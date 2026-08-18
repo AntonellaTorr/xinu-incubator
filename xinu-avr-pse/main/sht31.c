@@ -77,7 +77,7 @@ void sht31_reset(void) {
     cmd[0] = (SHT31_SOFTRESET >> 8) & 0xFF;
     cmd[1] = SHT31_SOFTRESET & 0xFF;
     twi_write(SHT31_DEFAULT_ADDR, cmd, 2, NULL);
-    sleepms(10); // Tiempo necesario para que el sensor se resetee
+    sleepms(20); // Tiempo necesario para que el sensor se resetee
 }
 
 void sht31_clear_status(void) {
@@ -85,7 +85,7 @@ void sht31_clear_status(void) {
     cmd[0] = (SHT31_CLEARSTATUS >> 8) & 0xFF;
     cmd[1] = SHT31_CLEARSTATUS & 0xFF;
     twi_write(SHT31_DEFAULT_ADDR, cmd, 2, NULL);
-    sleepms(10);
+    sleepms(20);
 }
 
 int sht31_heater(int h) {
@@ -94,7 +94,7 @@ int sht31_heater(int h) {
     cmd[0] = (command >> 8) & 0xFF;
     cmd[1] = command & 0xFF;
     twi_write(SHT31_DEFAULT_ADDR, cmd, 2, NULL);
-    sleepms(1);
+    sleepms(2);
     return 1;
 }
 
@@ -124,11 +124,11 @@ int sht31_read_temp_hum(void) {
     twi_write(SHT31_DEFAULT_ADDR, cmd, 2, NULL);
 
     // 2. Esperar medición (20ms para alta precisión)
-    sleepms(20); 
+    sleepms(40); 
 
     // 3. Leer 6 bytes: T (2), CRC (1), H (2), CRC (1)
     twi_read(SHT31_DEFAULT_ADDR, 6, leerb);
-    sleepms(2); // Retardo pequeño opcional
+    sleepms(4); // Retardo pequeño opcional
 
     // 4. Copiar datos al buffer de trabajo
     for (uint8_t i = 0; i < 6; i++)
