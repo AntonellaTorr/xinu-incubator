@@ -1,6 +1,9 @@
 #include <xinu.h>
 #include <stdint.h>
 #include <stddef.h>
+
+#define F_CPU 16000000UL // Definir la frecuencia del reloj del microcontrolador
+#define __DELAY_BACKWARD_COMPATIBLE__ // Para evitar advertencias de compatibilidad con versiones anteriores
 #include <util/delay.h>
 #include <math.h> // Para la función NAN
 #include "sht31.h"
