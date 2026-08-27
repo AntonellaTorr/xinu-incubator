@@ -5,6 +5,7 @@
 #include "sht31.h"
 #include "tarea_controltyh.h"
 #include "serial.h"
+#include "estado.h"
 
 extern float sht31_temperature;
 extern float sht31_humidity;
@@ -25,14 +26,16 @@ int tyh(void){
         }
     }
     serial_put_string("OK\n");
-    uint16_t estado = sht31_read_status();
-    serial_put_uint16_hex(estado);
+    uint16_t estado_sht= sht31_read_status();
+    serial_put_uint16_hex(estado_sht);
     serial_put_string("\n");
 
     
     float t,h;
     while (1) {
         if (sht31_read_both(&t, &h)) {
+            estado.temperatura = t;
+            estado.humedad = h;
 
             
         } else {
