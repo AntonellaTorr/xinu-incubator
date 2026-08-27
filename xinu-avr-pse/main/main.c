@@ -7,7 +7,7 @@ int main(void)
 {
 	serial_init();
     twi_init();
-	resume(create(control_tyh, 512, 20, "controltyh", 0));
+	resume(create(tyh, 512, 20, "controltyh", 0));
 
     for (;;);
 	return 0;

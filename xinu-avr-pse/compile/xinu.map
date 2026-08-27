@@ -1311,9 +1311,8 @@ END GROUP
  .text.sht31_read_both
                 0x00000000000021c6       0x6e binaries/sht31.o
                 0x00000000000021c6                sht31_read_both
- .text.control_tyh
-                0x0000000000002234       0x74 binaries/tarea_controltyh.o
-                0x0000000000002234                control_tyh
+ .text.tyh      0x0000000000002234       0x74 binaries/tarea_controltyh.o
+                0x0000000000002234                tyh
  .text.twi_init
                 0x00000000000022a8       0x18 binaries/twi.o
                 0x00000000000022a8                twi_init

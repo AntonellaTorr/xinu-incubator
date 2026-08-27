@@ -11,7 +11,7 @@ extern float sht31_humidity;
 
 //Se conecta scl a A5 y sda a A4
 
-int control_tyh(void){
+int tyh(void){
     int loopCnt = 0;
     int enableHeater = 0;
    
