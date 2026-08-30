@@ -8,7 +8,6 @@
 #include <math.h> // Para la función NAN
 #include "sht31.h"
 #include "twi.h"
-#include "serial.h"
 
 // Eliminada la declaración conflictiva 'uint8_t *response_data;'
 // El buffer global para guardar los datos recibidos (máximo 6 bytes)
@@ -155,19 +154,6 @@ int sht31_read_temp_hum(void) {
     sht31_temperature = -45.0f + 175.0f * ((float)rawT / 65535.0f);
     sht31_humidity    = 100.0f * ((float)rawH / 65535.0f);
 
-    // DEBUG: Imprime valores crudos
-    serial_put_string("\r\nDEBUG rawT=");
-    serial_put_number(rawT);
-    serial_put_string(" rawH=");
-    serial_put_number(rawH);
-    serial_put_string("\r\n");
-    
-    // DEBUG: Imprime valores convertidos
-    serial_put_string("DEBUG temp=");
-    serial_print_float(sht31_temperature);
-    serial_put_string(" hum=");
-    serial_print_float(sht31_humidity);
-    serial_put_string("\r\n");
 
 
     return 1;

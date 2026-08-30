@@ -4,7 +4,6 @@
 #include "twi.h"
 #include "sht31.h"
 #include "tarea_controltyh.h"
-#include "serial.h"
 #include "estado.h"
 
 extern float sht31_temperature;
@@ -25,10 +24,7 @@ int tyh(void){
             sleepms(1000);
         }
     }
-    serial_put_string("OK\n");
     uint16_t estado_sht= sht31_read_status();
-    serial_put_uint16_hex(estado_sht);
-    serial_put_string("\n");
 
     
     float t,h;
