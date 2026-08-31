@@ -1,194 +1,15 @@
 avr_serial.o: ../system/avr_serial.c ../include/xinu.h \
- ../include/avr_messages.h /usr/avr/include/avr/pgmspace.h \
- /usr/avr/include/inttypes.h /usr/lib/gcc/avr/10.2.0/include/stdint.h \
- /usr/avr/include/stdint.h ../include/stddef.h /usr/avr/include/avr/io.h \
- /usr/avr/include/avr/sfr_defs.h /usr/avr/include/avr/portpins.h \
- /usr/avr/include/avr/common.h /usr/avr/include/avr/version.h \
- /usr/avr/include/avr/fuse.h /usr/avr/include/avr/lock.h \
- ../include/kernel.h ../include/conf.h ../include/process.h \
- ../include/queue.h ../include/resched.h ../include/semaphore.h \
- ../include/memory.h ../include/bufpool.h ../include/mark.h \
- ../include/ports.h ../include/timer.h ../include/uart.h ../include/tty.h \
- ../include/gpio.h ../include/gpioselect.h ../include/device.h \
- ../include/interrupt.h ../include/file.h ../include/rfilesys.h \
- ../include/rdisksys.h ../include/lfilesys.h ../include/spi.h \
- ../include/ether.h ../include/net.h ../include/ip.h ../include/arp.h \
- ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
- ../include/name.h ../include/shell.h ../include/date.h \
- ../include/prototypes.h ../include/delay.h ../include/stdio.h \
- ../include/string.h ../include/syscall.h \
- /usr/avr/include/avr/interrupt.h
-blink_avr.o: ../system/blink_avr.c /usr/avr/include/avr/io.h \
- /usr/avr/include/avr/sfr_defs.h /usr/avr/include/inttypes.h \
- /usr/lib/gcc/avr/10.2.0/include/stdint.h /usr/avr/include/stdint.h \
- /usr/avr/include/avr/portpins.h /usr/avr/include/avr/common.h \
- /usr/avr/include/avr/version.h /usr/avr/include/avr/fuse.h \
- /usr/avr/include/avr/lock.h
-bufinit.o: ../system/bufinit.c ../include/xinu.h \
- ../include/avr_messages.h /usr/avr/include/avr/pgmspace.h \
- /usr/avr/include/inttypes.h /usr/lib/gcc/avr/10.2.0/include/stdint.h \
- /usr/avr/include/stdint.h ../include/stddef.h /usr/avr/include/avr/io.h \
- /usr/avr/include/avr/sfr_defs.h /usr/avr/include/avr/portpins.h \
- /usr/avr/include/avr/common.h /usr/avr/include/avr/version.h \
- /usr/avr/include/avr/fuse.h /usr/avr/include/avr/lock.h \
- ../include/kernel.h ../include/conf.h ../include/process.h \
- ../include/queue.h ../include/resched.h ../include/semaphore.h \
- ../include/memory.h ../include/bufpool.h ../include/mark.h \
- ../include/ports.h ../include/timer.h ../include/uart.h ../include/tty.h \
- ../include/gpio.h ../include/gpioselect.h ../include/device.h \
- ../include/interrupt.h ../include/file.h ../include/rfilesys.h \
- ../include/rdisksys.h ../include/lfilesys.h ../include/spi.h \
- ../include/ether.h ../include/net.h ../include/ip.h ../include/arp.h \
- ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
- ../include/name.h ../include/shell.h ../include/date.h \
- ../include/prototypes.h ../include/delay.h ../include/stdio.h \
- ../include/string.h ../include/syscall.h
-chprio.o: ../system/chprio.c ../include/xinu.h ../include/avr_messages.h \
- /usr/avr/include/avr/pgmspace.h /usr/avr/include/inttypes.h \
- /usr/lib/gcc/avr/10.2.0/include/stdint.h /usr/avr/include/stdint.h \
- ../include/stddef.h /usr/avr/include/avr/io.h \
- /usr/avr/include/avr/sfr_defs.h /usr/avr/include/avr/portpins.h \
- /usr/avr/include/avr/common.h /usr/avr/include/avr/version.h \
- /usr/avr/include/avr/fuse.h /usr/avr/include/avr/lock.h \
- ../include/kernel.h ../include/conf.h ../include/process.h \
- ../include/queue.h ../include/resched.h ../include/semaphore.h \
- ../include/memory.h ../include/bufpool.h ../include/mark.h \
- ../include/ports.h ../include/timer.h ../include/uart.h ../include/tty.h \
- ../include/gpio.h ../include/gpioselect.h ../include/device.h \
- ../include/interrupt.h ../include/file.h ../include/rfilesys.h \
- ../include/rdisksys.h ../include/lfilesys.h ../include/spi.h \
- ../include/ether.h ../include/net.h ../include/ip.h ../include/arp.h \
- ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
- ../include/name.h ../include/shell.h ../include/date.h \
- ../include/prototypes.h ../include/delay.h ../include/stdio.h \
- ../include/string.h ../include/syscall.h
-clkhandler.o: ../system/clkhandler.c ../include/xinu.h \
- ../include/avr_messages.h /usr/avr/include/avr/pgmspace.h \
- /usr/avr/include/inttypes.h /usr/lib/gcc/avr/10.2.0/include/stdint.h \
- /usr/avr/include/stdint.h ../include/stddef.h /usr/avr/include/avr/io.h \
- /usr/avr/include/avr/sfr_defs.h /usr/avr/include/avr/portpins.h \
- /usr/avr/include/avr/common.h /usr/avr/include/avr/version.h \
- /usr/avr/include/avr/fuse.h /usr/avr/include/avr/lock.h \
- ../include/kernel.h ../include/conf.h ../include/process.h \
- ../include/queue.h ../include/resched.h ../include/semaphore.h \
- ../include/memory.h ../include/bufpool.h ../include/mark.h \
- ../include/ports.h ../include/timer.h ../include/uart.h ../include/tty.h \
- ../include/gpio.h ../include/gpioselect.h ../include/device.h \
- ../include/interrupt.h ../include/file.h ../include/rfilesys.h \
- ../include/rdisksys.h ../include/lfilesys.h ../include/spi.h \
- ../include/ether.h ../include/net.h ../include/ip.h ../include/arp.h \
- ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
- ../include/name.h ../include/shell.h ../include/date.h \
- ../include/prototypes.h ../include/delay.h ../include/stdio.h \
- ../include/string.h ../include/syscall.h \
- /usr/avr/include/avr/interrupt.h
-clkinit.o: ../system/clkinit.c ../include/xinu.h \
- ../include/avr_messages.h /usr/avr/include/avr/pgmspace.h \
- /usr/avr/include/inttypes.h /usr/lib/gcc/avr/10.2.0/include/stdint.h \
- /usr/avr/include/stdint.h ../include/stddef.h /usr/avr/include/avr/io.h \
- /usr/avr/include/avr/sfr_defs.h /usr/avr/include/avr/portpins.h \
- /usr/avr/include/avr/common.h /usr/avr/include/avr/version.h \
- /usr/avr/include/avr/fuse.h /usr/avr/include/avr/lock.h \
- ../include/kernel.h ../include/conf.h ../include/process.h \
- ../include/queue.h ../include/resched.h ../include/semaphore.h \
- ../include/memory.h ../include/bufpool.h ../include/mark.h \
- ../include/ports.h ../include/timer.h ../include/uart.h ../include/tty.h \
- ../include/gpio.h ../include/gpioselect.h ../include/device.h \
- ../include/interrupt.h ../include/file.h ../include/rfilesys.h \
- ../include/rdisksys.h ../include/lfilesys.h ../include/spi.h \
- ../include/ether.h ../include/net.h ../include/ip.h ../include/arp.h \
- ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
- ../include/name.h ../include/shell.h ../include/date.h \
- ../include/prototypes.h ../include/delay.h ../include/stdio.h \
- ../include/string.h ../include/syscall.h \
- /usr/avr/include/avr/interrupt.h
-close.o: ../system/close.c ../include/xinu.h ../include/avr_messages.h \
- /usr/avr/include/avr/pgmspace.h /usr/avr/include/inttypes.h \
- /usr/lib/gcc/avr/10.2.0/include/stdint.h /usr/avr/include/stdint.h \
- ../include/stddef.h /usr/avr/include/avr/io.h \
- /usr/avr/include/avr/sfr_defs.h /usr/avr/include/avr/portpins.h \
- /usr/avr/include/avr/common.h /usr/avr/include/avr/version.h \
- /usr/avr/include/avr/fuse.h /usr/avr/include/avr/lock.h \
- ../include/kernel.h ../include/conf.h ../include/process.h \
- ../include/queue.h ../include/resched.h ../include/semaphore.h \
- ../include/memory.h ../include/bufpool.h ../include/mark.h \
- ../include/ports.h ../include/timer.h ../include/uart.h ../include/tty.h \
- ../include/gpio.h ../include/gpioselect.h ../include/device.h \
- ../include/interrupt.h ../include/file.h ../include/rfilesys.h \
- ../include/rdisksys.h ../include/lfilesys.h ../include/spi.h \
- ../include/ether.h ../include/net.h ../include/ip.h ../include/arp.h \
- ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
- ../include/name.h ../include/shell.h ../include/date.h \
- ../include/prototypes.h ../include/delay.h ../include/stdio.h \
- ../include/string.h ../include/syscall.h
-conf.o: ../system/conf.c ../include/xinu.h ../include/avr_messages.h \
- /usr/avr/include/avr/pgmspace.h /usr/avr/include/inttypes.h \
- /usr/lib/gcc/avr/10.2.0/include/stdint.h /usr/avr/include/stdint.h \
- ../include/stddef.h /usr/avr/include/avr/io.h \
- /usr/avr/include/avr/sfr_defs.h /usr/avr/include/avr/portpins.h \
- /usr/avr/include/avr/common.h /usr/avr/include/avr/version.h \
- /usr/avr/include/avr/fuse.h /usr/avr/include/avr/lock.h \
- ../include/kernel.h ../include/conf.h ../include/process.h \
- ../include/queue.h ../include/resched.h ../include/semaphore.h \
- ../include/memory.h ../include/bufpool.h ../include/mark.h \
- ../include/ports.h ../include/timer.h ../include/uart.h ../include/tty.h \
- ../include/gpio.h ../include/gpioselect.h ../include/device.h \
- ../include/interrupt.h ../include/file.h ../include/rfilesys.h \
- ../include/rdisksys.h ../include/lfilesys.h ../include/spi.h \
- ../include/ether.h ../include/net.h ../include/ip.h ../include/arp.h \
- ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
- ../include/name.h ../include/shell.h ../include/date.h \
- ../include/prototypes.h ../include/delay.h ../include/stdio.h \
- ../include/string.h ../include/syscall.h
-control.o: ../system/control.c ../include/xinu.h \
- ../include/avr_messages.h /usr/avr/include/avr/pgmspace.h \
- /usr/avr/include/inttypes.h /usr/lib/gcc/avr/10.2.0/include/stdint.h \
- /usr/avr/include/stdint.h ../include/stddef.h /usr/avr/include/avr/io.h \
- /usr/avr/include/avr/sfr_defs.h /usr/avr/include/avr/portpins.h \
- /usr/avr/include/avr/common.h /usr/avr/include/avr/version.h \
- /usr/avr/include/avr/fuse.h /usr/avr/include/avr/lock.h \
- ../include/kernel.h ../include/conf.h ../include/process.h \
- ../include/queue.h ../include/resched.h ../include/semaphore.h \
- ../include/memory.h ../include/bufpool.h ../include/mark.h \
- ../include/ports.h ../include/timer.h ../include/uart.h ../include/tty.h \
- ../include/gpio.h ../include/gpioselect.h ../include/device.h \
- ../include/interrupt.h ../include/file.h ../include/rfilesys.h \
- ../include/rdisksys.h ../include/lfilesys.h ../include/spi.h \
- ../include/ether.h ../include/net.h ../include/ip.h ../include/arp.h \
- ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
- ../include/name.h ../include/shell.h ../include/date.h \
- ../include/prototypes.h ../include/delay.h ../include/stdio.h \
- ../include/string.h ../include/syscall.h
-create.o: ../system/create.c ../include/stdarg.h ../include/xinu.h \
- ../include/avr_messages.h /usr/avr/include/avr/pgmspace.h \
- /usr/avr/include/inttypes.h /usr/lib/gcc/avr/10.2.0/include/stdint.h \
- /usr/avr/include/stdint.h ../include/stddef.h /usr/avr/include/avr/io.h \
- /usr/avr/include/avr/sfr_defs.h /usr/avr/include/avr/portpins.h \
- /usr/avr/include/avr/common.h /usr/avr/include/avr/version.h \
- /usr/avr/include/avr/fuse.h /usr/avr/include/avr/lock.h \
- ../include/kernel.h ../include/conf.h ../include/process.h \
- ../include/queue.h ../include/resched.h ../include/semaphore.h \
- ../include/memory.h ../include/bufpool.h ../include/mark.h \
- ../include/ports.h ../include/timer.h ../include/uart.h ../include/tty.h \
- ../include/gpio.h ../include/gpioselect.h ../include/device.h \
- ../include/interrupt.h ../include/file.h ../include/rfilesys.h \
- ../include/rdisksys.h ../include/lfilesys.h ../include/spi.h \
- ../include/ether.h ../include/net.h ../include/ip.h ../include/arp.h \
- ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
- ../include/name.h ../include/shell.h ../include/date.h \
- ../include/prototypes.h ../include/delay.h ../include/stdio.h \
- ../include/string.h ../include/syscall.h
-evec.o: ../system/evec.c /usr/avr/include/avr/pgmspace.h \
- /usr/avr/include/inttypes.h /usr/lib/gcc/avr/10.2.0/include/stdint.h \
- /usr/avr/include/stdint.h ../include/stddef.h /usr/avr/include/avr/io.h \
- /usr/avr/include/avr/sfr_defs.h /usr/avr/include/avr/portpins.h \
- /usr/avr/include/avr/common.h /usr/avr/include/avr/version.h \
- /usr/avr/include/avr/fuse.h /usr/avr/include/avr/lock.h \
- ../include/xinu.h ../include/avr_messages.h ../include/kernel.h \
- ../include/conf.h ../include/process.h ../include/queue.h \
- ../include/resched.h ../include/semaphore.h ../include/memory.h \
- ../include/bufpool.h ../include/mark.h ../include/ports.h \
- ../include/timer.h ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/avr_messages.h /usr/lib/avr/include/avr/pgmspace.h \
+ /usr/lib/avr/include/inttypes.h /usr/lib/gcc/avr/5.4.0/include/stdint.h \
+ /usr/lib/avr/include/stdint.h ../include/stddef.h \
+ /usr/lib/avr/include/avr/io.h /usr/lib/avr/include/avr/sfr_defs.h \
+ /usr/lib/avr/include/avr/portpins.h /usr/lib/avr/include/avr/common.h \
+ /usr/lib/avr/include/avr/version.h /usr/lib/avr/include/avr/fuse.h \
+ /usr/lib/avr/include/avr/lock.h ../include/kernel.h ../include/conf.h \
+ ../include/process.h ../include/queue.h ../include/resched.h \
+ ../include/semaphore.h ../include/memory.h ../include/bufpool.h \
+ ../include/mark.h ../include/ports.h ../include/timer.h \
+ ../include/uart.h ../include/tty.h ../include/gpio.h \
  ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
  ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
  ../include/lfilesys.h ../include/spi.h ../include/ether.h \
@@ -196,14 +17,203 @@ evec.o: ../system/evec.c /usr/avr/include/avr/pgmspace.h \
  ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
  ../include/shell.h ../include/date.h ../include/prototypes.h \
  ../include/delay.h ../include/stdio.h ../include/string.h \
- ../include/syscall.h
+ ../include/syscall.h ../include/avr_serial.h ../include/sync.h \
+ /usr/lib/avr/include/avr/interrupt.h
+blink_avr.o: ../system/blink_avr.c /usr/lib/avr/include/avr/io.h \
+ /usr/lib/avr/include/avr/sfr_defs.h /usr/lib/avr/include/inttypes.h \
+ /usr/lib/gcc/avr/5.4.0/include/stdint.h /usr/lib/avr/include/stdint.h \
+ /usr/lib/avr/include/avr/portpins.h /usr/lib/avr/include/avr/common.h \
+ /usr/lib/avr/include/avr/version.h /usr/lib/avr/include/avr/fuse.h \
+ /usr/lib/avr/include/avr/lock.h
+bufinit.o: ../system/bufinit.c ../include/xinu.h \
+ ../include/avr_messages.h /usr/lib/avr/include/avr/pgmspace.h \
+ /usr/lib/avr/include/inttypes.h /usr/lib/gcc/avr/5.4.0/include/stdint.h \
+ /usr/lib/avr/include/stdint.h ../include/stddef.h \
+ /usr/lib/avr/include/avr/io.h /usr/lib/avr/include/avr/sfr_defs.h \
+ /usr/lib/avr/include/avr/portpins.h /usr/lib/avr/include/avr/common.h \
+ /usr/lib/avr/include/avr/version.h /usr/lib/avr/include/avr/fuse.h \
+ /usr/lib/avr/include/avr/lock.h ../include/kernel.h ../include/conf.h \
+ ../include/process.h ../include/queue.h ../include/resched.h \
+ ../include/semaphore.h ../include/memory.h ../include/bufpool.h \
+ ../include/mark.h ../include/ports.h ../include/timer.h \
+ ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/syscall.h ../include/avr_serial.h ../include/sync.h
+chprio.o: ../system/chprio.c ../include/xinu.h ../include/avr_messages.h \
+ /usr/lib/avr/include/avr/pgmspace.h /usr/lib/avr/include/inttypes.h \
+ /usr/lib/gcc/avr/5.4.0/include/stdint.h /usr/lib/avr/include/stdint.h \
+ ../include/stddef.h /usr/lib/avr/include/avr/io.h \
+ /usr/lib/avr/include/avr/sfr_defs.h /usr/lib/avr/include/avr/portpins.h \
+ /usr/lib/avr/include/avr/common.h /usr/lib/avr/include/avr/version.h \
+ /usr/lib/avr/include/avr/fuse.h /usr/lib/avr/include/avr/lock.h \
+ ../include/kernel.h ../include/conf.h ../include/process.h \
+ ../include/queue.h ../include/resched.h ../include/semaphore.h \
+ ../include/memory.h ../include/bufpool.h ../include/mark.h \
+ ../include/ports.h ../include/timer.h ../include/uart.h ../include/tty.h \
+ ../include/gpio.h ../include/gpioselect.h ../include/device.h \
+ ../include/interrupt.h ../include/file.h ../include/rfilesys.h \
+ ../include/rdisksys.h ../include/lfilesys.h ../include/spi.h \
+ ../include/ether.h ../include/net.h ../include/ip.h ../include/arp.h \
+ ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
+ ../include/name.h ../include/shell.h ../include/date.h \
+ ../include/prototypes.h ../include/delay.h ../include/stdio.h \
+ ../include/string.h ../include/syscall.h ../include/avr_serial.h \
+ ../include/sync.h
+clkhandler.o: ../system/clkhandler.c ../include/xinu.h \
+ ../include/avr_messages.h /usr/lib/avr/include/avr/pgmspace.h \
+ /usr/lib/avr/include/inttypes.h /usr/lib/gcc/avr/5.4.0/include/stdint.h \
+ /usr/lib/avr/include/stdint.h ../include/stddef.h \
+ /usr/lib/avr/include/avr/io.h /usr/lib/avr/include/avr/sfr_defs.h \
+ /usr/lib/avr/include/avr/portpins.h /usr/lib/avr/include/avr/common.h \
+ /usr/lib/avr/include/avr/version.h /usr/lib/avr/include/avr/fuse.h \
+ /usr/lib/avr/include/avr/lock.h ../include/kernel.h ../include/conf.h \
+ ../include/process.h ../include/queue.h ../include/resched.h \
+ ../include/semaphore.h ../include/memory.h ../include/bufpool.h \
+ ../include/mark.h ../include/ports.h ../include/timer.h \
+ ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/syscall.h ../include/avr_serial.h ../include/sync.h \
+ /usr/lib/avr/include/avr/interrupt.h
+clkinit.o: ../system/clkinit.c ../include/xinu.h \
+ ../include/avr_messages.h /usr/lib/avr/include/avr/pgmspace.h \
+ /usr/lib/avr/include/inttypes.h /usr/lib/gcc/avr/5.4.0/include/stdint.h \
+ /usr/lib/avr/include/stdint.h ../include/stddef.h \
+ /usr/lib/avr/include/avr/io.h /usr/lib/avr/include/avr/sfr_defs.h \
+ /usr/lib/avr/include/avr/portpins.h /usr/lib/avr/include/avr/common.h \
+ /usr/lib/avr/include/avr/version.h /usr/lib/avr/include/avr/fuse.h \
+ /usr/lib/avr/include/avr/lock.h ../include/kernel.h ../include/conf.h \
+ ../include/process.h ../include/queue.h ../include/resched.h \
+ ../include/semaphore.h ../include/memory.h ../include/bufpool.h \
+ ../include/mark.h ../include/ports.h ../include/timer.h \
+ ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/syscall.h ../include/avr_serial.h ../include/sync.h \
+ /usr/lib/avr/include/avr/interrupt.h
+close.o: ../system/close.c ../include/xinu.h ../include/avr_messages.h \
+ /usr/lib/avr/include/avr/pgmspace.h /usr/lib/avr/include/inttypes.h \
+ /usr/lib/gcc/avr/5.4.0/include/stdint.h /usr/lib/avr/include/stdint.h \
+ ../include/stddef.h /usr/lib/avr/include/avr/io.h \
+ /usr/lib/avr/include/avr/sfr_defs.h /usr/lib/avr/include/avr/portpins.h \
+ /usr/lib/avr/include/avr/common.h /usr/lib/avr/include/avr/version.h \
+ /usr/lib/avr/include/avr/fuse.h /usr/lib/avr/include/avr/lock.h \
+ ../include/kernel.h ../include/conf.h ../include/process.h \
+ ../include/queue.h ../include/resched.h ../include/semaphore.h \
+ ../include/memory.h ../include/bufpool.h ../include/mark.h \
+ ../include/ports.h ../include/timer.h ../include/uart.h ../include/tty.h \
+ ../include/gpio.h ../include/gpioselect.h ../include/device.h \
+ ../include/interrupt.h ../include/file.h ../include/rfilesys.h \
+ ../include/rdisksys.h ../include/lfilesys.h ../include/spi.h \
+ ../include/ether.h ../include/net.h ../include/ip.h ../include/arp.h \
+ ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
+ ../include/name.h ../include/shell.h ../include/date.h \
+ ../include/prototypes.h ../include/delay.h ../include/stdio.h \
+ ../include/string.h ../include/syscall.h ../include/avr_serial.h \
+ ../include/sync.h
+conf.o: ../system/conf.c ../include/xinu.h ../include/avr_messages.h \
+ /usr/lib/avr/include/avr/pgmspace.h /usr/lib/avr/include/inttypes.h \
+ /usr/lib/gcc/avr/5.4.0/include/stdint.h /usr/lib/avr/include/stdint.h \
+ ../include/stddef.h /usr/lib/avr/include/avr/io.h \
+ /usr/lib/avr/include/avr/sfr_defs.h /usr/lib/avr/include/avr/portpins.h \
+ /usr/lib/avr/include/avr/common.h /usr/lib/avr/include/avr/version.h \
+ /usr/lib/avr/include/avr/fuse.h /usr/lib/avr/include/avr/lock.h \
+ ../include/kernel.h ../include/conf.h ../include/process.h \
+ ../include/queue.h ../include/resched.h ../include/semaphore.h \
+ ../include/memory.h ../include/bufpool.h ../include/mark.h \
+ ../include/ports.h ../include/timer.h ../include/uart.h ../include/tty.h \
+ ../include/gpio.h ../include/gpioselect.h ../include/device.h \
+ ../include/interrupt.h ../include/file.h ../include/rfilesys.h \
+ ../include/rdisksys.h ../include/lfilesys.h ../include/spi.h \
+ ../include/ether.h ../include/net.h ../include/ip.h ../include/arp.h \
+ ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
+ ../include/name.h ../include/shell.h ../include/date.h \
+ ../include/prototypes.h ../include/delay.h ../include/stdio.h \
+ ../include/string.h ../include/syscall.h ../include/avr_serial.h \
+ ../include/sync.h
+control.o: ../system/control.c ../include/xinu.h \
+ ../include/avr_messages.h /usr/lib/avr/include/avr/pgmspace.h \
+ /usr/lib/avr/include/inttypes.h /usr/lib/gcc/avr/5.4.0/include/stdint.h \
+ /usr/lib/avr/include/stdint.h ../include/stddef.h \
+ /usr/lib/avr/include/avr/io.h /usr/lib/avr/include/avr/sfr_defs.h \
+ /usr/lib/avr/include/avr/portpins.h /usr/lib/avr/include/avr/common.h \
+ /usr/lib/avr/include/avr/version.h /usr/lib/avr/include/avr/fuse.h \
+ /usr/lib/avr/include/avr/lock.h ../include/kernel.h ../include/conf.h \
+ ../include/process.h ../include/queue.h ../include/resched.h \
+ ../include/semaphore.h ../include/memory.h ../include/bufpool.h \
+ ../include/mark.h ../include/ports.h ../include/timer.h \
+ ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/syscall.h ../include/avr_serial.h ../include/sync.h
+create.o: ../system/create.c ../include/stdarg.h ../include/xinu.h \
+ ../include/avr_messages.h /usr/lib/avr/include/avr/pgmspace.h \
+ /usr/lib/avr/include/inttypes.h /usr/lib/gcc/avr/5.4.0/include/stdint.h \
+ /usr/lib/avr/include/stdint.h ../include/stddef.h \
+ /usr/lib/avr/include/avr/io.h /usr/lib/avr/include/avr/sfr_defs.h \
+ /usr/lib/avr/include/avr/portpins.h /usr/lib/avr/include/avr/common.h \
+ /usr/lib/avr/include/avr/version.h /usr/lib/avr/include/avr/fuse.h \
+ /usr/lib/avr/include/avr/lock.h ../include/kernel.h ../include/conf.h \
+ ../include/process.h ../include/queue.h ../include/resched.h \
+ ../include/semaphore.h ../include/memory.h ../include/bufpool.h \
+ ../include/mark.h ../include/ports.h ../include/timer.h \
+ ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/syscall.h ../include/avr_serial.h ../include/sync.h
+evec.o: ../system/evec.c /usr/lib/avr/include/avr/pgmspace.h \
+ /usr/lib/avr/include/inttypes.h /usr/lib/gcc/avr/5.4.0/include/stdint.h \
+ /usr/lib/avr/include/stdint.h ../include/stddef.h \
+ /usr/lib/avr/include/avr/io.h /usr/lib/avr/include/avr/sfr_defs.h \
+ /usr/lib/avr/include/avr/portpins.h /usr/lib/avr/include/avr/common.h \
+ /usr/lib/avr/include/avr/version.h /usr/lib/avr/include/avr/fuse.h \
+ /usr/lib/avr/include/avr/lock.h ../include/xinu.h \
+ ../include/avr_messages.h ../include/kernel.h ../include/conf.h \
+ ../include/process.h ../include/queue.h ../include/resched.h \
+ ../include/semaphore.h ../include/memory.h ../include/bufpool.h \
+ ../include/mark.h ../include/ports.h ../include/timer.h \
+ ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/syscall.h ../include/avr_serial.h ../include/sync.h
 exit.o: ../system/exit.c ../include/xinu.h ../include/avr_messages.h \
- /usr/avr/include/avr/pgmspace.h /usr/avr/include/inttypes.h \
- /usr/lib/gcc/avr/10.2.0/include/stdint.h /usr/avr/include/stdint.h \
- ../include/stddef.h /usr/avr/include/avr/io.h \
- /usr/avr/include/avr/sfr_defs.h /usr/avr/include/avr/portpins.h \
- /usr/avr/include/avr/common.h /usr/avr/include/avr/version.h \
- /usr/avr/include/avr/fuse.h /usr/avr/include/avr/lock.h \
+ /usr/lib/avr/include/avr/pgmspace.h /usr/lib/avr/include/inttypes.h \
+ /usr/lib/gcc/avr/5.4.0/include/stdint.h /usr/lib/avr/include/stdint.h \
+ ../include/stddef.h /usr/lib/avr/include/avr/io.h \
+ /usr/lib/avr/include/avr/sfr_defs.h /usr/lib/avr/include/avr/portpins.h \
+ /usr/lib/avr/include/avr/common.h /usr/lib/avr/include/avr/version.h \
+ /usr/lib/avr/include/avr/fuse.h /usr/lib/avr/include/avr/lock.h \
  ../include/kernel.h ../include/conf.h ../include/process.h \
  ../include/queue.h ../include/resched.h ../include/semaphore.h \
  ../include/memory.h ../include/bufpool.h ../include/mark.h \
@@ -215,52 +225,55 @@ exit.o: ../system/exit.c ../include/xinu.h ../include/avr_messages.h \
  ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
  ../include/name.h ../include/shell.h ../include/date.h \
  ../include/prototypes.h ../include/delay.h ../include/stdio.h \
- ../include/string.h ../include/syscall.h
+ ../include/string.h ../include/syscall.h ../include/avr_serial.h \
+ ../include/sync.h
 freebuf.o: ../system/freebuf.c ../include/xinu.h \
- ../include/avr_messages.h /usr/avr/include/avr/pgmspace.h \
- /usr/avr/include/inttypes.h /usr/lib/gcc/avr/10.2.0/include/stdint.h \
- /usr/avr/include/stdint.h ../include/stddef.h /usr/avr/include/avr/io.h \
- /usr/avr/include/avr/sfr_defs.h /usr/avr/include/avr/portpins.h \
- /usr/avr/include/avr/common.h /usr/avr/include/avr/version.h \
- /usr/avr/include/avr/fuse.h /usr/avr/include/avr/lock.h \
- ../include/kernel.h ../include/conf.h ../include/process.h \
- ../include/queue.h ../include/resched.h ../include/semaphore.h \
- ../include/memory.h ../include/bufpool.h ../include/mark.h \
- ../include/ports.h ../include/timer.h ../include/uart.h ../include/tty.h \
- ../include/gpio.h ../include/gpioselect.h ../include/device.h \
- ../include/interrupt.h ../include/file.h ../include/rfilesys.h \
- ../include/rdisksys.h ../include/lfilesys.h ../include/spi.h \
- ../include/ether.h ../include/net.h ../include/ip.h ../include/arp.h \
- ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
- ../include/name.h ../include/shell.h ../include/date.h \
- ../include/prototypes.h ../include/delay.h ../include/stdio.h \
- ../include/string.h ../include/syscall.h
+ ../include/avr_messages.h /usr/lib/avr/include/avr/pgmspace.h \
+ /usr/lib/avr/include/inttypes.h /usr/lib/gcc/avr/5.4.0/include/stdint.h \
+ /usr/lib/avr/include/stdint.h ../include/stddef.h \
+ /usr/lib/avr/include/avr/io.h /usr/lib/avr/include/avr/sfr_defs.h \
+ /usr/lib/avr/include/avr/portpins.h /usr/lib/avr/include/avr/common.h \
+ /usr/lib/avr/include/avr/version.h /usr/lib/avr/include/avr/fuse.h \
+ /usr/lib/avr/include/avr/lock.h ../include/kernel.h ../include/conf.h \
+ ../include/process.h ../include/queue.h ../include/resched.h \
+ ../include/semaphore.h ../include/memory.h ../include/bufpool.h \
+ ../include/mark.h ../include/ports.h ../include/timer.h \
+ ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/syscall.h ../include/avr_serial.h ../include/sync.h
 freemem.o: ../system/freemem.c ../include/xinu.h \
- ../include/avr_messages.h /usr/avr/include/avr/pgmspace.h \
- /usr/avr/include/inttypes.h /usr/lib/gcc/avr/10.2.0/include/stdint.h \
- /usr/avr/include/stdint.h ../include/stddef.h /usr/avr/include/avr/io.h \
- /usr/avr/include/avr/sfr_defs.h /usr/avr/include/avr/portpins.h \
- /usr/avr/include/avr/common.h /usr/avr/include/avr/version.h \
- /usr/avr/include/avr/fuse.h /usr/avr/include/avr/lock.h \
- ../include/kernel.h ../include/conf.h ../include/process.h \
- ../include/queue.h ../include/resched.h ../include/semaphore.h \
- ../include/memory.h ../include/bufpool.h ../include/mark.h \
- ../include/ports.h ../include/timer.h ../include/uart.h ../include/tty.h \
- ../include/gpio.h ../include/gpioselect.h ../include/device.h \
- ../include/interrupt.h ../include/file.h ../include/rfilesys.h \
- ../include/rdisksys.h ../include/lfilesys.h ../include/spi.h \
- ../include/ether.h ../include/net.h ../include/ip.h ../include/arp.h \
- ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
- ../include/name.h ../include/shell.h ../include/date.h \
- ../include/prototypes.h ../include/delay.h ../include/stdio.h \
- ../include/string.h ../include/syscall.h
+ ../include/avr_messages.h /usr/lib/avr/include/avr/pgmspace.h \
+ /usr/lib/avr/include/inttypes.h /usr/lib/gcc/avr/5.4.0/include/stdint.h \
+ /usr/lib/avr/include/stdint.h ../include/stddef.h \
+ /usr/lib/avr/include/avr/io.h /usr/lib/avr/include/avr/sfr_defs.h \
+ /usr/lib/avr/include/avr/portpins.h /usr/lib/avr/include/avr/common.h \
+ /usr/lib/avr/include/avr/version.h /usr/lib/avr/include/avr/fuse.h \
+ /usr/lib/avr/include/avr/lock.h ../include/kernel.h ../include/conf.h \
+ ../include/process.h ../include/queue.h ../include/resched.h \
+ ../include/semaphore.h ../include/memory.h ../include/bufpool.h \
+ ../include/mark.h ../include/ports.h ../include/timer.h \
+ ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/syscall.h ../include/avr_serial.h ../include/sync.h
 getbuf.o: ../system/getbuf.c ../include/xinu.h ../include/avr_messages.h \
- /usr/avr/include/avr/pgmspace.h /usr/avr/include/inttypes.h \
- /usr/lib/gcc/avr/10.2.0/include/stdint.h /usr/avr/include/stdint.h \
- ../include/stddef.h /usr/avr/include/avr/io.h \
- /usr/avr/include/avr/sfr_defs.h /usr/avr/include/avr/portpins.h \
- /usr/avr/include/avr/common.h /usr/avr/include/avr/version.h \
- /usr/avr/include/avr/fuse.h /usr/avr/include/avr/lock.h \
+ /usr/lib/avr/include/avr/pgmspace.h /usr/lib/avr/include/inttypes.h \
+ /usr/lib/gcc/avr/5.4.0/include/stdint.h /usr/lib/avr/include/stdint.h \
+ ../include/stddef.h /usr/lib/avr/include/avr/io.h \
+ /usr/lib/avr/include/avr/sfr_defs.h /usr/lib/avr/include/avr/portpins.h \
+ /usr/lib/avr/include/avr/common.h /usr/lib/avr/include/avr/version.h \
+ /usr/lib/avr/include/avr/fuse.h /usr/lib/avr/include/avr/lock.h \
  ../include/kernel.h ../include/conf.h ../include/process.h \
  ../include/queue.h ../include/resched.h ../include/semaphore.h \
  ../include/memory.h ../include/bufpool.h ../include/mark.h \
@@ -272,14 +285,15 @@ getbuf.o: ../system/getbuf.c ../include/xinu.h ../include/avr_messages.h \
  ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
  ../include/name.h ../include/shell.h ../include/date.h \
  ../include/prototypes.h ../include/delay.h ../include/stdio.h \
- ../include/string.h ../include/syscall.h
+ ../include/string.h ../include/syscall.h ../include/avr_serial.h \
+ ../include/sync.h
 getc.o: ../system/getc.c ../include/xinu.h ../include/avr_messages.h \
- /usr/avr/include/avr/pgmspace.h /usr/avr/include/inttypes.h \
- /usr/lib/gcc/avr/10.2.0/include/stdint.h /usr/avr/include/stdint.h \
- ../include/stddef.h /usr/avr/include/avr/io.h \
- /usr/avr/include/avr/sfr_defs.h /usr/avr/include/avr/portpins.h \
- /usr/avr/include/avr/common.h /usr/avr/include/avr/version.h \
- /usr/avr/include/avr/fuse.h /usr/avr/include/avr/lock.h \
+ /usr/lib/avr/include/avr/pgmspace.h /usr/lib/avr/include/inttypes.h \
+ /usr/lib/gcc/avr/5.4.0/include/stdint.h /usr/lib/avr/include/stdint.h \
+ ../include/stddef.h /usr/lib/avr/include/avr/io.h \
+ /usr/lib/avr/include/avr/sfr_defs.h /usr/lib/avr/include/avr/portpins.h \
+ /usr/lib/avr/include/avr/common.h /usr/lib/avr/include/avr/version.h \
+ /usr/lib/avr/include/avr/fuse.h /usr/lib/avr/include/avr/lock.h \
  ../include/kernel.h ../include/conf.h ../include/process.h \
  ../include/queue.h ../include/resched.h ../include/semaphore.h \
  ../include/memory.h ../include/bufpool.h ../include/mark.h \
@@ -291,14 +305,15 @@ getc.o: ../system/getc.c ../include/xinu.h ../include/avr_messages.h \
  ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
  ../include/name.h ../include/shell.h ../include/date.h \
  ../include/prototypes.h ../include/delay.h ../include/stdio.h \
- ../include/string.h ../include/syscall.h
+ ../include/string.h ../include/syscall.h ../include/avr_serial.h \
+ ../include/sync.h
 getdev.o: ../system/getdev.c ../include/xinu.h ../include/avr_messages.h \
- /usr/avr/include/avr/pgmspace.h /usr/avr/include/inttypes.h \
- /usr/lib/gcc/avr/10.2.0/include/stdint.h /usr/avr/include/stdint.h \
- ../include/stddef.h /usr/avr/include/avr/io.h \
- /usr/avr/include/avr/sfr_defs.h /usr/avr/include/avr/portpins.h \
- /usr/avr/include/avr/common.h /usr/avr/include/avr/version.h \
- /usr/avr/include/avr/fuse.h /usr/avr/include/avr/lock.h \
+ /usr/lib/avr/include/avr/pgmspace.h /usr/lib/avr/include/inttypes.h \
+ /usr/lib/gcc/avr/5.4.0/include/stdint.h /usr/lib/avr/include/stdint.h \
+ ../include/stddef.h /usr/lib/avr/include/avr/io.h \
+ /usr/lib/avr/include/avr/sfr_defs.h /usr/lib/avr/include/avr/portpins.h \
+ /usr/lib/avr/include/avr/common.h /usr/lib/avr/include/avr/version.h \
+ /usr/lib/avr/include/avr/fuse.h /usr/lib/avr/include/avr/lock.h \
  ../include/kernel.h ../include/conf.h ../include/process.h \
  ../include/queue.h ../include/resched.h ../include/semaphore.h \
  ../include/memory.h ../include/bufpool.h ../include/mark.h \
@@ -310,33 +325,35 @@ getdev.o: ../system/getdev.c ../include/xinu.h ../include/avr_messages.h \
  ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
  ../include/name.h ../include/shell.h ../include/date.h \
  ../include/prototypes.h ../include/delay.h ../include/stdio.h \
- ../include/string.h ../include/syscall.h
+ ../include/string.h ../include/syscall.h ../include/avr_serial.h \
+ ../include/sync.h
 getitem.o: ../system/getitem.c ../include/xinu.h \
- ../include/avr_messages.h /usr/avr/include/avr/pgmspace.h \
- /usr/avr/include/inttypes.h /usr/lib/gcc/avr/10.2.0/include/stdint.h \
- /usr/avr/include/stdint.h ../include/stddef.h /usr/avr/include/avr/io.h \
- /usr/avr/include/avr/sfr_defs.h /usr/avr/include/avr/portpins.h \
- /usr/avr/include/avr/common.h /usr/avr/include/avr/version.h \
- /usr/avr/include/avr/fuse.h /usr/avr/include/avr/lock.h \
- ../include/kernel.h ../include/conf.h ../include/process.h \
- ../include/queue.h ../include/resched.h ../include/semaphore.h \
- ../include/memory.h ../include/bufpool.h ../include/mark.h \
- ../include/ports.h ../include/timer.h ../include/uart.h ../include/tty.h \
- ../include/gpio.h ../include/gpioselect.h ../include/device.h \
- ../include/interrupt.h ../include/file.h ../include/rfilesys.h \
- ../include/rdisksys.h ../include/lfilesys.h ../include/spi.h \
- ../include/ether.h ../include/net.h ../include/ip.h ../include/arp.h \
- ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
- ../include/name.h ../include/shell.h ../include/date.h \
- ../include/prototypes.h ../include/delay.h ../include/stdio.h \
- ../include/string.h ../include/syscall.h
+ ../include/avr_messages.h /usr/lib/avr/include/avr/pgmspace.h \
+ /usr/lib/avr/include/inttypes.h /usr/lib/gcc/avr/5.4.0/include/stdint.h \
+ /usr/lib/avr/include/stdint.h ../include/stddef.h \
+ /usr/lib/avr/include/avr/io.h /usr/lib/avr/include/avr/sfr_defs.h \
+ /usr/lib/avr/include/avr/portpins.h /usr/lib/avr/include/avr/common.h \
+ /usr/lib/avr/include/avr/version.h /usr/lib/avr/include/avr/fuse.h \
+ /usr/lib/avr/include/avr/lock.h ../include/kernel.h ../include/conf.h \
+ ../include/process.h ../include/queue.h ../include/resched.h \
+ ../include/semaphore.h ../include/memory.h ../include/bufpool.h \
+ ../include/mark.h ../include/ports.h ../include/timer.h \
+ ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/syscall.h ../include/avr_serial.h ../include/sync.h
 getmem.o: ../system/getmem.c ../include/xinu.h ../include/avr_messages.h \
- /usr/avr/include/avr/pgmspace.h /usr/avr/include/inttypes.h \
- /usr/lib/gcc/avr/10.2.0/include/stdint.h /usr/avr/include/stdint.h \
- ../include/stddef.h /usr/avr/include/avr/io.h \
- /usr/avr/include/avr/sfr_defs.h /usr/avr/include/avr/portpins.h \
- /usr/avr/include/avr/common.h /usr/avr/include/avr/version.h \
- /usr/avr/include/avr/fuse.h /usr/avr/include/avr/lock.h \
+ /usr/lib/avr/include/avr/pgmspace.h /usr/lib/avr/include/inttypes.h \
+ /usr/lib/gcc/avr/5.4.0/include/stdint.h /usr/lib/avr/include/stdint.h \
+ ../include/stddef.h /usr/lib/avr/include/avr/io.h \
+ /usr/lib/avr/include/avr/sfr_defs.h /usr/lib/avr/include/avr/portpins.h \
+ /usr/lib/avr/include/avr/common.h /usr/lib/avr/include/avr/version.h \
+ /usr/lib/avr/include/avr/fuse.h /usr/lib/avr/include/avr/lock.h \
  ../include/kernel.h ../include/conf.h ../include/process.h \
  ../include/queue.h ../include/resched.h ../include/semaphore.h \
  ../include/memory.h ../include/bufpool.h ../include/mark.h \
@@ -348,14 +365,15 @@ getmem.o: ../system/getmem.c ../include/xinu.h ../include/avr_messages.h \
  ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
  ../include/name.h ../include/shell.h ../include/date.h \
  ../include/prototypes.h ../include/delay.h ../include/stdio.h \
- ../include/string.h ../include/syscall.h
+ ../include/string.h ../include/syscall.h ../include/avr_serial.h \
+ ../include/sync.h
 getpid.o: ../system/getpid.c ../include/xinu.h ../include/avr_messages.h \
- /usr/avr/include/avr/pgmspace.h /usr/avr/include/inttypes.h \
- /usr/lib/gcc/avr/10.2.0/include/stdint.h /usr/avr/include/stdint.h \
- ../include/stddef.h /usr/avr/include/avr/io.h \
- /usr/avr/include/avr/sfr_defs.h /usr/avr/include/avr/portpins.h \
- /usr/avr/include/avr/common.h /usr/avr/include/avr/version.h \
- /usr/avr/include/avr/fuse.h /usr/avr/include/avr/lock.h \
+ /usr/lib/avr/include/avr/pgmspace.h /usr/lib/avr/include/inttypes.h \
+ /usr/lib/gcc/avr/5.4.0/include/stdint.h /usr/lib/avr/include/stdint.h \
+ ../include/stddef.h /usr/lib/avr/include/avr/io.h \
+ /usr/lib/avr/include/avr/sfr_defs.h /usr/lib/avr/include/avr/portpins.h \
+ /usr/lib/avr/include/avr/common.h /usr/lib/avr/include/avr/version.h \
+ /usr/lib/avr/include/avr/fuse.h /usr/lib/avr/include/avr/lock.h \
  ../include/kernel.h ../include/conf.h ../include/process.h \
  ../include/queue.h ../include/resched.h ../include/semaphore.h \
  ../include/memory.h ../include/bufpool.h ../include/mark.h \
@@ -367,33 +385,35 @@ getpid.o: ../system/getpid.c ../include/xinu.h ../include/avr_messages.h \
  ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
  ../include/name.h ../include/shell.h ../include/date.h \
  ../include/prototypes.h ../include/delay.h ../include/stdio.h \
- ../include/string.h ../include/syscall.h
+ ../include/string.h ../include/syscall.h ../include/avr_serial.h \
+ ../include/sync.h
 getprio.o: ../system/getprio.c ../include/xinu.h \
- ../include/avr_messages.h /usr/avr/include/avr/pgmspace.h \
- /usr/avr/include/inttypes.h /usr/lib/gcc/avr/10.2.0/include/stdint.h \
- /usr/avr/include/stdint.h ../include/stddef.h /usr/avr/include/avr/io.h \
- /usr/avr/include/avr/sfr_defs.h /usr/avr/include/avr/portpins.h \
- /usr/avr/include/avr/common.h /usr/avr/include/avr/version.h \
- /usr/avr/include/avr/fuse.h /usr/avr/include/avr/lock.h \
- ../include/kernel.h ../include/conf.h ../include/process.h \
- ../include/queue.h ../include/resched.h ../include/semaphore.h \
- ../include/memory.h ../include/bufpool.h ../include/mark.h \
- ../include/ports.h ../include/timer.h ../include/uart.h ../include/tty.h \
- ../include/gpio.h ../include/gpioselect.h ../include/device.h \
- ../include/interrupt.h ../include/file.h ../include/rfilesys.h \
- ../include/rdisksys.h ../include/lfilesys.h ../include/spi.h \
- ../include/ether.h ../include/net.h ../include/ip.h ../include/arp.h \
- ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
- ../include/name.h ../include/shell.h ../include/date.h \
- ../include/prototypes.h ../include/delay.h ../include/stdio.h \
- ../include/string.h ../include/syscall.h
+ ../include/avr_messages.h /usr/lib/avr/include/avr/pgmspace.h \
+ /usr/lib/avr/include/inttypes.h /usr/lib/gcc/avr/5.4.0/include/stdint.h \
+ /usr/lib/avr/include/stdint.h ../include/stddef.h \
+ /usr/lib/avr/include/avr/io.h /usr/lib/avr/include/avr/sfr_defs.h \
+ /usr/lib/avr/include/avr/portpins.h /usr/lib/avr/include/avr/common.h \
+ /usr/lib/avr/include/avr/version.h /usr/lib/avr/include/avr/fuse.h \
+ /usr/lib/avr/include/avr/lock.h ../include/kernel.h ../include/conf.h \
+ ../include/process.h ../include/queue.h ../include/resched.h \
+ ../include/semaphore.h ../include/memory.h ../include/bufpool.h \
+ ../include/mark.h ../include/ports.h ../include/timer.h \
+ ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/syscall.h ../include/avr_serial.h ../include/sync.h
 getstk.o: ../system/getstk.c ../include/xinu.h ../include/avr_messages.h \
- /usr/avr/include/avr/pgmspace.h /usr/avr/include/inttypes.h \
- /usr/lib/gcc/avr/10.2.0/include/stdint.h /usr/avr/include/stdint.h \
- ../include/stddef.h /usr/avr/include/avr/io.h \
- /usr/avr/include/avr/sfr_defs.h /usr/avr/include/avr/portpins.h \
- /usr/avr/include/avr/common.h /usr/avr/include/avr/version.h \
- /usr/avr/include/avr/fuse.h /usr/avr/include/avr/lock.h \
+ /usr/lib/avr/include/avr/pgmspace.h /usr/lib/avr/include/inttypes.h \
+ /usr/lib/gcc/avr/5.4.0/include/stdint.h /usr/lib/avr/include/stdint.h \
+ ../include/stddef.h /usr/lib/avr/include/avr/io.h \
+ /usr/lib/avr/include/avr/sfr_defs.h /usr/lib/avr/include/avr/portpins.h \
+ /usr/lib/avr/include/avr/common.h /usr/lib/avr/include/avr/version.h \
+ /usr/lib/avr/include/avr/fuse.h /usr/lib/avr/include/avr/lock.h \
  ../include/kernel.h ../include/conf.h ../include/process.h \
  ../include/queue.h ../include/resched.h ../include/semaphore.h \
  ../include/memory.h ../include/bufpool.h ../include/mark.h \
@@ -405,52 +425,55 @@ getstk.o: ../system/getstk.c ../include/xinu.h ../include/avr_messages.h \
  ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
  ../include/name.h ../include/shell.h ../include/date.h \
  ../include/prototypes.h ../include/delay.h ../include/stdio.h \
- ../include/string.h ../include/syscall.h
+ ../include/string.h ../include/syscall.h ../include/avr_serial.h \
+ ../include/sync.h
 getticks.o: ../system/getticks.c ../include/xinu.h \
- ../include/avr_messages.h /usr/avr/include/avr/pgmspace.h \
- /usr/avr/include/inttypes.h /usr/lib/gcc/avr/10.2.0/include/stdint.h \
- /usr/avr/include/stdint.h ../include/stddef.h /usr/avr/include/avr/io.h \
- /usr/avr/include/avr/sfr_defs.h /usr/avr/include/avr/portpins.h \
- /usr/avr/include/avr/common.h /usr/avr/include/avr/version.h \
- /usr/avr/include/avr/fuse.h /usr/avr/include/avr/lock.h \
- ../include/kernel.h ../include/conf.h ../include/process.h \
- ../include/queue.h ../include/resched.h ../include/semaphore.h \
- ../include/memory.h ../include/bufpool.h ../include/mark.h \
- ../include/ports.h ../include/timer.h ../include/uart.h ../include/tty.h \
- ../include/gpio.h ../include/gpioselect.h ../include/device.h \
- ../include/interrupt.h ../include/file.h ../include/rfilesys.h \
- ../include/rdisksys.h ../include/lfilesys.h ../include/spi.h \
- ../include/ether.h ../include/net.h ../include/ip.h ../include/arp.h \
- ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
- ../include/name.h ../include/shell.h ../include/date.h \
- ../include/prototypes.h ../include/delay.h ../include/stdio.h \
- ../include/string.h ../include/syscall.h
+ ../include/avr_messages.h /usr/lib/avr/include/avr/pgmspace.h \
+ /usr/lib/avr/include/inttypes.h /usr/lib/gcc/avr/5.4.0/include/stdint.h \
+ /usr/lib/avr/include/stdint.h ../include/stddef.h \
+ /usr/lib/avr/include/avr/io.h /usr/lib/avr/include/avr/sfr_defs.h \
+ /usr/lib/avr/include/avr/portpins.h /usr/lib/avr/include/avr/common.h \
+ /usr/lib/avr/include/avr/version.h /usr/lib/avr/include/avr/fuse.h \
+ /usr/lib/avr/include/avr/lock.h ../include/kernel.h ../include/conf.h \
+ ../include/process.h ../include/queue.h ../include/resched.h \
+ ../include/semaphore.h ../include/memory.h ../include/bufpool.h \
+ ../include/mark.h ../include/ports.h ../include/timer.h \
+ ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/syscall.h ../include/avr_serial.h ../include/sync.h
 gettime.o: ../system/gettime.c ../include/xinu.h \
- ../include/avr_messages.h /usr/avr/include/avr/pgmspace.h \
- /usr/avr/include/inttypes.h /usr/lib/gcc/avr/10.2.0/include/stdint.h \
- /usr/avr/include/stdint.h ../include/stddef.h /usr/avr/include/avr/io.h \
- /usr/avr/include/avr/sfr_defs.h /usr/avr/include/avr/portpins.h \
- /usr/avr/include/avr/common.h /usr/avr/include/avr/version.h \
- /usr/avr/include/avr/fuse.h /usr/avr/include/avr/lock.h \
- ../include/kernel.h ../include/conf.h ../include/process.h \
- ../include/queue.h ../include/resched.h ../include/semaphore.h \
- ../include/memory.h ../include/bufpool.h ../include/mark.h \
- ../include/ports.h ../include/timer.h ../include/uart.h ../include/tty.h \
- ../include/gpio.h ../include/gpioselect.h ../include/device.h \
- ../include/interrupt.h ../include/file.h ../include/rfilesys.h \
- ../include/rdisksys.h ../include/lfilesys.h ../include/spi.h \
- ../include/ether.h ../include/net.h ../include/ip.h ../include/arp.h \
- ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
- ../include/name.h ../include/shell.h ../include/date.h \
- ../include/prototypes.h ../include/delay.h ../include/stdio.h \
- ../include/string.h ../include/syscall.h
+ ../include/avr_messages.h /usr/lib/avr/include/avr/pgmspace.h \
+ /usr/lib/avr/include/inttypes.h /usr/lib/gcc/avr/5.4.0/include/stdint.h \
+ /usr/lib/avr/include/stdint.h ../include/stddef.h \
+ /usr/lib/avr/include/avr/io.h /usr/lib/avr/include/avr/sfr_defs.h \
+ /usr/lib/avr/include/avr/portpins.h /usr/lib/avr/include/avr/common.h \
+ /usr/lib/avr/include/avr/version.h /usr/lib/avr/include/avr/fuse.h \
+ /usr/lib/avr/include/avr/lock.h ../include/kernel.h ../include/conf.h \
+ ../include/process.h ../include/queue.h ../include/resched.h \
+ ../include/semaphore.h ../include/memory.h ../include/bufpool.h \
+ ../include/mark.h ../include/ports.h ../include/timer.h \
+ ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/syscall.h ../include/avr_serial.h ../include/sync.h
 init.o: ../system/init.c ../include/xinu.h ../include/avr_messages.h \
- /usr/avr/include/avr/pgmspace.h /usr/avr/include/inttypes.h \
- /usr/lib/gcc/avr/10.2.0/include/stdint.h /usr/avr/include/stdint.h \
- ../include/stddef.h /usr/avr/include/avr/io.h \
- /usr/avr/include/avr/sfr_defs.h /usr/avr/include/avr/portpins.h \
- /usr/avr/include/avr/common.h /usr/avr/include/avr/version.h \
- /usr/avr/include/avr/fuse.h /usr/avr/include/avr/lock.h \
+ /usr/lib/avr/include/avr/pgmspace.h /usr/lib/avr/include/inttypes.h \
+ /usr/lib/gcc/avr/5.4.0/include/stdint.h /usr/lib/avr/include/stdint.h \
+ ../include/stddef.h /usr/lib/avr/include/avr/io.h \
+ /usr/lib/avr/include/avr/sfr_defs.h /usr/lib/avr/include/avr/portpins.h \
+ /usr/lib/avr/include/avr/common.h /usr/lib/avr/include/avr/version.h \
+ /usr/lib/avr/include/avr/fuse.h /usr/lib/avr/include/avr/lock.h \
  ../include/kernel.h ../include/conf.h ../include/process.h \
  ../include/queue.h ../include/resched.h ../include/semaphore.h \
  ../include/memory.h ../include/bufpool.h ../include/mark.h \
@@ -462,33 +485,35 @@ init.o: ../system/init.c ../include/xinu.h ../include/avr_messages.h \
  ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
  ../include/name.h ../include/shell.h ../include/date.h \
  ../include/prototypes.h ../include/delay.h ../include/stdio.h \
- ../include/string.h ../include/syscall.h
+ ../include/string.h ../include/syscall.h ../include/avr_serial.h \
+ ../include/sync.h
 initialize.o: ../system/initialize.c ../include/xinu.h \
- ../include/avr_messages.h /usr/avr/include/avr/pgmspace.h \
- /usr/avr/include/inttypes.h /usr/lib/gcc/avr/10.2.0/include/stdint.h \
- /usr/avr/include/stdint.h ../include/stddef.h /usr/avr/include/avr/io.h \
- /usr/avr/include/avr/sfr_defs.h /usr/avr/include/avr/portpins.h \
- /usr/avr/include/avr/common.h /usr/avr/include/avr/version.h \
- /usr/avr/include/avr/fuse.h /usr/avr/include/avr/lock.h \
- ../include/kernel.h ../include/conf.h ../include/process.h \
- ../include/queue.h ../include/resched.h ../include/semaphore.h \
- ../include/memory.h ../include/bufpool.h ../include/mark.h \
- ../include/ports.h ../include/timer.h ../include/uart.h ../include/tty.h \
- ../include/gpio.h ../include/gpioselect.h ../include/device.h \
- ../include/interrupt.h ../include/file.h ../include/rfilesys.h \
- ../include/rdisksys.h ../include/lfilesys.h ../include/spi.h \
- ../include/ether.h ../include/net.h ../include/ip.h ../include/arp.h \
- ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
- ../include/name.h ../include/shell.h ../include/date.h \
- ../include/prototypes.h ../include/delay.h ../include/stdio.h \
- ../include/string.h ../include/syscall.h ../include/avr_serial.h
+ ../include/avr_messages.h /usr/lib/avr/include/avr/pgmspace.h \
+ /usr/lib/avr/include/inttypes.h /usr/lib/gcc/avr/5.4.0/include/stdint.h \
+ /usr/lib/avr/include/stdint.h ../include/stddef.h \
+ /usr/lib/avr/include/avr/io.h /usr/lib/avr/include/avr/sfr_defs.h \
+ /usr/lib/avr/include/avr/portpins.h /usr/lib/avr/include/avr/common.h \
+ /usr/lib/avr/include/avr/version.h /usr/lib/avr/include/avr/fuse.h \
+ /usr/lib/avr/include/avr/lock.h ../include/kernel.h ../include/conf.h \
+ ../include/process.h ../include/queue.h ../include/resched.h \
+ ../include/semaphore.h ../include/memory.h ../include/bufpool.h \
+ ../include/mark.h ../include/ports.h ../include/timer.h \
+ ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/syscall.h ../include/avr_serial.h ../include/sync.h
 insert.o: ../system/insert.c ../include/xinu.h ../include/avr_messages.h \
- /usr/avr/include/avr/pgmspace.h /usr/avr/include/inttypes.h \
- /usr/lib/gcc/avr/10.2.0/include/stdint.h /usr/avr/include/stdint.h \
- ../include/stddef.h /usr/avr/include/avr/io.h \
- /usr/avr/include/avr/sfr_defs.h /usr/avr/include/avr/portpins.h \
- /usr/avr/include/avr/common.h /usr/avr/include/avr/version.h \
- /usr/avr/include/avr/fuse.h /usr/avr/include/avr/lock.h \
+ /usr/lib/avr/include/avr/pgmspace.h /usr/lib/avr/include/inttypes.h \
+ /usr/lib/gcc/avr/5.4.0/include/stdint.h /usr/lib/avr/include/stdint.h \
+ ../include/stddef.h /usr/lib/avr/include/avr/io.h \
+ /usr/lib/avr/include/avr/sfr_defs.h /usr/lib/avr/include/avr/portpins.h \
+ /usr/lib/avr/include/avr/common.h /usr/lib/avr/include/avr/version.h \
+ /usr/lib/avr/include/avr/fuse.h /usr/lib/avr/include/avr/lock.h \
  ../include/kernel.h ../include/conf.h ../include/process.h \
  ../include/queue.h ../include/resched.h ../include/semaphore.h \
  ../include/memory.h ../include/bufpool.h ../include/mark.h \
@@ -500,33 +525,35 @@ insert.o: ../system/insert.c ../include/xinu.h ../include/avr_messages.h \
  ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
  ../include/name.h ../include/shell.h ../include/date.h \
  ../include/prototypes.h ../include/delay.h ../include/stdio.h \
- ../include/string.h ../include/syscall.h
+ ../include/string.h ../include/syscall.h ../include/avr_serial.h \
+ ../include/sync.h
 insertd.o: ../system/insertd.c ../include/xinu.h \
- ../include/avr_messages.h /usr/avr/include/avr/pgmspace.h \
- /usr/avr/include/inttypes.h /usr/lib/gcc/avr/10.2.0/include/stdint.h \
- /usr/avr/include/stdint.h ../include/stddef.h /usr/avr/include/avr/io.h \
- /usr/avr/include/avr/sfr_defs.h /usr/avr/include/avr/portpins.h \
- /usr/avr/include/avr/common.h /usr/avr/include/avr/version.h \
- /usr/avr/include/avr/fuse.h /usr/avr/include/avr/lock.h \
- ../include/kernel.h ../include/conf.h ../include/process.h \
- ../include/queue.h ../include/resched.h ../include/semaphore.h \
- ../include/memory.h ../include/bufpool.h ../include/mark.h \
- ../include/ports.h ../include/timer.h ../include/uart.h ../include/tty.h \
- ../include/gpio.h ../include/gpioselect.h ../include/device.h \
- ../include/interrupt.h ../include/file.h ../include/rfilesys.h \
- ../include/rdisksys.h ../include/lfilesys.h ../include/spi.h \
- ../include/ether.h ../include/net.h ../include/ip.h ../include/arp.h \
- ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
- ../include/name.h ../include/shell.h ../include/date.h \
- ../include/prototypes.h ../include/delay.h ../include/stdio.h \
- ../include/string.h ../include/syscall.h
+ ../include/avr_messages.h /usr/lib/avr/include/avr/pgmspace.h \
+ /usr/lib/avr/include/inttypes.h /usr/lib/gcc/avr/5.4.0/include/stdint.h \
+ /usr/lib/avr/include/stdint.h ../include/stddef.h \
+ /usr/lib/avr/include/avr/io.h /usr/lib/avr/include/avr/sfr_defs.h \
+ /usr/lib/avr/include/avr/portpins.h /usr/lib/avr/include/avr/common.h \
+ /usr/lib/avr/include/avr/version.h /usr/lib/avr/include/avr/fuse.h \
+ /usr/lib/avr/include/avr/lock.h ../include/kernel.h ../include/conf.h \
+ ../include/process.h ../include/queue.h ../include/resched.h \
+ ../include/semaphore.h ../include/memory.h ../include/bufpool.h \
+ ../include/mark.h ../include/ports.h ../include/timer.h \
+ ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/syscall.h ../include/avr_serial.h ../include/sync.h
 intr.o: ../system/intr.c ../include/xinu.h ../include/avr_messages.h \
- /usr/avr/include/avr/pgmspace.h /usr/avr/include/inttypes.h \
- /usr/lib/gcc/avr/10.2.0/include/stdint.h /usr/avr/include/stdint.h \
- ../include/stddef.h /usr/avr/include/avr/io.h \
- /usr/avr/include/avr/sfr_defs.h /usr/avr/include/avr/portpins.h \
- /usr/avr/include/avr/common.h /usr/avr/include/avr/version.h \
- /usr/avr/include/avr/fuse.h /usr/avr/include/avr/lock.h \
+ /usr/lib/avr/include/avr/pgmspace.h /usr/lib/avr/include/inttypes.h \
+ /usr/lib/gcc/avr/5.4.0/include/stdint.h /usr/lib/avr/include/stdint.h \
+ ../include/stddef.h /usr/lib/avr/include/avr/io.h \
+ /usr/lib/avr/include/avr/sfr_defs.h /usr/lib/avr/include/avr/portpins.h \
+ /usr/lib/avr/include/avr/common.h /usr/lib/avr/include/avr/version.h \
+ /usr/lib/avr/include/avr/fuse.h /usr/lib/avr/include/avr/lock.h \
  ../include/kernel.h ../include/conf.h ../include/process.h \
  ../include/queue.h ../include/resched.h ../include/semaphore.h \
  ../include/memory.h ../include/bufpool.h ../include/mark.h \
@@ -538,15 +565,15 @@ intr.o: ../system/intr.c ../include/xinu.h ../include/avr_messages.h \
  ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
  ../include/name.h ../include/shell.h ../include/date.h \
  ../include/prototypes.h ../include/delay.h ../include/stdio.h \
- ../include/string.h ../include/syscall.h \
- /usr/avr/include/avr/interrupt.h
+ ../include/string.h ../include/syscall.h ../include/avr_serial.h \
+ ../include/sync.h /usr/lib/avr/include/avr/interrupt.h
 ioerr.o: ../system/ioerr.c ../include/xinu.h ../include/avr_messages.h \
- /usr/avr/include/avr/pgmspace.h /usr/avr/include/inttypes.h \
- /usr/lib/gcc/avr/10.2.0/include/stdint.h /usr/avr/include/stdint.h \
- ../include/stddef.h /usr/avr/include/avr/io.h \
- /usr/avr/include/avr/sfr_defs.h /usr/avr/include/avr/portpins.h \
- /usr/avr/include/avr/common.h /usr/avr/include/avr/version.h \
- /usr/avr/include/avr/fuse.h /usr/avr/include/avr/lock.h \
+ /usr/lib/avr/include/avr/pgmspace.h /usr/lib/avr/include/inttypes.h \
+ /usr/lib/gcc/avr/5.4.0/include/stdint.h /usr/lib/avr/include/stdint.h \
+ ../include/stddef.h /usr/lib/avr/include/avr/io.h \
+ /usr/lib/avr/include/avr/sfr_defs.h /usr/lib/avr/include/avr/portpins.h \
+ /usr/lib/avr/include/avr/common.h /usr/lib/avr/include/avr/version.h \
+ /usr/lib/avr/include/avr/fuse.h /usr/lib/avr/include/avr/lock.h \
  ../include/kernel.h ../include/conf.h ../include/process.h \
  ../include/queue.h ../include/resched.h ../include/semaphore.h \
  ../include/memory.h ../include/bufpool.h ../include/mark.h \
@@ -558,14 +585,15 @@ ioerr.o: ../system/ioerr.c ../include/xinu.h ../include/avr_messages.h \
  ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
  ../include/name.h ../include/shell.h ../include/date.h \
  ../include/prototypes.h ../include/delay.h ../include/stdio.h \
- ../include/string.h ../include/syscall.h
+ ../include/string.h ../include/syscall.h ../include/avr_serial.h \
+ ../include/sync.h
 ionull.o: ../system/ionull.c ../include/xinu.h ../include/avr_messages.h \
- /usr/avr/include/avr/pgmspace.h /usr/avr/include/inttypes.h \
- /usr/lib/gcc/avr/10.2.0/include/stdint.h /usr/avr/include/stdint.h \
- ../include/stddef.h /usr/avr/include/avr/io.h \
- /usr/avr/include/avr/sfr_defs.h /usr/avr/include/avr/portpins.h \
- /usr/avr/include/avr/common.h /usr/avr/include/avr/version.h \
- /usr/avr/include/avr/fuse.h /usr/avr/include/avr/lock.h \
+ /usr/lib/avr/include/avr/pgmspace.h /usr/lib/avr/include/inttypes.h \
+ /usr/lib/gcc/avr/5.4.0/include/stdint.h /usr/lib/avr/include/stdint.h \
+ ../include/stddef.h /usr/lib/avr/include/avr/io.h \
+ /usr/lib/avr/include/avr/sfr_defs.h /usr/lib/avr/include/avr/portpins.h \
+ /usr/lib/avr/include/avr/common.h /usr/lib/avr/include/avr/version.h \
+ /usr/lib/avr/include/avr/fuse.h /usr/lib/avr/include/avr/lock.h \
  ../include/kernel.h ../include/conf.h ../include/process.h \
  ../include/queue.h ../include/resched.h ../include/semaphore.h \
  ../include/memory.h ../include/bufpool.h ../include/mark.h \
@@ -577,14 +605,15 @@ ionull.o: ../system/ionull.c ../include/xinu.h ../include/avr_messages.h \
  ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
  ../include/name.h ../include/shell.h ../include/date.h \
  ../include/prototypes.h ../include/delay.h ../include/stdio.h \
- ../include/string.h ../include/syscall.h
+ ../include/string.h ../include/syscall.h ../include/avr_serial.h \
+ ../include/sync.h
 kill.o: ../system/kill.c ../include/xinu.h ../include/avr_messages.h \
- /usr/avr/include/avr/pgmspace.h /usr/avr/include/inttypes.h \
- /usr/lib/gcc/avr/10.2.0/include/stdint.h /usr/avr/include/stdint.h \
- ../include/stddef.h /usr/avr/include/avr/io.h \
- /usr/avr/include/avr/sfr_defs.h /usr/avr/include/avr/portpins.h \
- /usr/avr/include/avr/common.h /usr/avr/include/avr/version.h \
- /usr/avr/include/avr/fuse.h /usr/avr/include/avr/lock.h \
+ /usr/lib/avr/include/avr/pgmspace.h /usr/lib/avr/include/inttypes.h \
+ /usr/lib/gcc/avr/5.4.0/include/stdint.h /usr/lib/avr/include/stdint.h \
+ ../include/stddef.h /usr/lib/avr/include/avr/io.h \
+ /usr/lib/avr/include/avr/sfr_defs.h /usr/lib/avr/include/avr/portpins.h \
+ /usr/lib/avr/include/avr/common.h /usr/lib/avr/include/avr/version.h \
+ /usr/lib/avr/include/avr/fuse.h /usr/lib/avr/include/avr/lock.h \
  ../include/kernel.h ../include/conf.h ../include/process.h \
  ../include/queue.h ../include/resched.h ../include/semaphore.h \
  ../include/memory.h ../include/bufpool.h ../include/mark.h \
@@ -596,34 +625,36 @@ kill.o: ../system/kill.c ../include/xinu.h ../include/avr_messages.h \
  ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
  ../include/name.h ../include/shell.h ../include/date.h \
  ../include/prototypes.h ../include/delay.h ../include/stdio.h \
- ../include/string.h ../include/syscall.h
+ ../include/string.h ../include/syscall.h ../include/avr_serial.h \
+ ../include/sync.h
 kprintf.o: ../system/kprintf.c ../include/xinu.h \
- ../include/avr_messages.h /usr/avr/include/avr/pgmspace.h \
- /usr/avr/include/inttypes.h /usr/lib/gcc/avr/10.2.0/include/stdint.h \
- /usr/avr/include/stdint.h ../include/stddef.h /usr/avr/include/avr/io.h \
- /usr/avr/include/avr/sfr_defs.h /usr/avr/include/avr/portpins.h \
- /usr/avr/include/avr/common.h /usr/avr/include/avr/version.h \
- /usr/avr/include/avr/fuse.h /usr/avr/include/avr/lock.h \
- ../include/kernel.h ../include/conf.h ../include/process.h \
- ../include/queue.h ../include/resched.h ../include/semaphore.h \
- ../include/memory.h ../include/bufpool.h ../include/mark.h \
- ../include/ports.h ../include/timer.h ../include/uart.h ../include/tty.h \
- ../include/gpio.h ../include/gpioselect.h ../include/device.h \
- ../include/interrupt.h ../include/file.h ../include/rfilesys.h \
- ../include/rdisksys.h ../include/lfilesys.h ../include/spi.h \
- ../include/ether.h ../include/net.h ../include/ip.h ../include/arp.h \
- ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
- ../include/name.h ../include/shell.h ../include/date.h \
- ../include/prototypes.h ../include/delay.h ../include/stdio.h \
- ../include/string.h ../include/syscall.h ../include/stdarg.h \
- ../include/avr_serial.h
+ ../include/avr_messages.h /usr/lib/avr/include/avr/pgmspace.h \
+ /usr/lib/avr/include/inttypes.h /usr/lib/gcc/avr/5.4.0/include/stdint.h \
+ /usr/lib/avr/include/stdint.h ../include/stddef.h \
+ /usr/lib/avr/include/avr/io.h /usr/lib/avr/include/avr/sfr_defs.h \
+ /usr/lib/avr/include/avr/portpins.h /usr/lib/avr/include/avr/common.h \
+ /usr/lib/avr/include/avr/version.h /usr/lib/avr/include/avr/fuse.h \
+ /usr/lib/avr/include/avr/lock.h ../include/kernel.h ../include/conf.h \
+ ../include/process.h ../include/queue.h ../include/resched.h \
+ ../include/semaphore.h ../include/memory.h ../include/bufpool.h \
+ ../include/mark.h ../include/ports.h ../include/timer.h \
+ ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/syscall.h ../include/avr_serial.h ../include/sync.h \
+ ../include/stdarg.h
 mark.o: ../system/mark.c ../include/xinu.h ../include/avr_messages.h \
- /usr/avr/include/avr/pgmspace.h /usr/avr/include/inttypes.h \
- /usr/lib/gcc/avr/10.2.0/include/stdint.h /usr/avr/include/stdint.h \
- ../include/stddef.h /usr/avr/include/avr/io.h \
- /usr/avr/include/avr/sfr_defs.h /usr/avr/include/avr/portpins.h \
- /usr/avr/include/avr/common.h /usr/avr/include/avr/version.h \
- /usr/avr/include/avr/fuse.h /usr/avr/include/avr/lock.h \
+ /usr/lib/avr/include/avr/pgmspace.h /usr/lib/avr/include/inttypes.h \
+ /usr/lib/gcc/avr/5.4.0/include/stdint.h /usr/lib/avr/include/stdint.h \
+ ../include/stddef.h /usr/lib/avr/include/avr/io.h \
+ /usr/lib/avr/include/avr/sfr_defs.h /usr/lib/avr/include/avr/portpins.h \
+ /usr/lib/avr/include/avr/common.h /usr/lib/avr/include/avr/version.h \
+ /usr/lib/avr/include/avr/fuse.h /usr/lib/avr/include/avr/lock.h \
  ../include/kernel.h ../include/conf.h ../include/process.h \
  ../include/queue.h ../include/resched.h ../include/semaphore.h \
  ../include/memory.h ../include/bufpool.h ../include/mark.h \
@@ -635,71 +666,75 @@ mark.o: ../system/mark.c ../include/xinu.h ../include/avr_messages.h \
  ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
  ../include/name.h ../include/shell.h ../include/date.h \
  ../include/prototypes.h ../include/delay.h ../include/stdio.h \
- ../include/string.h ../include/syscall.h
+ ../include/string.h ../include/syscall.h ../include/avr_serial.h \
+ ../include/sync.h
 meminit.o: ../system/meminit.c ../include/xinu.h \
- ../include/avr_messages.h /usr/avr/include/avr/pgmspace.h \
- /usr/avr/include/inttypes.h /usr/lib/gcc/avr/10.2.0/include/stdint.h \
- /usr/avr/include/stdint.h ../include/stddef.h /usr/avr/include/avr/io.h \
- /usr/avr/include/avr/sfr_defs.h /usr/avr/include/avr/portpins.h \
- /usr/avr/include/avr/common.h /usr/avr/include/avr/version.h \
- /usr/avr/include/avr/fuse.h /usr/avr/include/avr/lock.h \
- ../include/kernel.h ../include/conf.h ../include/process.h \
- ../include/queue.h ../include/resched.h ../include/semaphore.h \
- ../include/memory.h ../include/bufpool.h ../include/mark.h \
- ../include/ports.h ../include/timer.h ../include/uart.h ../include/tty.h \
- ../include/gpio.h ../include/gpioselect.h ../include/device.h \
- ../include/interrupt.h ../include/file.h ../include/rfilesys.h \
- ../include/rdisksys.h ../include/lfilesys.h ../include/spi.h \
- ../include/ether.h ../include/net.h ../include/ip.h ../include/arp.h \
- ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
- ../include/name.h ../include/shell.h ../include/date.h \
- ../include/prototypes.h ../include/delay.h ../include/stdio.h \
- ../include/string.h ../include/syscall.h
+ ../include/avr_messages.h /usr/lib/avr/include/avr/pgmspace.h \
+ /usr/lib/avr/include/inttypes.h /usr/lib/gcc/avr/5.4.0/include/stdint.h \
+ /usr/lib/avr/include/stdint.h ../include/stddef.h \
+ /usr/lib/avr/include/avr/io.h /usr/lib/avr/include/avr/sfr_defs.h \
+ /usr/lib/avr/include/avr/portpins.h /usr/lib/avr/include/avr/common.h \
+ /usr/lib/avr/include/avr/version.h /usr/lib/avr/include/avr/fuse.h \
+ /usr/lib/avr/include/avr/lock.h ../include/kernel.h ../include/conf.h \
+ ../include/process.h ../include/queue.h ../include/resched.h \
+ ../include/semaphore.h ../include/memory.h ../include/bufpool.h \
+ ../include/mark.h ../include/ports.h ../include/timer.h \
+ ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/syscall.h ../include/avr_serial.h ../include/sync.h
 mkbufpool.o: ../system/mkbufpool.c ../include/xinu.h \
- ../include/avr_messages.h /usr/avr/include/avr/pgmspace.h \
- /usr/avr/include/inttypes.h /usr/lib/gcc/avr/10.2.0/include/stdint.h \
- /usr/avr/include/stdint.h ../include/stddef.h /usr/avr/include/avr/io.h \
- /usr/avr/include/avr/sfr_defs.h /usr/avr/include/avr/portpins.h \
- /usr/avr/include/avr/common.h /usr/avr/include/avr/version.h \
- /usr/avr/include/avr/fuse.h /usr/avr/include/avr/lock.h \
- ../include/kernel.h ../include/conf.h ../include/process.h \
- ../include/queue.h ../include/resched.h ../include/semaphore.h \
- ../include/memory.h ../include/bufpool.h ../include/mark.h \
- ../include/ports.h ../include/timer.h ../include/uart.h ../include/tty.h \
- ../include/gpio.h ../include/gpioselect.h ../include/device.h \
- ../include/interrupt.h ../include/file.h ../include/rfilesys.h \
- ../include/rdisksys.h ../include/lfilesys.h ../include/spi.h \
- ../include/ether.h ../include/net.h ../include/ip.h ../include/arp.h \
- ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
- ../include/name.h ../include/shell.h ../include/date.h \
- ../include/prototypes.h ../include/delay.h ../include/stdio.h \
- ../include/string.h ../include/syscall.h
+ ../include/avr_messages.h /usr/lib/avr/include/avr/pgmspace.h \
+ /usr/lib/avr/include/inttypes.h /usr/lib/gcc/avr/5.4.0/include/stdint.h \
+ /usr/lib/avr/include/stdint.h ../include/stddef.h \
+ /usr/lib/avr/include/avr/io.h /usr/lib/avr/include/avr/sfr_defs.h \
+ /usr/lib/avr/include/avr/portpins.h /usr/lib/avr/include/avr/common.h \
+ /usr/lib/avr/include/avr/version.h /usr/lib/avr/include/avr/fuse.h \
+ /usr/lib/avr/include/avr/lock.h ../include/kernel.h ../include/conf.h \
+ ../include/process.h ../include/queue.h ../include/resched.h \
+ ../include/semaphore.h ../include/memory.h ../include/bufpool.h \
+ ../include/mark.h ../include/ports.h ../include/timer.h \
+ ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/syscall.h ../include/avr_serial.h ../include/sync.h
 newqueue.o: ../system/newqueue.c ../include/xinu.h \
- ../include/avr_messages.h /usr/avr/include/avr/pgmspace.h \
- /usr/avr/include/inttypes.h /usr/lib/gcc/avr/10.2.0/include/stdint.h \
- /usr/avr/include/stdint.h ../include/stddef.h /usr/avr/include/avr/io.h \
- /usr/avr/include/avr/sfr_defs.h /usr/avr/include/avr/portpins.h \
- /usr/avr/include/avr/common.h /usr/avr/include/avr/version.h \
- /usr/avr/include/avr/fuse.h /usr/avr/include/avr/lock.h \
- ../include/kernel.h ../include/conf.h ../include/process.h \
- ../include/queue.h ../include/resched.h ../include/semaphore.h \
- ../include/memory.h ../include/bufpool.h ../include/mark.h \
- ../include/ports.h ../include/timer.h ../include/uart.h ../include/tty.h \
- ../include/gpio.h ../include/gpioselect.h ../include/device.h \
- ../include/interrupt.h ../include/file.h ../include/rfilesys.h \
- ../include/rdisksys.h ../include/lfilesys.h ../include/spi.h \
- ../include/ether.h ../include/net.h ../include/ip.h ../include/arp.h \
- ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
- ../include/name.h ../include/shell.h ../include/date.h \
- ../include/prototypes.h ../include/delay.h ../include/stdio.h \
- ../include/string.h ../include/syscall.h
+ ../include/avr_messages.h /usr/lib/avr/include/avr/pgmspace.h \
+ /usr/lib/avr/include/inttypes.h /usr/lib/gcc/avr/5.4.0/include/stdint.h \
+ /usr/lib/avr/include/stdint.h ../include/stddef.h \
+ /usr/lib/avr/include/avr/io.h /usr/lib/avr/include/avr/sfr_defs.h \
+ /usr/lib/avr/include/avr/portpins.h /usr/lib/avr/include/avr/common.h \
+ /usr/lib/avr/include/avr/version.h /usr/lib/avr/include/avr/fuse.h \
+ /usr/lib/avr/include/avr/lock.h ../include/kernel.h ../include/conf.h \
+ ../include/process.h ../include/queue.h ../include/resched.h \
+ ../include/semaphore.h ../include/memory.h ../include/bufpool.h \
+ ../include/mark.h ../include/ports.h ../include/timer.h \
+ ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/syscall.h ../include/avr_serial.h ../include/sync.h
 open.o: ../system/open.c ../include/xinu.h ../include/avr_messages.h \
- /usr/avr/include/avr/pgmspace.h /usr/avr/include/inttypes.h \
- /usr/lib/gcc/avr/10.2.0/include/stdint.h /usr/avr/include/stdint.h \
- ../include/stddef.h /usr/avr/include/avr/io.h \
- /usr/avr/include/avr/sfr_defs.h /usr/avr/include/avr/portpins.h \
- /usr/avr/include/avr/common.h /usr/avr/include/avr/version.h \
- /usr/avr/include/avr/fuse.h /usr/avr/include/avr/lock.h \
+ /usr/lib/avr/include/avr/pgmspace.h /usr/lib/avr/include/inttypes.h \
+ /usr/lib/gcc/avr/5.4.0/include/stdint.h /usr/lib/avr/include/stdint.h \
+ ../include/stddef.h /usr/lib/avr/include/avr/io.h \
+ /usr/lib/avr/include/avr/sfr_defs.h /usr/lib/avr/include/avr/portpins.h \
+ /usr/lib/avr/include/avr/common.h /usr/lib/avr/include/avr/version.h \
+ /usr/lib/avr/include/avr/fuse.h /usr/lib/avr/include/avr/lock.h \
  ../include/kernel.h ../include/conf.h ../include/process.h \
  ../include/queue.h ../include/resched.h ../include/semaphore.h \
  ../include/memory.h ../include/bufpool.h ../include/mark.h \
@@ -711,14 +746,15 @@ open.o: ../system/open.c ../include/xinu.h ../include/avr_messages.h \
  ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
  ../include/name.h ../include/shell.h ../include/date.h \
  ../include/prototypes.h ../include/delay.h ../include/stdio.h \
- ../include/string.h ../include/syscall.h
+ ../include/string.h ../include/syscall.h ../include/avr_serial.h \
+ ../include/sync.h
 panic.o: ../system/panic.c ../include/xinu.h ../include/avr_messages.h \
- /usr/avr/include/avr/pgmspace.h /usr/avr/include/inttypes.h \
- /usr/lib/gcc/avr/10.2.0/include/stdint.h /usr/avr/include/stdint.h \
- ../include/stddef.h /usr/avr/include/avr/io.h \
- /usr/avr/include/avr/sfr_defs.h /usr/avr/include/avr/portpins.h \
- /usr/avr/include/avr/common.h /usr/avr/include/avr/version.h \
- /usr/avr/include/avr/fuse.h /usr/avr/include/avr/lock.h \
+ /usr/lib/avr/include/avr/pgmspace.h /usr/lib/avr/include/inttypes.h \
+ /usr/lib/gcc/avr/5.4.0/include/stdint.h /usr/lib/avr/include/stdint.h \
+ ../include/stddef.h /usr/lib/avr/include/avr/io.h \
+ /usr/lib/avr/include/avr/sfr_defs.h /usr/lib/avr/include/avr/portpins.h \
+ /usr/lib/avr/include/avr/common.h /usr/lib/avr/include/avr/version.h \
+ /usr/lib/avr/include/avr/fuse.h /usr/lib/avr/include/avr/lock.h \
  ../include/kernel.h ../include/conf.h ../include/process.h \
  ../include/queue.h ../include/resched.h ../include/semaphore.h \
  ../include/memory.h ../include/bufpool.h ../include/mark.h \
@@ -730,34 +766,36 @@ panic.o: ../system/panic.c ../include/xinu.h ../include/avr_messages.h \
  ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
  ../include/name.h ../include/shell.h ../include/date.h \
  ../include/prototypes.h ../include/delay.h ../include/stdio.h \
- ../include/string.h ../include/syscall.h
+ ../include/string.h ../include/syscall.h ../include/avr_serial.h \
+ ../include/sync.h
 platinit.o: ../system/platinit.c ../include/xinu.h \
- ../include/avr_messages.h /usr/avr/include/avr/pgmspace.h \
- /usr/avr/include/inttypes.h /usr/lib/gcc/avr/10.2.0/include/stdint.h \
- /usr/avr/include/stdint.h ../include/stddef.h /usr/avr/include/avr/io.h \
- /usr/avr/include/avr/sfr_defs.h /usr/avr/include/avr/portpins.h \
- /usr/avr/include/avr/common.h /usr/avr/include/avr/version.h \
- /usr/avr/include/avr/fuse.h /usr/avr/include/avr/lock.h \
- ../include/kernel.h ../include/conf.h ../include/process.h \
- ../include/queue.h ../include/resched.h ../include/semaphore.h \
- ../include/memory.h ../include/bufpool.h ../include/mark.h \
- ../include/ports.h ../include/timer.h ../include/uart.h ../include/tty.h \
- ../include/gpio.h ../include/gpioselect.h ../include/device.h \
- ../include/interrupt.h ../include/file.h ../include/rfilesys.h \
- ../include/rdisksys.h ../include/lfilesys.h ../include/spi.h \
- ../include/ether.h ../include/net.h ../include/ip.h ../include/arp.h \
- ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
- ../include/name.h ../include/shell.h ../include/date.h \
- ../include/prototypes.h ../include/delay.h ../include/stdio.h \
- ../include/string.h ../include/syscall.h \
- /usr/avr/include/avr/interrupt.h ../include/avr_serial.h
+ ../include/avr_messages.h /usr/lib/avr/include/avr/pgmspace.h \
+ /usr/lib/avr/include/inttypes.h /usr/lib/gcc/avr/5.4.0/include/stdint.h \
+ /usr/lib/avr/include/stdint.h ../include/stddef.h \
+ /usr/lib/avr/include/avr/io.h /usr/lib/avr/include/avr/sfr_defs.h \
+ /usr/lib/avr/include/avr/portpins.h /usr/lib/avr/include/avr/common.h \
+ /usr/lib/avr/include/avr/version.h /usr/lib/avr/include/avr/fuse.h \
+ /usr/lib/avr/include/avr/lock.h ../include/kernel.h ../include/conf.h \
+ ../include/process.h ../include/queue.h ../include/resched.h \
+ ../include/semaphore.h ../include/memory.h ../include/bufpool.h \
+ ../include/mark.h ../include/ports.h ../include/timer.h \
+ ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/syscall.h ../include/avr_serial.h ../include/sync.h \
+ /usr/lib/avr/include/avr/interrupt.h
 putc.o: ../system/putc.c ../include/xinu.h ../include/avr_messages.h \
- /usr/avr/include/avr/pgmspace.h /usr/avr/include/inttypes.h \
- /usr/lib/gcc/avr/10.2.0/include/stdint.h /usr/avr/include/stdint.h \
- ../include/stddef.h /usr/avr/include/avr/io.h \
- /usr/avr/include/avr/sfr_defs.h /usr/avr/include/avr/portpins.h \
- /usr/avr/include/avr/common.h /usr/avr/include/avr/version.h \
- /usr/avr/include/avr/fuse.h /usr/avr/include/avr/lock.h \
+ /usr/lib/avr/include/avr/pgmspace.h /usr/lib/avr/include/inttypes.h \
+ /usr/lib/gcc/avr/5.4.0/include/stdint.h /usr/lib/avr/include/stdint.h \
+ ../include/stddef.h /usr/lib/avr/include/avr/io.h \
+ /usr/lib/avr/include/avr/sfr_defs.h /usr/lib/avr/include/avr/portpins.h \
+ /usr/lib/avr/include/avr/common.h /usr/lib/avr/include/avr/version.h \
+ /usr/lib/avr/include/avr/fuse.h /usr/lib/avr/include/avr/lock.h \
  ../include/kernel.h ../include/conf.h ../include/process.h \
  ../include/queue.h ../include/resched.h ../include/semaphore.h \
  ../include/memory.h ../include/bufpool.h ../include/mark.h \
@@ -769,14 +807,15 @@ putc.o: ../system/putc.c ../include/xinu.h ../include/avr_messages.h \
  ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
  ../include/name.h ../include/shell.h ../include/date.h \
  ../include/prototypes.h ../include/delay.h ../include/stdio.h \
- ../include/string.h ../include/syscall.h
+ ../include/string.h ../include/syscall.h ../include/avr_serial.h \
+ ../include/sync.h
 queue.o: ../system/queue.c ../include/xinu.h ../include/avr_messages.h \
- /usr/avr/include/avr/pgmspace.h /usr/avr/include/inttypes.h \
- /usr/lib/gcc/avr/10.2.0/include/stdint.h /usr/avr/include/stdint.h \
- ../include/stddef.h /usr/avr/include/avr/io.h \
- /usr/avr/include/avr/sfr_defs.h /usr/avr/include/avr/portpins.h \
- /usr/avr/include/avr/common.h /usr/avr/include/avr/version.h \
- /usr/avr/include/avr/fuse.h /usr/avr/include/avr/lock.h \
+ /usr/lib/avr/include/avr/pgmspace.h /usr/lib/avr/include/inttypes.h \
+ /usr/lib/gcc/avr/5.4.0/include/stdint.h /usr/lib/avr/include/stdint.h \
+ ../include/stddef.h /usr/lib/avr/include/avr/io.h \
+ /usr/lib/avr/include/avr/sfr_defs.h /usr/lib/avr/include/avr/portpins.h \
+ /usr/lib/avr/include/avr/common.h /usr/lib/avr/include/avr/version.h \
+ /usr/lib/avr/include/avr/fuse.h /usr/lib/avr/include/avr/lock.h \
  ../include/kernel.h ../include/conf.h ../include/process.h \
  ../include/queue.h ../include/resched.h ../include/semaphore.h \
  ../include/memory.h ../include/bufpool.h ../include/mark.h \
@@ -788,14 +827,15 @@ queue.o: ../system/queue.c ../include/xinu.h ../include/avr_messages.h \
  ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
  ../include/name.h ../include/shell.h ../include/date.h \
  ../include/prototypes.h ../include/delay.h ../include/stdio.h \
- ../include/string.h ../include/syscall.h
+ ../include/string.h ../include/syscall.h ../include/avr_serial.h \
+ ../include/sync.h
 read.o: ../system/read.c ../include/xinu.h ../include/avr_messages.h \
- /usr/avr/include/avr/pgmspace.h /usr/avr/include/inttypes.h \
- /usr/lib/gcc/avr/10.2.0/include/stdint.h /usr/avr/include/stdint.h \
- ../include/stddef.h /usr/avr/include/avr/io.h \
- /usr/avr/include/avr/sfr_defs.h /usr/avr/include/avr/portpins.h \
- /usr/avr/include/avr/common.h /usr/avr/include/avr/version.h \
- /usr/avr/include/avr/fuse.h /usr/avr/include/avr/lock.h \
+ /usr/lib/avr/include/avr/pgmspace.h /usr/lib/avr/include/inttypes.h \
+ /usr/lib/gcc/avr/5.4.0/include/stdint.h /usr/lib/avr/include/stdint.h \
+ ../include/stddef.h /usr/lib/avr/include/avr/io.h \
+ /usr/lib/avr/include/avr/sfr_defs.h /usr/lib/avr/include/avr/portpins.h \
+ /usr/lib/avr/include/avr/common.h /usr/lib/avr/include/avr/version.h \
+ /usr/lib/avr/include/avr/fuse.h /usr/lib/avr/include/avr/lock.h \
  ../include/kernel.h ../include/conf.h ../include/process.h \
  ../include/queue.h ../include/resched.h ../include/semaphore.h \
  ../include/memory.h ../include/bufpool.h ../include/mark.h \
@@ -807,14 +847,15 @@ read.o: ../system/read.c ../include/xinu.h ../include/avr_messages.h \
  ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
  ../include/name.h ../include/shell.h ../include/date.h \
  ../include/prototypes.h ../include/delay.h ../include/stdio.h \
- ../include/string.h ../include/syscall.h
+ ../include/string.h ../include/syscall.h ../include/avr_serial.h \
+ ../include/sync.h
 ready.o: ../system/ready.c ../include/xinu.h ../include/avr_messages.h \
- /usr/avr/include/avr/pgmspace.h /usr/avr/include/inttypes.h \
- /usr/lib/gcc/avr/10.2.0/include/stdint.h /usr/avr/include/stdint.h \
- ../include/stddef.h /usr/avr/include/avr/io.h \
- /usr/avr/include/avr/sfr_defs.h /usr/avr/include/avr/portpins.h \
- /usr/avr/include/avr/common.h /usr/avr/include/avr/version.h \
- /usr/avr/include/avr/fuse.h /usr/avr/include/avr/lock.h \
+ /usr/lib/avr/include/avr/pgmspace.h /usr/lib/avr/include/inttypes.h \
+ /usr/lib/gcc/avr/5.4.0/include/stdint.h /usr/lib/avr/include/stdint.h \
+ ../include/stddef.h /usr/lib/avr/include/avr/io.h \
+ /usr/lib/avr/include/avr/sfr_defs.h /usr/lib/avr/include/avr/portpins.h \
+ /usr/lib/avr/include/avr/common.h /usr/lib/avr/include/avr/version.h \
+ /usr/lib/avr/include/avr/fuse.h /usr/lib/avr/include/avr/lock.h \
  ../include/kernel.h ../include/conf.h ../include/process.h \
  ../include/queue.h ../include/resched.h ../include/semaphore.h \
  ../include/memory.h ../include/bufpool.h ../include/mark.h \
@@ -826,90 +867,95 @@ ready.o: ../system/ready.c ../include/xinu.h ../include/avr_messages.h \
  ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
  ../include/name.h ../include/shell.h ../include/date.h \
  ../include/prototypes.h ../include/delay.h ../include/stdio.h \
- ../include/string.h ../include/syscall.h
+ ../include/string.h ../include/syscall.h ../include/avr_serial.h \
+ ../include/sync.h
 receive.o: ../system/receive.c ../include/xinu.h \
- ../include/avr_messages.h /usr/avr/include/avr/pgmspace.h \
- /usr/avr/include/inttypes.h /usr/lib/gcc/avr/10.2.0/include/stdint.h \
- /usr/avr/include/stdint.h ../include/stddef.h /usr/avr/include/avr/io.h \
- /usr/avr/include/avr/sfr_defs.h /usr/avr/include/avr/portpins.h \
- /usr/avr/include/avr/common.h /usr/avr/include/avr/version.h \
- /usr/avr/include/avr/fuse.h /usr/avr/include/avr/lock.h \
- ../include/kernel.h ../include/conf.h ../include/process.h \
- ../include/queue.h ../include/resched.h ../include/semaphore.h \
- ../include/memory.h ../include/bufpool.h ../include/mark.h \
- ../include/ports.h ../include/timer.h ../include/uart.h ../include/tty.h \
- ../include/gpio.h ../include/gpioselect.h ../include/device.h \
- ../include/interrupt.h ../include/file.h ../include/rfilesys.h \
- ../include/rdisksys.h ../include/lfilesys.h ../include/spi.h \
- ../include/ether.h ../include/net.h ../include/ip.h ../include/arp.h \
- ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
- ../include/name.h ../include/shell.h ../include/date.h \
- ../include/prototypes.h ../include/delay.h ../include/stdio.h \
- ../include/string.h ../include/syscall.h
+ ../include/avr_messages.h /usr/lib/avr/include/avr/pgmspace.h \
+ /usr/lib/avr/include/inttypes.h /usr/lib/gcc/avr/5.4.0/include/stdint.h \
+ /usr/lib/avr/include/stdint.h ../include/stddef.h \
+ /usr/lib/avr/include/avr/io.h /usr/lib/avr/include/avr/sfr_defs.h \
+ /usr/lib/avr/include/avr/portpins.h /usr/lib/avr/include/avr/common.h \
+ /usr/lib/avr/include/avr/version.h /usr/lib/avr/include/avr/fuse.h \
+ /usr/lib/avr/include/avr/lock.h ../include/kernel.h ../include/conf.h \
+ ../include/process.h ../include/queue.h ../include/resched.h \
+ ../include/semaphore.h ../include/memory.h ../include/bufpool.h \
+ ../include/mark.h ../include/ports.h ../include/timer.h \
+ ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/syscall.h ../include/avr_serial.h ../include/sync.h
 recvclr.o: ../system/recvclr.c ../include/xinu.h \
- ../include/avr_messages.h /usr/avr/include/avr/pgmspace.h \
- /usr/avr/include/inttypes.h /usr/lib/gcc/avr/10.2.0/include/stdint.h \
- /usr/avr/include/stdint.h ../include/stddef.h /usr/avr/include/avr/io.h \
- /usr/avr/include/avr/sfr_defs.h /usr/avr/include/avr/portpins.h \
- /usr/avr/include/avr/common.h /usr/avr/include/avr/version.h \
- /usr/avr/include/avr/fuse.h /usr/avr/include/avr/lock.h \
- ../include/kernel.h ../include/conf.h ../include/process.h \
- ../include/queue.h ../include/resched.h ../include/semaphore.h \
- ../include/memory.h ../include/bufpool.h ../include/mark.h \
- ../include/ports.h ../include/timer.h ../include/uart.h ../include/tty.h \
- ../include/gpio.h ../include/gpioselect.h ../include/device.h \
- ../include/interrupt.h ../include/file.h ../include/rfilesys.h \
- ../include/rdisksys.h ../include/lfilesys.h ../include/spi.h \
- ../include/ether.h ../include/net.h ../include/ip.h ../include/arp.h \
- ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
- ../include/name.h ../include/shell.h ../include/date.h \
- ../include/prototypes.h ../include/delay.h ../include/stdio.h \
- ../include/string.h ../include/syscall.h
+ ../include/avr_messages.h /usr/lib/avr/include/avr/pgmspace.h \
+ /usr/lib/avr/include/inttypes.h /usr/lib/gcc/avr/5.4.0/include/stdint.h \
+ /usr/lib/avr/include/stdint.h ../include/stddef.h \
+ /usr/lib/avr/include/avr/io.h /usr/lib/avr/include/avr/sfr_defs.h \
+ /usr/lib/avr/include/avr/portpins.h /usr/lib/avr/include/avr/common.h \
+ /usr/lib/avr/include/avr/version.h /usr/lib/avr/include/avr/fuse.h \
+ /usr/lib/avr/include/avr/lock.h ../include/kernel.h ../include/conf.h \
+ ../include/process.h ../include/queue.h ../include/resched.h \
+ ../include/semaphore.h ../include/memory.h ../include/bufpool.h \
+ ../include/mark.h ../include/ports.h ../include/timer.h \
+ ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/syscall.h ../include/avr_serial.h ../include/sync.h
 recvtime.o: ../system/recvtime.c ../include/xinu.h \
- ../include/avr_messages.h /usr/avr/include/avr/pgmspace.h \
- /usr/avr/include/inttypes.h /usr/lib/gcc/avr/10.2.0/include/stdint.h \
- /usr/avr/include/stdint.h ../include/stddef.h /usr/avr/include/avr/io.h \
- /usr/avr/include/avr/sfr_defs.h /usr/avr/include/avr/portpins.h \
- /usr/avr/include/avr/common.h /usr/avr/include/avr/version.h \
- /usr/avr/include/avr/fuse.h /usr/avr/include/avr/lock.h \
- ../include/kernel.h ../include/conf.h ../include/process.h \
- ../include/queue.h ../include/resched.h ../include/semaphore.h \
- ../include/memory.h ../include/bufpool.h ../include/mark.h \
- ../include/ports.h ../include/timer.h ../include/uart.h ../include/tty.h \
- ../include/gpio.h ../include/gpioselect.h ../include/device.h \
- ../include/interrupt.h ../include/file.h ../include/rfilesys.h \
- ../include/rdisksys.h ../include/lfilesys.h ../include/spi.h \
- ../include/ether.h ../include/net.h ../include/ip.h ../include/arp.h \
- ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
- ../include/name.h ../include/shell.h ../include/date.h \
- ../include/prototypes.h ../include/delay.h ../include/stdio.h \
- ../include/string.h ../include/syscall.h
+ ../include/avr_messages.h /usr/lib/avr/include/avr/pgmspace.h \
+ /usr/lib/avr/include/inttypes.h /usr/lib/gcc/avr/5.4.0/include/stdint.h \
+ /usr/lib/avr/include/stdint.h ../include/stddef.h \
+ /usr/lib/avr/include/avr/io.h /usr/lib/avr/include/avr/sfr_defs.h \
+ /usr/lib/avr/include/avr/portpins.h /usr/lib/avr/include/avr/common.h \
+ /usr/lib/avr/include/avr/version.h /usr/lib/avr/include/avr/fuse.h \
+ /usr/lib/avr/include/avr/lock.h ../include/kernel.h ../include/conf.h \
+ ../include/process.h ../include/queue.h ../include/resched.h \
+ ../include/semaphore.h ../include/memory.h ../include/bufpool.h \
+ ../include/mark.h ../include/ports.h ../include/timer.h \
+ ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/syscall.h ../include/avr_serial.h ../include/sync.h
 resched.o: ../system/resched.c ../include/xinu.h \
- ../include/avr_messages.h /usr/avr/include/avr/pgmspace.h \
- /usr/avr/include/inttypes.h /usr/lib/gcc/avr/10.2.0/include/stdint.h \
- /usr/avr/include/stdint.h ../include/stddef.h /usr/avr/include/avr/io.h \
- /usr/avr/include/avr/sfr_defs.h /usr/avr/include/avr/portpins.h \
- /usr/avr/include/avr/common.h /usr/avr/include/avr/version.h \
- /usr/avr/include/avr/fuse.h /usr/avr/include/avr/lock.h \
- ../include/kernel.h ../include/conf.h ../include/process.h \
- ../include/queue.h ../include/resched.h ../include/semaphore.h \
- ../include/memory.h ../include/bufpool.h ../include/mark.h \
- ../include/ports.h ../include/timer.h ../include/uart.h ../include/tty.h \
- ../include/gpio.h ../include/gpioselect.h ../include/device.h \
- ../include/interrupt.h ../include/file.h ../include/rfilesys.h \
- ../include/rdisksys.h ../include/lfilesys.h ../include/spi.h \
- ../include/ether.h ../include/net.h ../include/ip.h ../include/arp.h \
- ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
- ../include/name.h ../include/shell.h ../include/date.h \
- ../include/prototypes.h ../include/delay.h ../include/stdio.h \
- ../include/string.h ../include/syscall.h
+ ../include/avr_messages.h /usr/lib/avr/include/avr/pgmspace.h \
+ /usr/lib/avr/include/inttypes.h /usr/lib/gcc/avr/5.4.0/include/stdint.h \
+ /usr/lib/avr/include/stdint.h ../include/stddef.h \
+ /usr/lib/avr/include/avr/io.h /usr/lib/avr/include/avr/sfr_defs.h \
+ /usr/lib/avr/include/avr/portpins.h /usr/lib/avr/include/avr/common.h \
+ /usr/lib/avr/include/avr/version.h /usr/lib/avr/include/avr/fuse.h \
+ /usr/lib/avr/include/avr/lock.h ../include/kernel.h ../include/conf.h \
+ ../include/process.h ../include/queue.h ../include/resched.h \
+ ../include/semaphore.h ../include/memory.h ../include/bufpool.h \
+ ../include/mark.h ../include/ports.h ../include/timer.h \
+ ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/syscall.h ../include/avr_serial.h ../include/sync.h
 resume.o: ../system/resume.c ../include/xinu.h ../include/avr_messages.h \
- /usr/avr/include/avr/pgmspace.h /usr/avr/include/inttypes.h \
- /usr/lib/gcc/avr/10.2.0/include/stdint.h /usr/avr/include/stdint.h \
- ../include/stddef.h /usr/avr/include/avr/io.h \
- /usr/avr/include/avr/sfr_defs.h /usr/avr/include/avr/portpins.h \
- /usr/avr/include/avr/common.h /usr/avr/include/avr/version.h \
- /usr/avr/include/avr/fuse.h /usr/avr/include/avr/lock.h \
+ /usr/lib/avr/include/avr/pgmspace.h /usr/lib/avr/include/inttypes.h \
+ /usr/lib/gcc/avr/5.4.0/include/stdint.h /usr/lib/avr/include/stdint.h \
+ ../include/stddef.h /usr/lib/avr/include/avr/io.h \
+ /usr/lib/avr/include/avr/sfr_defs.h /usr/lib/avr/include/avr/portpins.h \
+ /usr/lib/avr/include/avr/common.h /usr/lib/avr/include/avr/version.h \
+ /usr/lib/avr/include/avr/fuse.h /usr/lib/avr/include/avr/lock.h \
  ../include/kernel.h ../include/conf.h ../include/process.h \
  ../include/queue.h ../include/resched.h ../include/semaphore.h \
  ../include/memory.h ../include/bufpool.h ../include/mark.h \
@@ -921,14 +967,15 @@ resume.o: ../system/resume.c ../include/xinu.h ../include/avr_messages.h \
  ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
  ../include/name.h ../include/shell.h ../include/date.h \
  ../include/prototypes.h ../include/delay.h ../include/stdio.h \
- ../include/string.h ../include/syscall.h
+ ../include/string.h ../include/syscall.h ../include/avr_serial.h \
+ ../include/sync.h
 seek.o: ../system/seek.c ../include/xinu.h ../include/avr_messages.h \
- /usr/avr/include/avr/pgmspace.h /usr/avr/include/inttypes.h \
- /usr/lib/gcc/avr/10.2.0/include/stdint.h /usr/avr/include/stdint.h \
- ../include/stddef.h /usr/avr/include/avr/io.h \
- /usr/avr/include/avr/sfr_defs.h /usr/avr/include/avr/portpins.h \
- /usr/avr/include/avr/common.h /usr/avr/include/avr/version.h \
- /usr/avr/include/avr/fuse.h /usr/avr/include/avr/lock.h \
+ /usr/lib/avr/include/avr/pgmspace.h /usr/lib/avr/include/inttypes.h \
+ /usr/lib/gcc/avr/5.4.0/include/stdint.h /usr/lib/avr/include/stdint.h \
+ ../include/stddef.h /usr/lib/avr/include/avr/io.h \
+ /usr/lib/avr/include/avr/sfr_defs.h /usr/lib/avr/include/avr/portpins.h \
+ /usr/lib/avr/include/avr/common.h /usr/lib/avr/include/avr/version.h \
+ /usr/lib/avr/include/avr/fuse.h /usr/lib/avr/include/avr/lock.h \
  ../include/kernel.h ../include/conf.h ../include/process.h \
  ../include/queue.h ../include/resched.h ../include/semaphore.h \
  ../include/memory.h ../include/bufpool.h ../include/mark.h \
@@ -940,90 +987,95 @@ seek.o: ../system/seek.c ../include/xinu.h ../include/avr_messages.h \
  ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
  ../include/name.h ../include/shell.h ../include/date.h \
  ../include/prototypes.h ../include/delay.h ../include/stdio.h \
- ../include/string.h ../include/syscall.h
+ ../include/string.h ../include/syscall.h ../include/avr_serial.h \
+ ../include/sync.h
 semcount.o: ../system/semcount.c ../include/xinu.h \
- ../include/avr_messages.h /usr/avr/include/avr/pgmspace.h \
- /usr/avr/include/inttypes.h /usr/lib/gcc/avr/10.2.0/include/stdint.h \
- /usr/avr/include/stdint.h ../include/stddef.h /usr/avr/include/avr/io.h \
- /usr/avr/include/avr/sfr_defs.h /usr/avr/include/avr/portpins.h \
- /usr/avr/include/avr/common.h /usr/avr/include/avr/version.h \
- /usr/avr/include/avr/fuse.h /usr/avr/include/avr/lock.h \
- ../include/kernel.h ../include/conf.h ../include/process.h \
- ../include/queue.h ../include/resched.h ../include/semaphore.h \
- ../include/memory.h ../include/bufpool.h ../include/mark.h \
- ../include/ports.h ../include/timer.h ../include/uart.h ../include/tty.h \
- ../include/gpio.h ../include/gpioselect.h ../include/device.h \
- ../include/interrupt.h ../include/file.h ../include/rfilesys.h \
- ../include/rdisksys.h ../include/lfilesys.h ../include/spi.h \
- ../include/ether.h ../include/net.h ../include/ip.h ../include/arp.h \
- ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
- ../include/name.h ../include/shell.h ../include/date.h \
- ../include/prototypes.h ../include/delay.h ../include/stdio.h \
- ../include/string.h ../include/syscall.h
+ ../include/avr_messages.h /usr/lib/avr/include/avr/pgmspace.h \
+ /usr/lib/avr/include/inttypes.h /usr/lib/gcc/avr/5.4.0/include/stdint.h \
+ /usr/lib/avr/include/stdint.h ../include/stddef.h \
+ /usr/lib/avr/include/avr/io.h /usr/lib/avr/include/avr/sfr_defs.h \
+ /usr/lib/avr/include/avr/portpins.h /usr/lib/avr/include/avr/common.h \
+ /usr/lib/avr/include/avr/version.h /usr/lib/avr/include/avr/fuse.h \
+ /usr/lib/avr/include/avr/lock.h ../include/kernel.h ../include/conf.h \
+ ../include/process.h ../include/queue.h ../include/resched.h \
+ ../include/semaphore.h ../include/memory.h ../include/bufpool.h \
+ ../include/mark.h ../include/ports.h ../include/timer.h \
+ ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/syscall.h ../include/avr_serial.h ../include/sync.h
 semcreate.o: ../system/semcreate.c ../include/xinu.h \
- ../include/avr_messages.h /usr/avr/include/avr/pgmspace.h \
- /usr/avr/include/inttypes.h /usr/lib/gcc/avr/10.2.0/include/stdint.h \
- /usr/avr/include/stdint.h ../include/stddef.h /usr/avr/include/avr/io.h \
- /usr/avr/include/avr/sfr_defs.h /usr/avr/include/avr/portpins.h \
- /usr/avr/include/avr/common.h /usr/avr/include/avr/version.h \
- /usr/avr/include/avr/fuse.h /usr/avr/include/avr/lock.h \
- ../include/kernel.h ../include/conf.h ../include/process.h \
- ../include/queue.h ../include/resched.h ../include/semaphore.h \
- ../include/memory.h ../include/bufpool.h ../include/mark.h \
- ../include/ports.h ../include/timer.h ../include/uart.h ../include/tty.h \
- ../include/gpio.h ../include/gpioselect.h ../include/device.h \
- ../include/interrupt.h ../include/file.h ../include/rfilesys.h \
- ../include/rdisksys.h ../include/lfilesys.h ../include/spi.h \
- ../include/ether.h ../include/net.h ../include/ip.h ../include/arp.h \
- ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
- ../include/name.h ../include/shell.h ../include/date.h \
- ../include/prototypes.h ../include/delay.h ../include/stdio.h \
- ../include/string.h ../include/syscall.h
+ ../include/avr_messages.h /usr/lib/avr/include/avr/pgmspace.h \
+ /usr/lib/avr/include/inttypes.h /usr/lib/gcc/avr/5.4.0/include/stdint.h \
+ /usr/lib/avr/include/stdint.h ../include/stddef.h \
+ /usr/lib/avr/include/avr/io.h /usr/lib/avr/include/avr/sfr_defs.h \
+ /usr/lib/avr/include/avr/portpins.h /usr/lib/avr/include/avr/common.h \
+ /usr/lib/avr/include/avr/version.h /usr/lib/avr/include/avr/fuse.h \
+ /usr/lib/avr/include/avr/lock.h ../include/kernel.h ../include/conf.h \
+ ../include/process.h ../include/queue.h ../include/resched.h \
+ ../include/semaphore.h ../include/memory.h ../include/bufpool.h \
+ ../include/mark.h ../include/ports.h ../include/timer.h \
+ ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/syscall.h ../include/avr_serial.h ../include/sync.h
 semdelete.o: ../system/semdelete.c ../include/xinu.h \
- ../include/avr_messages.h /usr/avr/include/avr/pgmspace.h \
- /usr/avr/include/inttypes.h /usr/lib/gcc/avr/10.2.0/include/stdint.h \
- /usr/avr/include/stdint.h ../include/stddef.h /usr/avr/include/avr/io.h \
- /usr/avr/include/avr/sfr_defs.h /usr/avr/include/avr/portpins.h \
- /usr/avr/include/avr/common.h /usr/avr/include/avr/version.h \
- /usr/avr/include/avr/fuse.h /usr/avr/include/avr/lock.h \
- ../include/kernel.h ../include/conf.h ../include/process.h \
- ../include/queue.h ../include/resched.h ../include/semaphore.h \
- ../include/memory.h ../include/bufpool.h ../include/mark.h \
- ../include/ports.h ../include/timer.h ../include/uart.h ../include/tty.h \
- ../include/gpio.h ../include/gpioselect.h ../include/device.h \
- ../include/interrupt.h ../include/file.h ../include/rfilesys.h \
- ../include/rdisksys.h ../include/lfilesys.h ../include/spi.h \
- ../include/ether.h ../include/net.h ../include/ip.h ../include/arp.h \
- ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
- ../include/name.h ../include/shell.h ../include/date.h \
- ../include/prototypes.h ../include/delay.h ../include/stdio.h \
- ../include/string.h ../include/syscall.h
+ ../include/avr_messages.h /usr/lib/avr/include/avr/pgmspace.h \
+ /usr/lib/avr/include/inttypes.h /usr/lib/gcc/avr/5.4.0/include/stdint.h \
+ /usr/lib/avr/include/stdint.h ../include/stddef.h \
+ /usr/lib/avr/include/avr/io.h /usr/lib/avr/include/avr/sfr_defs.h \
+ /usr/lib/avr/include/avr/portpins.h /usr/lib/avr/include/avr/common.h \
+ /usr/lib/avr/include/avr/version.h /usr/lib/avr/include/avr/fuse.h \
+ /usr/lib/avr/include/avr/lock.h ../include/kernel.h ../include/conf.h \
+ ../include/process.h ../include/queue.h ../include/resched.h \
+ ../include/semaphore.h ../include/memory.h ../include/bufpool.h \
+ ../include/mark.h ../include/ports.h ../include/timer.h \
+ ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/syscall.h ../include/avr_serial.h ../include/sync.h
 semreset.o: ../system/semreset.c ../include/xinu.h \
- ../include/avr_messages.h /usr/avr/include/avr/pgmspace.h \
- /usr/avr/include/inttypes.h /usr/lib/gcc/avr/10.2.0/include/stdint.h \
- /usr/avr/include/stdint.h ../include/stddef.h /usr/avr/include/avr/io.h \
- /usr/avr/include/avr/sfr_defs.h /usr/avr/include/avr/portpins.h \
- /usr/avr/include/avr/common.h /usr/avr/include/avr/version.h \
- /usr/avr/include/avr/fuse.h /usr/avr/include/avr/lock.h \
- ../include/kernel.h ../include/conf.h ../include/process.h \
- ../include/queue.h ../include/resched.h ../include/semaphore.h \
- ../include/memory.h ../include/bufpool.h ../include/mark.h \
- ../include/ports.h ../include/timer.h ../include/uart.h ../include/tty.h \
- ../include/gpio.h ../include/gpioselect.h ../include/device.h \
- ../include/interrupt.h ../include/file.h ../include/rfilesys.h \
- ../include/rdisksys.h ../include/lfilesys.h ../include/spi.h \
- ../include/ether.h ../include/net.h ../include/ip.h ../include/arp.h \
- ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
- ../include/name.h ../include/shell.h ../include/date.h \
- ../include/prototypes.h ../include/delay.h ../include/stdio.h \
- ../include/string.h ../include/syscall.h
+ ../include/avr_messages.h /usr/lib/avr/include/avr/pgmspace.h \
+ /usr/lib/avr/include/inttypes.h /usr/lib/gcc/avr/5.4.0/include/stdint.h \
+ /usr/lib/avr/include/stdint.h ../include/stddef.h \
+ /usr/lib/avr/include/avr/io.h /usr/lib/avr/include/avr/sfr_defs.h \
+ /usr/lib/avr/include/avr/portpins.h /usr/lib/avr/include/avr/common.h \
+ /usr/lib/avr/include/avr/version.h /usr/lib/avr/include/avr/fuse.h \
+ /usr/lib/avr/include/avr/lock.h ../include/kernel.h ../include/conf.h \
+ ../include/process.h ../include/queue.h ../include/resched.h \
+ ../include/semaphore.h ../include/memory.h ../include/bufpool.h \
+ ../include/mark.h ../include/ports.h ../include/timer.h \
+ ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/syscall.h ../include/avr_serial.h ../include/sync.h
 send.o: ../system/send.c ../include/xinu.h ../include/avr_messages.h \
- /usr/avr/include/avr/pgmspace.h /usr/avr/include/inttypes.h \
- /usr/lib/gcc/avr/10.2.0/include/stdint.h /usr/avr/include/stdint.h \
- ../include/stddef.h /usr/avr/include/avr/io.h \
- /usr/avr/include/avr/sfr_defs.h /usr/avr/include/avr/portpins.h \
- /usr/avr/include/avr/common.h /usr/avr/include/avr/version.h \
- /usr/avr/include/avr/fuse.h /usr/avr/include/avr/lock.h \
+ /usr/lib/avr/include/avr/pgmspace.h /usr/lib/avr/include/inttypes.h \
+ /usr/lib/gcc/avr/5.4.0/include/stdint.h /usr/lib/avr/include/stdint.h \
+ ../include/stddef.h /usr/lib/avr/include/avr/io.h \
+ /usr/lib/avr/include/avr/sfr_defs.h /usr/lib/avr/include/avr/portpins.h \
+ /usr/lib/avr/include/avr/common.h /usr/lib/avr/include/avr/version.h \
+ /usr/lib/avr/include/avr/fuse.h /usr/lib/avr/include/avr/lock.h \
  ../include/kernel.h ../include/conf.h ../include/process.h \
  ../include/queue.h ../include/resched.h ../include/semaphore.h \
  ../include/memory.h ../include/bufpool.h ../include/mark.h \
@@ -1035,14 +1087,15 @@ send.o: ../system/send.c ../include/xinu.h ../include/avr_messages.h \
  ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
  ../include/name.h ../include/shell.h ../include/date.h \
  ../include/prototypes.h ../include/delay.h ../include/stdio.h \
- ../include/string.h ../include/syscall.h
+ ../include/string.h ../include/syscall.h ../include/avr_serial.h \
+ ../include/sync.h
 signal.o: ../system/signal.c ../include/xinu.h ../include/avr_messages.h \
- /usr/avr/include/avr/pgmspace.h /usr/avr/include/inttypes.h \
- /usr/lib/gcc/avr/10.2.0/include/stdint.h /usr/avr/include/stdint.h \
- ../include/stddef.h /usr/avr/include/avr/io.h \
- /usr/avr/include/avr/sfr_defs.h /usr/avr/include/avr/portpins.h \
- /usr/avr/include/avr/common.h /usr/avr/include/avr/version.h \
- /usr/avr/include/avr/fuse.h /usr/avr/include/avr/lock.h \
+ /usr/lib/avr/include/avr/pgmspace.h /usr/lib/avr/include/inttypes.h \
+ /usr/lib/gcc/avr/5.4.0/include/stdint.h /usr/lib/avr/include/stdint.h \
+ ../include/stddef.h /usr/lib/avr/include/avr/io.h \
+ /usr/lib/avr/include/avr/sfr_defs.h /usr/lib/avr/include/avr/portpins.h \
+ /usr/lib/avr/include/avr/common.h /usr/lib/avr/include/avr/version.h \
+ /usr/lib/avr/include/avr/fuse.h /usr/lib/avr/include/avr/lock.h \
  ../include/kernel.h ../include/conf.h ../include/process.h \
  ../include/queue.h ../include/resched.h ../include/semaphore.h \
  ../include/memory.h ../include/bufpool.h ../include/mark.h \
@@ -1054,33 +1107,35 @@ signal.o: ../system/signal.c ../include/xinu.h ../include/avr_messages.h \
  ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
  ../include/name.h ../include/shell.h ../include/date.h \
  ../include/prototypes.h ../include/delay.h ../include/stdio.h \
- ../include/string.h ../include/syscall.h
+ ../include/string.h ../include/syscall.h ../include/avr_serial.h \
+ ../include/sync.h
 signaln.o: ../system/signaln.c ../include/xinu.h \
- ../include/avr_messages.h /usr/avr/include/avr/pgmspace.h \
- /usr/avr/include/inttypes.h /usr/lib/gcc/avr/10.2.0/include/stdint.h \
- /usr/avr/include/stdint.h ../include/stddef.h /usr/avr/include/avr/io.h \
- /usr/avr/include/avr/sfr_defs.h /usr/avr/include/avr/portpins.h \
- /usr/avr/include/avr/common.h /usr/avr/include/avr/version.h \
- /usr/avr/include/avr/fuse.h /usr/avr/include/avr/lock.h \
- ../include/kernel.h ../include/conf.h ../include/process.h \
- ../include/queue.h ../include/resched.h ../include/semaphore.h \
- ../include/memory.h ../include/bufpool.h ../include/mark.h \
- ../include/ports.h ../include/timer.h ../include/uart.h ../include/tty.h \
- ../include/gpio.h ../include/gpioselect.h ../include/device.h \
- ../include/interrupt.h ../include/file.h ../include/rfilesys.h \
- ../include/rdisksys.h ../include/lfilesys.h ../include/spi.h \
- ../include/ether.h ../include/net.h ../include/ip.h ../include/arp.h \
- ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
- ../include/name.h ../include/shell.h ../include/date.h \
- ../include/prototypes.h ../include/delay.h ../include/stdio.h \
- ../include/string.h ../include/syscall.h
+ ../include/avr_messages.h /usr/lib/avr/include/avr/pgmspace.h \
+ /usr/lib/avr/include/inttypes.h /usr/lib/gcc/avr/5.4.0/include/stdint.h \
+ /usr/lib/avr/include/stdint.h ../include/stddef.h \
+ /usr/lib/avr/include/avr/io.h /usr/lib/avr/include/avr/sfr_defs.h \
+ /usr/lib/avr/include/avr/portpins.h /usr/lib/avr/include/avr/common.h \
+ /usr/lib/avr/include/avr/version.h /usr/lib/avr/include/avr/fuse.h \
+ /usr/lib/avr/include/avr/lock.h ../include/kernel.h ../include/conf.h \
+ ../include/process.h ../include/queue.h ../include/resched.h \
+ ../include/semaphore.h ../include/memory.h ../include/bufpool.h \
+ ../include/mark.h ../include/ports.h ../include/timer.h \
+ ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/syscall.h ../include/avr_serial.h ../include/sync.h
 sleep.o: ../system/sleep.c ../include/xinu.h ../include/avr_messages.h \
- /usr/avr/include/avr/pgmspace.h /usr/avr/include/inttypes.h \
- /usr/lib/gcc/avr/10.2.0/include/stdint.h /usr/avr/include/stdint.h \
- ../include/stddef.h /usr/avr/include/avr/io.h \
- /usr/avr/include/avr/sfr_defs.h /usr/avr/include/avr/portpins.h \
- /usr/avr/include/avr/common.h /usr/avr/include/avr/version.h \
- /usr/avr/include/avr/fuse.h /usr/avr/include/avr/lock.h \
+ /usr/lib/avr/include/avr/pgmspace.h /usr/lib/avr/include/inttypes.h \
+ /usr/lib/gcc/avr/5.4.0/include/stdint.h /usr/lib/avr/include/stdint.h \
+ ../include/stddef.h /usr/lib/avr/include/avr/io.h \
+ /usr/lib/avr/include/avr/sfr_defs.h /usr/lib/avr/include/avr/portpins.h \
+ /usr/lib/avr/include/avr/common.h /usr/lib/avr/include/avr/version.h \
+ /usr/lib/avr/include/avr/fuse.h /usr/lib/avr/include/avr/lock.h \
  ../include/kernel.h ../include/conf.h ../include/process.h \
  ../include/queue.h ../include/resched.h ../include/semaphore.h \
  ../include/memory.h ../include/bufpool.h ../include/mark.h \
@@ -1092,71 +1147,75 @@ sleep.o: ../system/sleep.c ../include/xinu.h ../include/avr_messages.h \
  ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
  ../include/name.h ../include/shell.h ../include/date.h \
  ../include/prototypes.h ../include/delay.h ../include/stdio.h \
- ../include/string.h ../include/syscall.h
+ ../include/string.h ../include/syscall.h ../include/avr_serial.h \
+ ../include/sync.h
 suspend.o: ../system/suspend.c ../include/xinu.h \
- ../include/avr_messages.h /usr/avr/include/avr/pgmspace.h \
- /usr/avr/include/inttypes.h /usr/lib/gcc/avr/10.2.0/include/stdint.h \
- /usr/avr/include/stdint.h ../include/stddef.h /usr/avr/include/avr/io.h \
- /usr/avr/include/avr/sfr_defs.h /usr/avr/include/avr/portpins.h \
- /usr/avr/include/avr/common.h /usr/avr/include/avr/version.h \
- /usr/avr/include/avr/fuse.h /usr/avr/include/avr/lock.h \
- ../include/kernel.h ../include/conf.h ../include/process.h \
- ../include/queue.h ../include/resched.h ../include/semaphore.h \
- ../include/memory.h ../include/bufpool.h ../include/mark.h \
- ../include/ports.h ../include/timer.h ../include/uart.h ../include/tty.h \
- ../include/gpio.h ../include/gpioselect.h ../include/device.h \
- ../include/interrupt.h ../include/file.h ../include/rfilesys.h \
- ../include/rdisksys.h ../include/lfilesys.h ../include/spi.h \
- ../include/ether.h ../include/net.h ../include/ip.h ../include/arp.h \
- ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
- ../include/name.h ../include/shell.h ../include/date.h \
- ../include/prototypes.h ../include/delay.h ../include/stdio.h \
- ../include/string.h ../include/syscall.h
+ ../include/avr_messages.h /usr/lib/avr/include/avr/pgmspace.h \
+ /usr/lib/avr/include/inttypes.h /usr/lib/gcc/avr/5.4.0/include/stdint.h \
+ /usr/lib/avr/include/stdint.h ../include/stddef.h \
+ /usr/lib/avr/include/avr/io.h /usr/lib/avr/include/avr/sfr_defs.h \
+ /usr/lib/avr/include/avr/portpins.h /usr/lib/avr/include/avr/common.h \
+ /usr/lib/avr/include/avr/version.h /usr/lib/avr/include/avr/fuse.h \
+ /usr/lib/avr/include/avr/lock.h ../include/kernel.h ../include/conf.h \
+ ../include/process.h ../include/queue.h ../include/resched.h \
+ ../include/semaphore.h ../include/memory.h ../include/bufpool.h \
+ ../include/mark.h ../include/ports.h ../include/timer.h \
+ ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/syscall.h ../include/avr_serial.h ../include/sync.h
 unsleep.o: ../system/unsleep.c ../include/xinu.h \
- ../include/avr_messages.h /usr/avr/include/avr/pgmspace.h \
- /usr/avr/include/inttypes.h /usr/lib/gcc/avr/10.2.0/include/stdint.h \
- /usr/avr/include/stdint.h ../include/stddef.h /usr/avr/include/avr/io.h \
- /usr/avr/include/avr/sfr_defs.h /usr/avr/include/avr/portpins.h \
- /usr/avr/include/avr/common.h /usr/avr/include/avr/version.h \
- /usr/avr/include/avr/fuse.h /usr/avr/include/avr/lock.h \
- ../include/kernel.h ../include/conf.h ../include/process.h \
- ../include/queue.h ../include/resched.h ../include/semaphore.h \
- ../include/memory.h ../include/bufpool.h ../include/mark.h \
- ../include/ports.h ../include/timer.h ../include/uart.h ../include/tty.h \
- ../include/gpio.h ../include/gpioselect.h ../include/device.h \
- ../include/interrupt.h ../include/file.h ../include/rfilesys.h \
- ../include/rdisksys.h ../include/lfilesys.h ../include/spi.h \
- ../include/ether.h ../include/net.h ../include/ip.h ../include/arp.h \
- ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
- ../include/name.h ../include/shell.h ../include/date.h \
- ../include/prototypes.h ../include/delay.h ../include/stdio.h \
- ../include/string.h ../include/syscall.h
+ ../include/avr_messages.h /usr/lib/avr/include/avr/pgmspace.h \
+ /usr/lib/avr/include/inttypes.h /usr/lib/gcc/avr/5.4.0/include/stdint.h \
+ /usr/lib/avr/include/stdint.h ../include/stddef.h \
+ /usr/lib/avr/include/avr/io.h /usr/lib/avr/include/avr/sfr_defs.h \
+ /usr/lib/avr/include/avr/portpins.h /usr/lib/avr/include/avr/common.h \
+ /usr/lib/avr/include/avr/version.h /usr/lib/avr/include/avr/fuse.h \
+ /usr/lib/avr/include/avr/lock.h ../include/kernel.h ../include/conf.h \
+ ../include/process.h ../include/queue.h ../include/resched.h \
+ ../include/semaphore.h ../include/memory.h ../include/bufpool.h \
+ ../include/mark.h ../include/ports.h ../include/timer.h \
+ ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/syscall.h ../include/avr_serial.h ../include/sync.h
 userret.o: ../system/userret.c ../include/xinu.h \
- ../include/avr_messages.h /usr/avr/include/avr/pgmspace.h \
- /usr/avr/include/inttypes.h /usr/lib/gcc/avr/10.2.0/include/stdint.h \
- /usr/avr/include/stdint.h ../include/stddef.h /usr/avr/include/avr/io.h \
- /usr/avr/include/avr/sfr_defs.h /usr/avr/include/avr/portpins.h \
- /usr/avr/include/avr/common.h /usr/avr/include/avr/version.h \
- /usr/avr/include/avr/fuse.h /usr/avr/include/avr/lock.h \
- ../include/kernel.h ../include/conf.h ../include/process.h \
- ../include/queue.h ../include/resched.h ../include/semaphore.h \
- ../include/memory.h ../include/bufpool.h ../include/mark.h \
- ../include/ports.h ../include/timer.h ../include/uart.h ../include/tty.h \
- ../include/gpio.h ../include/gpioselect.h ../include/device.h \
- ../include/interrupt.h ../include/file.h ../include/rfilesys.h \
- ../include/rdisksys.h ../include/lfilesys.h ../include/spi.h \
- ../include/ether.h ../include/net.h ../include/ip.h ../include/arp.h \
- ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
- ../include/name.h ../include/shell.h ../include/date.h \
- ../include/prototypes.h ../include/delay.h ../include/stdio.h \
- ../include/string.h ../include/syscall.h
+ ../include/avr_messages.h /usr/lib/avr/include/avr/pgmspace.h \
+ /usr/lib/avr/include/inttypes.h /usr/lib/gcc/avr/5.4.0/include/stdint.h \
+ /usr/lib/avr/include/stdint.h ../include/stddef.h \
+ /usr/lib/avr/include/avr/io.h /usr/lib/avr/include/avr/sfr_defs.h \
+ /usr/lib/avr/include/avr/portpins.h /usr/lib/avr/include/avr/common.h \
+ /usr/lib/avr/include/avr/version.h /usr/lib/avr/include/avr/fuse.h \
+ /usr/lib/avr/include/avr/lock.h ../include/kernel.h ../include/conf.h \
+ ../include/process.h ../include/queue.h ../include/resched.h \
+ ../include/semaphore.h ../include/memory.h ../include/bufpool.h \
+ ../include/mark.h ../include/ports.h ../include/timer.h \
+ ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/syscall.h ../include/avr_serial.h ../include/sync.h
 wait.o: ../system/wait.c ../include/xinu.h ../include/avr_messages.h \
- /usr/avr/include/avr/pgmspace.h /usr/avr/include/inttypes.h \
- /usr/lib/gcc/avr/10.2.0/include/stdint.h /usr/avr/include/stdint.h \
- ../include/stddef.h /usr/avr/include/avr/io.h \
- /usr/avr/include/avr/sfr_defs.h /usr/avr/include/avr/portpins.h \
- /usr/avr/include/avr/common.h /usr/avr/include/avr/version.h \
- /usr/avr/include/avr/fuse.h /usr/avr/include/avr/lock.h \
+ /usr/lib/avr/include/avr/pgmspace.h /usr/lib/avr/include/inttypes.h \
+ /usr/lib/gcc/avr/5.4.0/include/stdint.h /usr/lib/avr/include/stdint.h \
+ ../include/stddef.h /usr/lib/avr/include/avr/io.h \
+ /usr/lib/avr/include/avr/sfr_defs.h /usr/lib/avr/include/avr/portpins.h \
+ /usr/lib/avr/include/avr/common.h /usr/lib/avr/include/avr/version.h \
+ /usr/lib/avr/include/avr/fuse.h /usr/lib/avr/include/avr/lock.h \
  ../include/kernel.h ../include/conf.h ../include/process.h \
  ../include/queue.h ../include/resched.h ../include/semaphore.h \
  ../include/memory.h ../include/bufpool.h ../include/mark.h \
@@ -1168,14 +1227,15 @@ wait.o: ../system/wait.c ../include/xinu.h ../include/avr_messages.h \
  ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
  ../include/name.h ../include/shell.h ../include/date.h \
  ../include/prototypes.h ../include/delay.h ../include/stdio.h \
- ../include/string.h ../include/syscall.h
+ ../include/string.h ../include/syscall.h ../include/avr_serial.h \
+ ../include/sync.h
 wakeup.o: ../system/wakeup.c ../include/xinu.h ../include/avr_messages.h \
- /usr/avr/include/avr/pgmspace.h /usr/avr/include/inttypes.h \
- /usr/lib/gcc/avr/10.2.0/include/stdint.h /usr/avr/include/stdint.h \
- ../include/stddef.h /usr/avr/include/avr/io.h \
- /usr/avr/include/avr/sfr_defs.h /usr/avr/include/avr/portpins.h \
- /usr/avr/include/avr/common.h /usr/avr/include/avr/version.h \
- /usr/avr/include/avr/fuse.h /usr/avr/include/avr/lock.h \
+ /usr/lib/avr/include/avr/pgmspace.h /usr/lib/avr/include/inttypes.h \
+ /usr/lib/gcc/avr/5.4.0/include/stdint.h /usr/lib/avr/include/stdint.h \
+ ../include/stddef.h /usr/lib/avr/include/avr/io.h \
+ /usr/lib/avr/include/avr/sfr_defs.h /usr/lib/avr/include/avr/portpins.h \
+ /usr/lib/avr/include/avr/common.h /usr/lib/avr/include/avr/version.h \
+ /usr/lib/avr/include/avr/fuse.h /usr/lib/avr/include/avr/lock.h \
  ../include/kernel.h ../include/conf.h ../include/process.h \
  ../include/queue.h ../include/resched.h ../include/semaphore.h \
  ../include/memory.h ../include/bufpool.h ../include/mark.h \
@@ -1187,14 +1247,15 @@ wakeup.o: ../system/wakeup.c ../include/xinu.h ../include/avr_messages.h \
  ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
  ../include/name.h ../include/shell.h ../include/date.h \
  ../include/prototypes.h ../include/delay.h ../include/stdio.h \
- ../include/string.h ../include/syscall.h
+ ../include/string.h ../include/syscall.h ../include/avr_serial.h \
+ ../include/sync.h
 write.o: ../system/write.c ../include/xinu.h ../include/avr_messages.h \
- /usr/avr/include/avr/pgmspace.h /usr/avr/include/inttypes.h \
- /usr/lib/gcc/avr/10.2.0/include/stdint.h /usr/avr/include/stdint.h \
- ../include/stddef.h /usr/avr/include/avr/io.h \
- /usr/avr/include/avr/sfr_defs.h /usr/avr/include/avr/portpins.h \
- /usr/avr/include/avr/common.h /usr/avr/include/avr/version.h \
- /usr/avr/include/avr/fuse.h /usr/avr/include/avr/lock.h \
+ /usr/lib/avr/include/avr/pgmspace.h /usr/lib/avr/include/inttypes.h \
+ /usr/lib/gcc/avr/5.4.0/include/stdint.h /usr/lib/avr/include/stdint.h \
+ ../include/stddef.h /usr/lib/avr/include/avr/io.h \
+ /usr/lib/avr/include/avr/sfr_defs.h /usr/lib/avr/include/avr/portpins.h \
+ /usr/lib/avr/include/avr/common.h /usr/lib/avr/include/avr/version.h \
+ /usr/lib/avr/include/avr/fuse.h /usr/lib/avr/include/avr/lock.h \
  ../include/kernel.h ../include/conf.h ../include/process.h \
  ../include/queue.h ../include/resched.h ../include/semaphore.h \
  ../include/memory.h ../include/bufpool.h ../include/mark.h \
@@ -1206,14 +1267,15 @@ write.o: ../system/write.c ../include/xinu.h ../include/avr_messages.h \
  ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
  ../include/name.h ../include/shell.h ../include/date.h \
  ../include/prototypes.h ../include/delay.h ../include/stdio.h \
- ../include/string.h ../include/syscall.h
+ ../include/string.h ../include/syscall.h ../include/avr_serial.h \
+ ../include/sync.h
 xdone.o: ../system/xdone.c ../include/xinu.h ../include/avr_messages.h \
- /usr/avr/include/avr/pgmspace.h /usr/avr/include/inttypes.h \
- /usr/lib/gcc/avr/10.2.0/include/stdint.h /usr/avr/include/stdint.h \
- ../include/stddef.h /usr/avr/include/avr/io.h \
- /usr/avr/include/avr/sfr_defs.h /usr/avr/include/avr/portpins.h \
- /usr/avr/include/avr/common.h /usr/avr/include/avr/version.h \
- /usr/avr/include/avr/fuse.h /usr/avr/include/avr/lock.h \
+ /usr/lib/avr/include/avr/pgmspace.h /usr/lib/avr/include/inttypes.h \
+ /usr/lib/gcc/avr/5.4.0/include/stdint.h /usr/lib/avr/include/stdint.h \
+ ../include/stddef.h /usr/lib/avr/include/avr/io.h \
+ /usr/lib/avr/include/avr/sfr_defs.h /usr/lib/avr/include/avr/portpins.h \
+ /usr/lib/avr/include/avr/common.h /usr/lib/avr/include/avr/version.h \
+ /usr/lib/avr/include/avr/fuse.h /usr/lib/avr/include/avr/lock.h \
  ../include/kernel.h ../include/conf.h ../include/process.h \
  ../include/queue.h ../include/resched.h ../include/semaphore.h \
  ../include/memory.h ../include/bufpool.h ../include/mark.h \
@@ -1225,14 +1287,15 @@ xdone.o: ../system/xdone.c ../include/xinu.h ../include/avr_messages.h \
  ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
  ../include/name.h ../include/shell.h ../include/date.h \
  ../include/prototypes.h ../include/delay.h ../include/stdio.h \
- ../include/string.h ../include/syscall.h
+ ../include/string.h ../include/syscall.h ../include/avr_serial.h \
+ ../include/sync.h
 yield.o: ../system/yield.c ../include/xinu.h ../include/avr_messages.h \
- /usr/avr/include/avr/pgmspace.h /usr/avr/include/inttypes.h \
- /usr/lib/gcc/avr/10.2.0/include/stdint.h /usr/avr/include/stdint.h \
- ../include/stddef.h /usr/avr/include/avr/io.h \
- /usr/avr/include/avr/sfr_defs.h /usr/avr/include/avr/portpins.h \
- /usr/avr/include/avr/common.h /usr/avr/include/avr/version.h \
- /usr/avr/include/avr/fuse.h /usr/avr/include/avr/lock.h \
+ /usr/lib/avr/include/avr/pgmspace.h /usr/lib/avr/include/inttypes.h \
+ /usr/lib/gcc/avr/5.4.0/include/stdint.h /usr/lib/avr/include/stdint.h \
+ ../include/stddef.h /usr/lib/avr/include/avr/io.h \
+ /usr/lib/avr/include/avr/sfr_defs.h /usr/lib/avr/include/avr/portpins.h \
+ /usr/lib/avr/include/avr/common.h /usr/lib/avr/include/avr/version.h \
+ /usr/lib/avr/include/avr/fuse.h /usr/lib/avr/include/avr/lock.h \
  ../include/kernel.h ../include/conf.h ../include/process.h \
  ../include/queue.h ../include/resched.h ../include/semaphore.h \
  ../include/memory.h ../include/bufpool.h ../include/mark.h \
@@ -1244,107 +1307,71 @@ yield.o: ../system/yield.c ../include/xinu.h ../include/avr_messages.h \
  ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
  ../include/name.h ../include/shell.h ../include/date.h \
  ../include/prototypes.h ../include/delay.h ../include/stdio.h \
- ../include/string.h ../include/syscall.h
+ ../include/string.h ../include/syscall.h ../include/avr_serial.h \
+ ../include/sync.h
 abs.o: ../lib/abs.c
-avr_gpio.o: ../lib/avr_gpio.c
-avr_messages.o: ../lib/avr_messages.c /usr/avr/include/avr/pgmspace.h \
- /usr/avr/include/inttypes.h /usr/lib/gcc/avr/10.2.0/include/stdint.h \
- /usr/avr/include/stdint.h ../include/stddef.h /usr/avr/include/avr/io.h \
- /usr/avr/include/avr/sfr_defs.h /usr/avr/include/avr/portpins.h \
- /usr/avr/include/avr/common.h /usr/avr/include/avr/version.h \
- /usr/avr/include/avr/fuse.h /usr/avr/include/avr/lock.h
+avr_messages.o: ../lib/avr_messages.c /usr/lib/avr/include/avr/pgmspace.h \
+ /usr/lib/avr/include/inttypes.h /usr/lib/gcc/avr/5.4.0/include/stdint.h \
+ /usr/lib/avr/include/stdint.h ../include/stddef.h \
+ /usr/lib/avr/include/avr/io.h /usr/lib/avr/include/avr/sfr_defs.h \
+ /usr/lib/avr/include/avr/portpins.h /usr/lib/avr/include/avr/common.h \
+ /usr/lib/avr/include/avr/version.h /usr/lib/avr/include/avr/fuse.h \
+ /usr/lib/avr/include/avr/lock.h
 avr_printf.o: ../lib/avr_printf.c ../include/xinu.h \
- ../include/avr_messages.h /usr/avr/include/avr/pgmspace.h \
- /usr/avr/include/inttypes.h /usr/lib/gcc/avr/10.2.0/include/stdint.h \
- /usr/avr/include/stdint.h ../include/stddef.h /usr/avr/include/avr/io.h \
- /usr/avr/include/avr/sfr_defs.h /usr/avr/include/avr/portpins.h \
- /usr/avr/include/avr/common.h /usr/avr/include/avr/version.h \
- /usr/avr/include/avr/fuse.h /usr/avr/include/avr/lock.h \
- ../include/kernel.h ../include/conf.h ../include/process.h \
- ../include/queue.h ../include/resched.h ../include/semaphore.h \
- ../include/memory.h ../include/bufpool.h ../include/mark.h \
- ../include/ports.h ../include/timer.h ../include/uart.h ../include/tty.h \
- ../include/gpio.h ../include/gpioselect.h ../include/device.h \
- ../include/interrupt.h ../include/file.h ../include/rfilesys.h \
- ../include/rdisksys.h ../include/lfilesys.h ../include/spi.h \
- ../include/ether.h ../include/net.h ../include/ip.h ../include/arp.h \
- ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
- ../include/name.h ../include/shell.h ../include/date.h \
- ../include/prototypes.h ../include/delay.h ../include/stdio.h \
- ../include/string.h ../include/syscall.h
+ ../include/avr_messages.h /usr/lib/avr/include/avr/pgmspace.h \
+ /usr/lib/avr/include/inttypes.h /usr/lib/gcc/avr/5.4.0/include/stdint.h \
+ /usr/lib/avr/include/stdint.h ../include/stddef.h \
+ /usr/lib/avr/include/avr/io.h /usr/lib/avr/include/avr/sfr_defs.h \
+ /usr/lib/avr/include/avr/portpins.h /usr/lib/avr/include/avr/common.h \
+ /usr/lib/avr/include/avr/version.h /usr/lib/avr/include/avr/fuse.h \
+ /usr/lib/avr/include/avr/lock.h ../include/kernel.h ../include/conf.h \
+ ../include/process.h ../include/queue.h ../include/resched.h \
+ ../include/semaphore.h ../include/memory.h ../include/bufpool.h \
+ ../include/mark.h ../include/ports.h ../include/timer.h \
+ ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/syscall.h ../include/avr_serial.h ../include/sync.h
 bzero.o: ../lib/bzero.c
 change_proc_name.o: ../lib/change_proc_name.c ../include/xinu.h \
- ../include/avr_messages.h /usr/avr/include/avr/pgmspace.h \
- /usr/avr/include/inttypes.h /usr/lib/gcc/avr/10.2.0/include/stdint.h \
- /usr/avr/include/stdint.h ../include/stddef.h /usr/avr/include/avr/io.h \
- /usr/avr/include/avr/sfr_defs.h /usr/avr/include/avr/portpins.h \
- /usr/avr/include/avr/common.h /usr/avr/include/avr/version.h \
- /usr/avr/include/avr/fuse.h /usr/avr/include/avr/lock.h \
- ../include/kernel.h ../include/conf.h ../include/process.h \
- ../include/queue.h ../include/resched.h ../include/semaphore.h \
- ../include/memory.h ../include/bufpool.h ../include/mark.h \
- ../include/ports.h ../include/timer.h ../include/uart.h ../include/tty.h \
- ../include/gpio.h ../include/gpioselect.h ../include/device.h \
- ../include/interrupt.h ../include/file.h ../include/rfilesys.h \
- ../include/rdisksys.h ../include/lfilesys.h ../include/spi.h \
- ../include/ether.h ../include/net.h ../include/ip.h ../include/arp.h \
- ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
- ../include/name.h ../include/shell.h ../include/date.h \
- ../include/prototypes.h ../include/delay.h ../include/stdio.h \
- ../include/string.h ../include/syscall.h
-ctype_.o: ../lib/ctype_.c ../include/ctype.h /usr/avr/include/avr/io.h \
- /usr/avr/include/avr/sfr_defs.h /usr/avr/include/inttypes.h \
- /usr/lib/gcc/avr/10.2.0/include/stdint.h /usr/avr/include/stdint.h \
- /usr/avr/include/avr/portpins.h /usr/avr/include/avr/common.h \
- /usr/avr/include/avr/version.h /usr/avr/include/avr/fuse.h \
- /usr/avr/include/avr/lock.h /usr/avr/include/avr/pgmspace.h \
- ../include/stddef.h
-date.o: ../lib/date.c ../include/xinu.h ../include/avr_messages.h \
- /usr/avr/include/avr/pgmspace.h /usr/avr/include/inttypes.h \
- /usr/lib/gcc/avr/10.2.0/include/stdint.h /usr/avr/include/stdint.h \
- ../include/stddef.h /usr/avr/include/avr/io.h \
- /usr/avr/include/avr/sfr_defs.h /usr/avr/include/avr/portpins.h \
- /usr/avr/include/avr/common.h /usr/avr/include/avr/version.h \
- /usr/avr/include/avr/fuse.h /usr/avr/include/avr/lock.h \
- ../include/kernel.h ../include/conf.h ../include/process.h \
- ../include/queue.h ../include/resched.h ../include/semaphore.h \
- ../include/memory.h ../include/bufpool.h ../include/mark.h \
- ../include/ports.h ../include/timer.h ../include/uart.h ../include/tty.h \
- ../include/gpio.h ../include/gpioselect.h ../include/device.h \
- ../include/interrupt.h ../include/file.h ../include/rfilesys.h \
- ../include/rdisksys.h ../include/lfilesys.h ../include/spi.h \
- ../include/ether.h ../include/net.h ../include/ip.h ../include/arp.h \
- ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
- ../include/name.h ../include/shell.h ../include/date.h \
- ../include/prototypes.h ../include/delay.h ../include/stdio.h \
- ../include/string.h ../include/syscall.h /usr/avr/include/time.h \
- ../include/stdlib.h
-fprintf.o: ../lib/fprintf.c ../include/xinu.h ../include/avr_messages.h \
- /usr/avr/include/avr/pgmspace.h /usr/avr/include/inttypes.h \
- /usr/lib/gcc/avr/10.2.0/include/stdint.h /usr/avr/include/stdint.h \
- ../include/stddef.h /usr/avr/include/avr/io.h \
- /usr/avr/include/avr/sfr_defs.h /usr/avr/include/avr/portpins.h \
- /usr/avr/include/avr/common.h /usr/avr/include/avr/version.h \
- /usr/avr/include/avr/fuse.h /usr/avr/include/avr/lock.h \
- ../include/kernel.h ../include/conf.h ../include/process.h \
- ../include/queue.h ../include/resched.h ../include/semaphore.h \
- ../include/memory.h ../include/bufpool.h ../include/mark.h \
- ../include/ports.h ../include/timer.h ../include/uart.h ../include/tty.h \
- ../include/gpio.h ../include/gpioselect.h ../include/device.h \
- ../include/interrupt.h ../include/file.h ../include/rfilesys.h \
- ../include/rdisksys.h ../include/lfilesys.h ../include/spi.h \
- ../include/ether.h ../include/net.h ../include/ip.h ../include/arp.h \
- ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
- ../include/name.h ../include/shell.h ../include/date.h \
- ../include/prototypes.h ../include/delay.h ../include/stdio.h \
- ../include/string.h ../include/syscall.h ../include/stdarg.h
+ ../include/avr_messages.h /usr/lib/avr/include/avr/pgmspace.h \
+ /usr/lib/avr/include/inttypes.h /usr/lib/gcc/avr/5.4.0/include/stdint.h \
+ /usr/lib/avr/include/stdint.h ../include/stddef.h \
+ /usr/lib/avr/include/avr/io.h /usr/lib/avr/include/avr/sfr_defs.h \
+ /usr/lib/avr/include/avr/portpins.h /usr/lib/avr/include/avr/common.h \
+ /usr/lib/avr/include/avr/version.h /usr/lib/avr/include/avr/fuse.h \
+ /usr/lib/avr/include/avr/lock.h ../include/kernel.h ../include/conf.h \
+ ../include/process.h ../include/queue.h ../include/resched.h \
+ ../include/semaphore.h ../include/memory.h ../include/bufpool.h \
+ ../include/mark.h ../include/ports.h ../include/timer.h \
+ ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/syscall.h ../include/avr_serial.h ../include/sync.h
+ctype_.o: ../lib/ctype_.c ../include/ctype.h \
+ /usr/lib/avr/include/avr/io.h /usr/lib/avr/include/avr/sfr_defs.h \
+ /usr/lib/avr/include/inttypes.h /usr/lib/gcc/avr/5.4.0/include/stdint.h \
+ /usr/lib/avr/include/stdint.h /usr/lib/avr/include/avr/portpins.h \
+ /usr/lib/avr/include/avr/common.h /usr/lib/avr/include/avr/version.h \
+ /usr/lib/avr/include/avr/fuse.h /usr/lib/avr/include/avr/lock.h \
+ /usr/lib/avr/include/avr/pgmspace.h ../include/stddef.h
 getchar.o: ../lib/getchar.c ../include/xinu.h ../include/avr_messages.h \
- /usr/avr/include/avr/pgmspace.h /usr/avr/include/inttypes.h \
- /usr/lib/gcc/avr/10.2.0/include/stdint.h /usr/avr/include/stdint.h \
- ../include/stddef.h /usr/avr/include/avr/io.h \
- /usr/avr/include/avr/sfr_defs.h /usr/avr/include/avr/portpins.h \
- /usr/avr/include/avr/common.h /usr/avr/include/avr/version.h \
- /usr/avr/include/avr/fuse.h /usr/avr/include/avr/lock.h \
+ /usr/lib/avr/include/avr/pgmspace.h /usr/lib/avr/include/inttypes.h \
+ /usr/lib/gcc/avr/5.4.0/include/stdint.h /usr/lib/avr/include/stdint.h \
+ ../include/stddef.h /usr/lib/avr/include/avr/io.h \
+ /usr/lib/avr/include/avr/sfr_defs.h /usr/lib/avr/include/avr/portpins.h \
+ /usr/lib/avr/include/avr/common.h /usr/lib/avr/include/avr/version.h \
+ /usr/lib/avr/include/avr/fuse.h /usr/lib/avr/include/avr/lock.h \
  ../include/kernel.h ../include/conf.h ../include/process.h \
  ../include/queue.h ../include/resched.h ../include/semaphore.h \
  ../include/memory.h ../include/bufpool.h ../include/mark.h \
@@ -1356,33 +1383,15 @@ getchar.o: ../lib/getchar.c ../include/xinu.h ../include/avr_messages.h \
  ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
  ../include/name.h ../include/shell.h ../include/date.h \
  ../include/prototypes.h ../include/delay.h ../include/stdio.h \
- ../include/string.h ../include/syscall.h
-printf.o: ../lib/printf.c ../include/xinu.h ../include/avr_messages.h \
- /usr/avr/include/avr/pgmspace.h /usr/avr/include/inttypes.h \
- /usr/lib/gcc/avr/10.2.0/include/stdint.h /usr/avr/include/stdint.h \
- ../include/stddef.h /usr/avr/include/avr/io.h \
- /usr/avr/include/avr/sfr_defs.h /usr/avr/include/avr/portpins.h \
- /usr/avr/include/avr/common.h /usr/avr/include/avr/version.h \
- /usr/avr/include/avr/fuse.h /usr/avr/include/avr/lock.h \
- ../include/kernel.h ../include/conf.h ../include/process.h \
- ../include/queue.h ../include/resched.h ../include/semaphore.h \
- ../include/memory.h ../include/bufpool.h ../include/mark.h \
- ../include/ports.h ../include/timer.h ../include/uart.h ../include/tty.h \
- ../include/gpio.h ../include/gpioselect.h ../include/device.h \
- ../include/interrupt.h ../include/file.h ../include/rfilesys.h \
- ../include/rdisksys.h ../include/lfilesys.h ../include/spi.h \
- ../include/ether.h ../include/net.h ../include/ip.h ../include/arp.h \
- ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
- ../include/name.h ../include/shell.h ../include/date.h \
- ../include/prototypes.h ../include/delay.h ../include/stdio.h \
- ../include/string.h ../include/syscall.h ../include/stdarg.h
+ ../include/string.h ../include/syscall.h ../include/avr_serial.h \
+ ../include/sync.h
 putchar.o: ../lib/putchar.c ../include/xinu.h ../include/avr_messages.h \
- /usr/avr/include/avr/pgmspace.h /usr/avr/include/inttypes.h \
- /usr/lib/gcc/avr/10.2.0/include/stdint.h /usr/avr/include/stdint.h \
- ../include/stddef.h /usr/avr/include/avr/io.h \
- /usr/avr/include/avr/sfr_defs.h /usr/avr/include/avr/portpins.h \
- /usr/avr/include/avr/common.h /usr/avr/include/avr/version.h \
- /usr/avr/include/avr/fuse.h /usr/avr/include/avr/lock.h \
+ /usr/lib/avr/include/avr/pgmspace.h /usr/lib/avr/include/inttypes.h \
+ /usr/lib/gcc/avr/5.4.0/include/stdint.h /usr/lib/avr/include/stdint.h \
+ ../include/stddef.h /usr/lib/avr/include/avr/io.h \
+ /usr/lib/avr/include/avr/sfr_defs.h /usr/lib/avr/include/avr/portpins.h \
+ /usr/lib/avr/include/avr/common.h /usr/lib/avr/include/avr/version.h \
+ /usr/lib/avr/include/avr/fuse.h /usr/lib/avr/include/avr/lock.h \
  ../include/kernel.h ../include/conf.h ../include/process.h \
  ../include/queue.h ../include/resched.h ../include/semaphore.h \
  ../include/memory.h ../include/bufpool.h ../include/mark.h \
@@ -1394,14 +1403,35 @@ putchar.o: ../lib/putchar.c ../include/xinu.h ../include/avr_messages.h \
  ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
  ../include/name.h ../include/shell.h ../include/date.h \
  ../include/prototypes.h ../include/delay.h ../include/stdio.h \
- ../include/string.h ../include/syscall.h
+ ../include/string.h ../include/syscall.h ../include/avr_serial.h \
+ ../include/sync.h
+sync.o: ../lib/sync.c ../include/xinu.h ../include/avr_messages.h \
+ /usr/lib/avr/include/avr/pgmspace.h /usr/lib/avr/include/inttypes.h \
+ /usr/lib/gcc/avr/5.4.0/include/stdint.h /usr/lib/avr/include/stdint.h \
+ ../include/stddef.h /usr/lib/avr/include/avr/io.h \
+ /usr/lib/avr/include/avr/sfr_defs.h /usr/lib/avr/include/avr/portpins.h \
+ /usr/lib/avr/include/avr/common.h /usr/lib/avr/include/avr/version.h \
+ /usr/lib/avr/include/avr/fuse.h /usr/lib/avr/include/avr/lock.h \
+ ../include/kernel.h ../include/conf.h ../include/process.h \
+ ../include/queue.h ../include/resched.h ../include/semaphore.h \
+ ../include/memory.h ../include/bufpool.h ../include/mark.h \
+ ../include/ports.h ../include/timer.h ../include/uart.h ../include/tty.h \
+ ../include/gpio.h ../include/gpioselect.h ../include/device.h \
+ ../include/interrupt.h ../include/file.h ../include/rfilesys.h \
+ ../include/rdisksys.h ../include/lfilesys.h ../include/spi.h \
+ ../include/ether.h ../include/net.h ../include/ip.h ../include/arp.h \
+ ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
+ ../include/name.h ../include/shell.h ../include/date.h \
+ ../include/prototypes.h ../include/delay.h ../include/stdio.h \
+ ../include/string.h ../include/syscall.h ../include/avr_serial.h \
+ ../include/sync.h /usr/lib/avr/include/avr/interrupt.h
 userland.o: ../lib/userland.c ../include/xinu.h ../include/avr_messages.h \
- /usr/avr/include/avr/pgmspace.h /usr/avr/include/inttypes.h \
- /usr/lib/gcc/avr/10.2.0/include/stdint.h /usr/avr/include/stdint.h \
- ../include/stddef.h /usr/avr/include/avr/io.h \
- /usr/avr/include/avr/sfr_defs.h /usr/avr/include/avr/portpins.h \
- /usr/avr/include/avr/common.h /usr/avr/include/avr/version.h \
- /usr/avr/include/avr/fuse.h /usr/avr/include/avr/lock.h \
+ /usr/lib/avr/include/avr/pgmspace.h /usr/lib/avr/include/inttypes.h \
+ /usr/lib/gcc/avr/5.4.0/include/stdint.h /usr/lib/avr/include/stdint.h \
+ ../include/stddef.h /usr/lib/avr/include/avr/io.h \
+ /usr/lib/avr/include/avr/sfr_defs.h /usr/lib/avr/include/avr/portpins.h \
+ /usr/lib/avr/include/avr/common.h /usr/lib/avr/include/avr/version.h \
+ /usr/lib/avr/include/avr/fuse.h /usr/lib/avr/include/avr/lock.h \
  ../include/kernel.h ../include/conf.h ../include/process.h \
  ../include/queue.h ../include/resched.h ../include/semaphore.h \
  ../include/memory.h ../include/bufpool.h ../include/mark.h \
@@ -1413,281 +1443,97 @@ userland.o: ../lib/userland.c ../include/xinu.h ../include/avr_messages.h \
  ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
  ../include/name.h ../include/shell.h ../include/date.h \
  ../include/prototypes.h ../include/delay.h ../include/stdio.h \
- ../include/string.h ../include/syscall.h
+ ../include/string.h ../include/syscall.h ../include/avr_serial.h \
+ ../include/sync.h
 mount.o: ../device/nam/mount.c ../include/xinu.h \
- ../include/avr_messages.h /usr/avr/include/avr/pgmspace.h \
- /usr/avr/include/inttypes.h /usr/lib/gcc/avr/10.2.0/include/stdint.h \
- /usr/avr/include/stdint.h ../include/stddef.h /usr/avr/include/avr/io.h \
- /usr/avr/include/avr/sfr_defs.h /usr/avr/include/avr/portpins.h \
- /usr/avr/include/avr/common.h /usr/avr/include/avr/version.h \
- /usr/avr/include/avr/fuse.h /usr/avr/include/avr/lock.h \
- ../include/kernel.h ../include/conf.h ../include/process.h \
- ../include/queue.h ../include/resched.h ../include/semaphore.h \
- ../include/memory.h ../include/bufpool.h ../include/mark.h \
- ../include/ports.h ../include/timer.h ../include/uart.h ../include/tty.h \
- ../include/gpio.h ../include/gpioselect.h ../include/device.h \
- ../include/interrupt.h ../include/file.h ../include/rfilesys.h \
- ../include/rdisksys.h ../include/lfilesys.h ../include/spi.h \
- ../include/ether.h ../include/net.h ../include/ip.h ../include/arp.h \
- ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
- ../include/name.h ../include/shell.h ../include/date.h \
- ../include/prototypes.h ../include/delay.h ../include/stdio.h \
- ../include/string.h ../include/syscall.h
+ ../include/avr_messages.h /usr/lib/avr/include/avr/pgmspace.h \
+ /usr/lib/avr/include/inttypes.h /usr/lib/gcc/avr/5.4.0/include/stdint.h \
+ /usr/lib/avr/include/stdint.h ../include/stddef.h \
+ /usr/lib/avr/include/avr/io.h /usr/lib/avr/include/avr/sfr_defs.h \
+ /usr/lib/avr/include/avr/portpins.h /usr/lib/avr/include/avr/common.h \
+ /usr/lib/avr/include/avr/version.h /usr/lib/avr/include/avr/fuse.h \
+ /usr/lib/avr/include/avr/lock.h ../include/kernel.h ../include/conf.h \
+ ../include/process.h ../include/queue.h ../include/resched.h \
+ ../include/semaphore.h ../include/memory.h ../include/bufpool.h \
+ ../include/mark.h ../include/ports.h ../include/timer.h \
+ ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/syscall.h ../include/avr_serial.h ../include/sync.h
 naminit.o: ../device/nam/naminit.c ../include/xinu.h \
- ../include/avr_messages.h /usr/avr/include/avr/pgmspace.h \
- /usr/avr/include/inttypes.h /usr/lib/gcc/avr/10.2.0/include/stdint.h \
- /usr/avr/include/stdint.h ../include/stddef.h /usr/avr/include/avr/io.h \
- /usr/avr/include/avr/sfr_defs.h /usr/avr/include/avr/portpins.h \
- /usr/avr/include/avr/common.h /usr/avr/include/avr/version.h \
- /usr/avr/include/avr/fuse.h /usr/avr/include/avr/lock.h \
- ../include/kernel.h ../include/conf.h ../include/process.h \
- ../include/queue.h ../include/resched.h ../include/semaphore.h \
- ../include/memory.h ../include/bufpool.h ../include/mark.h \
- ../include/ports.h ../include/timer.h ../include/uart.h ../include/tty.h \
- ../include/gpio.h ../include/gpioselect.h ../include/device.h \
- ../include/interrupt.h ../include/file.h ../include/rfilesys.h \
- ../include/rdisksys.h ../include/lfilesys.h ../include/spi.h \
- ../include/ether.h ../include/net.h ../include/ip.h ../include/arp.h \
- ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
- ../include/name.h ../include/shell.h ../include/date.h \
- ../include/prototypes.h ../include/delay.h ../include/stdio.h \
- ../include/string.h ../include/syscall.h
+ ../include/avr_messages.h /usr/lib/avr/include/avr/pgmspace.h \
+ /usr/lib/avr/include/inttypes.h /usr/lib/gcc/avr/5.4.0/include/stdint.h \
+ /usr/lib/avr/include/stdint.h ../include/stddef.h \
+ /usr/lib/avr/include/avr/io.h /usr/lib/avr/include/avr/sfr_defs.h \
+ /usr/lib/avr/include/avr/portpins.h /usr/lib/avr/include/avr/common.h \
+ /usr/lib/avr/include/avr/version.h /usr/lib/avr/include/avr/fuse.h \
+ /usr/lib/avr/include/avr/lock.h ../include/kernel.h ../include/conf.h \
+ ../include/process.h ../include/queue.h ../include/resched.h \
+ ../include/semaphore.h ../include/memory.h ../include/bufpool.h \
+ ../include/mark.h ../include/ports.h ../include/timer.h \
+ ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/syscall.h ../include/avr_serial.h ../include/sync.h
 nammap.o: ../device/nam/nammap.c ../include/xinu.h \
- ../include/avr_messages.h /usr/avr/include/avr/pgmspace.h \
- /usr/avr/include/inttypes.h /usr/lib/gcc/avr/10.2.0/include/stdint.h \
- /usr/avr/include/stdint.h ../include/stddef.h /usr/avr/include/avr/io.h \
- /usr/avr/include/avr/sfr_defs.h /usr/avr/include/avr/portpins.h \
- /usr/avr/include/avr/common.h /usr/avr/include/avr/version.h \
- /usr/avr/include/avr/fuse.h /usr/avr/include/avr/lock.h \
- ../include/kernel.h ../include/conf.h ../include/process.h \
- ../include/queue.h ../include/resched.h ../include/semaphore.h \
- ../include/memory.h ../include/bufpool.h ../include/mark.h \
- ../include/ports.h ../include/timer.h ../include/uart.h ../include/tty.h \
- ../include/gpio.h ../include/gpioselect.h ../include/device.h \
- ../include/interrupt.h ../include/file.h ../include/rfilesys.h \
- ../include/rdisksys.h ../include/lfilesys.h ../include/spi.h \
- ../include/ether.h ../include/net.h ../include/ip.h ../include/arp.h \
- ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
- ../include/name.h ../include/shell.h ../include/date.h \
- ../include/prototypes.h ../include/delay.h ../include/stdio.h \
- ../include/string.h ../include/syscall.h
+ ../include/avr_messages.h /usr/lib/avr/include/avr/pgmspace.h \
+ /usr/lib/avr/include/inttypes.h /usr/lib/gcc/avr/5.4.0/include/stdint.h \
+ /usr/lib/avr/include/stdint.h ../include/stddef.h \
+ /usr/lib/avr/include/avr/io.h /usr/lib/avr/include/avr/sfr_defs.h \
+ /usr/lib/avr/include/avr/portpins.h /usr/lib/avr/include/avr/common.h \
+ /usr/lib/avr/include/avr/version.h /usr/lib/avr/include/avr/fuse.h \
+ /usr/lib/avr/include/avr/lock.h ../include/kernel.h ../include/conf.h \
+ ../include/process.h ../include/queue.h ../include/resched.h \
+ ../include/semaphore.h ../include/memory.h ../include/bufpool.h \
+ ../include/mark.h ../include/ports.h ../include/timer.h \
+ ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/syscall.h ../include/avr_serial.h ../include/sync.h
 namopen.o: ../device/nam/namopen.c ../include/xinu.h \
- ../include/avr_messages.h /usr/avr/include/avr/pgmspace.h \
- /usr/avr/include/inttypes.h /usr/lib/gcc/avr/10.2.0/include/stdint.h \
- /usr/avr/include/stdint.h ../include/stddef.h /usr/avr/include/avr/io.h \
- /usr/avr/include/avr/sfr_defs.h /usr/avr/include/avr/portpins.h \
- /usr/avr/include/avr/common.h /usr/avr/include/avr/version.h \
- /usr/avr/include/avr/fuse.h /usr/avr/include/avr/lock.h \
- ../include/kernel.h ../include/conf.h ../include/process.h \
- ../include/queue.h ../include/resched.h ../include/semaphore.h \
- ../include/memory.h ../include/bufpool.h ../include/mark.h \
- ../include/ports.h ../include/timer.h ../include/uart.h ../include/tty.h \
- ../include/gpio.h ../include/gpioselect.h ../include/device.h \
- ../include/interrupt.h ../include/file.h ../include/rfilesys.h \
- ../include/rdisksys.h ../include/lfilesys.h ../include/spi.h \
- ../include/ether.h ../include/net.h ../include/ip.h ../include/arp.h \
- ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
- ../include/name.h ../include/shell.h ../include/date.h \
- ../include/prototypes.h ../include/delay.h ../include/stdio.h \
- ../include/string.h ../include/syscall.h
-ttycontrol.o: ../device/tty/ttycontrol.c ../include/xinu.h \
- ../include/avr_messages.h /usr/avr/include/avr/pgmspace.h \
- /usr/avr/include/inttypes.h /usr/lib/gcc/avr/10.2.0/include/stdint.h \
- /usr/avr/include/stdint.h ../include/stddef.h /usr/avr/include/avr/io.h \
- /usr/avr/include/avr/sfr_defs.h /usr/avr/include/avr/portpins.h \
- /usr/avr/include/avr/common.h /usr/avr/include/avr/version.h \
- /usr/avr/include/avr/fuse.h /usr/avr/include/avr/lock.h \
- ../include/kernel.h ../include/conf.h ../include/process.h \
- ../include/queue.h ../include/resched.h ../include/semaphore.h \
- ../include/memory.h ../include/bufpool.h ../include/mark.h \
- ../include/ports.h ../include/timer.h ../include/uart.h ../include/tty.h \
- ../include/gpio.h ../include/gpioselect.h ../include/device.h \
- ../include/interrupt.h ../include/file.h ../include/rfilesys.h \
- ../include/rdisksys.h ../include/lfilesys.h ../include/spi.h \
- ../include/ether.h ../include/net.h ../include/ip.h ../include/arp.h \
- ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
- ../include/name.h ../include/shell.h ../include/date.h \
- ../include/prototypes.h ../include/delay.h ../include/stdio.h \
- ../include/string.h ../include/syscall.h
-ttygetc.o: ../device/tty/ttygetc.c ../include/xinu.h \
- ../include/avr_messages.h /usr/avr/include/avr/pgmspace.h \
- /usr/avr/include/inttypes.h /usr/lib/gcc/avr/10.2.0/include/stdint.h \
- /usr/avr/include/stdint.h ../include/stddef.h /usr/avr/include/avr/io.h \
- /usr/avr/include/avr/sfr_defs.h /usr/avr/include/avr/portpins.h \
- /usr/avr/include/avr/common.h /usr/avr/include/avr/version.h \
- /usr/avr/include/avr/fuse.h /usr/avr/include/avr/lock.h \
- ../include/kernel.h ../include/conf.h ../include/process.h \
- ../include/queue.h ../include/resched.h ../include/semaphore.h \
- ../include/memory.h ../include/bufpool.h ../include/mark.h \
- ../include/ports.h ../include/timer.h ../include/uart.h ../include/tty.h \
- ../include/gpio.h ../include/gpioselect.h ../include/device.h \
- ../include/interrupt.h ../include/file.h ../include/rfilesys.h \
- ../include/rdisksys.h ../include/lfilesys.h ../include/spi.h \
- ../include/ether.h ../include/net.h ../include/ip.h ../include/arp.h \
- ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
- ../include/name.h ../include/shell.h ../include/date.h \
- ../include/prototypes.h ../include/delay.h ../include/stdio.h \
- ../include/string.h ../include/syscall.h
-ttyhandle_in.o: ../device/tty/ttyhandle_in.c ../include/xinu.h \
- ../include/avr_messages.h /usr/avr/include/avr/pgmspace.h \
- /usr/avr/include/inttypes.h /usr/lib/gcc/avr/10.2.0/include/stdint.h \
- /usr/avr/include/stdint.h ../include/stddef.h /usr/avr/include/avr/io.h \
- /usr/avr/include/avr/sfr_defs.h /usr/avr/include/avr/portpins.h \
- /usr/avr/include/avr/common.h /usr/avr/include/avr/version.h \
- /usr/avr/include/avr/fuse.h /usr/avr/include/avr/lock.h \
- ../include/kernel.h ../include/conf.h ../include/process.h \
- ../include/queue.h ../include/resched.h ../include/semaphore.h \
- ../include/memory.h ../include/bufpool.h ../include/mark.h \
- ../include/ports.h ../include/timer.h ../include/uart.h ../include/tty.h \
- ../include/gpio.h ../include/gpioselect.h ../include/device.h \
- ../include/interrupt.h ../include/file.h ../include/rfilesys.h \
- ../include/rdisksys.h ../include/lfilesys.h ../include/spi.h \
- ../include/ether.h ../include/net.h ../include/ip.h ../include/arp.h \
- ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
- ../include/name.h ../include/shell.h ../include/date.h \
- ../include/prototypes.h ../include/delay.h ../include/stdio.h \
- ../include/string.h ../include/syscall.h
-ttyhandle_out.o: ../device/tty/ttyhandle_out.c ../include/xinu.h \
- ../include/avr_messages.h /usr/avr/include/avr/pgmspace.h \
- /usr/avr/include/inttypes.h /usr/lib/gcc/avr/10.2.0/include/stdint.h \
- /usr/avr/include/stdint.h ../include/stddef.h /usr/avr/include/avr/io.h \
- /usr/avr/include/avr/sfr_defs.h /usr/avr/include/avr/portpins.h \
- /usr/avr/include/avr/common.h /usr/avr/include/avr/version.h \
- /usr/avr/include/avr/fuse.h /usr/avr/include/avr/lock.h \
- ../include/kernel.h ../include/conf.h ../include/process.h \
- ../include/queue.h ../include/resched.h ../include/semaphore.h \
- ../include/memory.h ../include/bufpool.h ../include/mark.h \
- ../include/ports.h ../include/timer.h ../include/uart.h ../include/tty.h \
- ../include/gpio.h ../include/gpioselect.h ../include/device.h \
- ../include/interrupt.h ../include/file.h ../include/rfilesys.h \
- ../include/rdisksys.h ../include/lfilesys.h ../include/spi.h \
- ../include/ether.h ../include/net.h ../include/ip.h ../include/arp.h \
- ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
- ../include/name.h ../include/shell.h ../include/date.h \
- ../include/prototypes.h ../include/delay.h ../include/stdio.h \
- ../include/string.h ../include/syscall.h
-ttyhandler.o: ../device/tty/ttyhandler.c ../include/xinu.h \
- ../include/avr_messages.h /usr/avr/include/avr/pgmspace.h \
- /usr/avr/include/inttypes.h /usr/lib/gcc/avr/10.2.0/include/stdint.h \
- /usr/avr/include/stdint.h ../include/stddef.h /usr/avr/include/avr/io.h \
- /usr/avr/include/avr/sfr_defs.h /usr/avr/include/avr/portpins.h \
- /usr/avr/include/avr/common.h /usr/avr/include/avr/version.h \
- /usr/avr/include/avr/fuse.h /usr/avr/include/avr/lock.h \
- ../include/kernel.h ../include/conf.h ../include/process.h \
- ../include/queue.h ../include/resched.h ../include/semaphore.h \
- ../include/memory.h ../include/bufpool.h ../include/mark.h \
- ../include/ports.h ../include/timer.h ../include/uart.h ../include/tty.h \
- ../include/gpio.h ../include/gpioselect.h ../include/device.h \
- ../include/interrupt.h ../include/file.h ../include/rfilesys.h \
- ../include/rdisksys.h ../include/lfilesys.h ../include/spi.h \
- ../include/ether.h ../include/net.h ../include/ip.h ../include/arp.h \
- ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
- ../include/name.h ../include/shell.h ../include/date.h \
- ../include/prototypes.h ../include/delay.h ../include/stdio.h \
- ../include/string.h ../include/syscall.h
-ttyinit.o: ../device/tty/ttyinit.c ../include/xinu.h \
- ../include/avr_messages.h /usr/avr/include/avr/pgmspace.h \
- /usr/avr/include/inttypes.h /usr/lib/gcc/avr/10.2.0/include/stdint.h \
- /usr/avr/include/stdint.h ../include/stddef.h /usr/avr/include/avr/io.h \
- /usr/avr/include/avr/sfr_defs.h /usr/avr/include/avr/portpins.h \
- /usr/avr/include/avr/common.h /usr/avr/include/avr/version.h \
- /usr/avr/include/avr/fuse.h /usr/avr/include/avr/lock.h \
- ../include/kernel.h ../include/conf.h ../include/process.h \
- ../include/queue.h ../include/resched.h ../include/semaphore.h \
- ../include/memory.h ../include/bufpool.h ../include/mark.h \
- ../include/ports.h ../include/timer.h ../include/uart.h ../include/tty.h \
- ../include/gpio.h ../include/gpioselect.h ../include/device.h \
- ../include/interrupt.h ../include/file.h ../include/rfilesys.h \
- ../include/rdisksys.h ../include/lfilesys.h ../include/spi.h \
- ../include/ether.h ../include/net.h ../include/ip.h ../include/arp.h \
- ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
- ../include/name.h ../include/shell.h ../include/date.h \
- ../include/prototypes.h ../include/delay.h ../include/stdio.h \
- ../include/string.h ../include/syscall.h
-ttykickout.o: ../device/tty/ttykickout.c ../include/xinu.h \
- ../include/avr_messages.h /usr/avr/include/avr/pgmspace.h \
- /usr/avr/include/inttypes.h /usr/lib/gcc/avr/10.2.0/include/stdint.h \
- /usr/avr/include/stdint.h ../include/stddef.h /usr/avr/include/avr/io.h \
- /usr/avr/include/avr/sfr_defs.h /usr/avr/include/avr/portpins.h \
- /usr/avr/include/avr/common.h /usr/avr/include/avr/version.h \
- /usr/avr/include/avr/fuse.h /usr/avr/include/avr/lock.h \
- ../include/kernel.h ../include/conf.h ../include/process.h \
- ../include/queue.h ../include/resched.h ../include/semaphore.h \
- ../include/memory.h ../include/bufpool.h ../include/mark.h \
- ../include/ports.h ../include/timer.h ../include/uart.h ../include/tty.h \
- ../include/gpio.h ../include/gpioselect.h ../include/device.h \
- ../include/interrupt.h ../include/file.h ../include/rfilesys.h \
- ../include/rdisksys.h ../include/lfilesys.h ../include/spi.h \
- ../include/ether.h ../include/net.h ../include/ip.h ../include/arp.h \
- ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
- ../include/name.h ../include/shell.h ../include/date.h \
- ../include/prototypes.h ../include/delay.h ../include/stdio.h \
- ../include/string.h ../include/syscall.h \
- /usr/avr/include/avr/interrupt.h
-ttyputc.o: ../device/tty/ttyputc.c ../include/xinu.h \
- ../include/avr_messages.h /usr/avr/include/avr/pgmspace.h \
- /usr/avr/include/inttypes.h /usr/lib/gcc/avr/10.2.0/include/stdint.h \
- /usr/avr/include/stdint.h ../include/stddef.h /usr/avr/include/avr/io.h \
- /usr/avr/include/avr/sfr_defs.h /usr/avr/include/avr/portpins.h \
- /usr/avr/include/avr/common.h /usr/avr/include/avr/version.h \
- /usr/avr/include/avr/fuse.h /usr/avr/include/avr/lock.h \
- ../include/kernel.h ../include/conf.h ../include/process.h \
- ../include/queue.h ../include/resched.h ../include/semaphore.h \
- ../include/memory.h ../include/bufpool.h ../include/mark.h \
- ../include/ports.h ../include/timer.h ../include/uart.h ../include/tty.h \
- ../include/gpio.h ../include/gpioselect.h ../include/device.h \
- ../include/interrupt.h ../include/file.h ../include/rfilesys.h \
- ../include/rdisksys.h ../include/lfilesys.h ../include/spi.h \
- ../include/ether.h ../include/net.h ../include/ip.h ../include/arp.h \
- ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
- ../include/name.h ../include/shell.h ../include/date.h \
- ../include/prototypes.h ../include/delay.h ../include/stdio.h \
- ../include/string.h ../include/syscall.h
-ttyread.o: ../device/tty/ttyread.c ../include/xinu.h \
- ../include/avr_messages.h /usr/avr/include/avr/pgmspace.h \
- /usr/avr/include/inttypes.h /usr/lib/gcc/avr/10.2.0/include/stdint.h \
- /usr/avr/include/stdint.h ../include/stddef.h /usr/avr/include/avr/io.h \
- /usr/avr/include/avr/sfr_defs.h /usr/avr/include/avr/portpins.h \
- /usr/avr/include/avr/common.h /usr/avr/include/avr/version.h \
- /usr/avr/include/avr/fuse.h /usr/avr/include/avr/lock.h \
- ../include/kernel.h ../include/conf.h ../include/process.h \
- ../include/queue.h ../include/resched.h ../include/semaphore.h \
- ../include/memory.h ../include/bufpool.h ../include/mark.h \
- ../include/ports.h ../include/timer.h ../include/uart.h ../include/tty.h \
- ../include/gpio.h ../include/gpioselect.h ../include/device.h \
- ../include/interrupt.h ../include/file.h ../include/rfilesys.h \
- ../include/rdisksys.h ../include/lfilesys.h ../include/spi.h \
- ../include/ether.h ../include/net.h ../include/ip.h ../include/arp.h \
- ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
- ../include/name.h ../include/shell.h ../include/date.h \
- ../include/prototypes.h ../include/delay.h ../include/stdio.h \
- ../include/string.h ../include/syscall.h
-ttywrite.o: ../device/tty/ttywrite.c ../include/xinu.h \
- ../include/avr_messages.h /usr/avr/include/avr/pgmspace.h \
- /usr/avr/include/inttypes.h /usr/lib/gcc/avr/10.2.0/include/stdint.h \
- /usr/avr/include/stdint.h ../include/stddef.h /usr/avr/include/avr/io.h \
- /usr/avr/include/avr/sfr_defs.h /usr/avr/include/avr/portpins.h \
- /usr/avr/include/avr/common.h /usr/avr/include/avr/version.h \
- /usr/avr/include/avr/fuse.h /usr/avr/include/avr/lock.h \
- ../include/kernel.h ../include/conf.h ../include/process.h \
- ../include/queue.h ../include/resched.h ../include/semaphore.h \
- ../include/memory.h ../include/bufpool.h ../include/mark.h \
- ../include/ports.h ../include/timer.h ../include/uart.h ../include/tty.h \
- ../include/gpio.h ../include/gpioselect.h ../include/device.h \
- ../include/interrupt.h ../include/file.h ../include/rfilesys.h \
- ../include/rdisksys.h ../include/lfilesys.h ../include/spi.h \
- ../include/ether.h ../include/net.h ../include/ip.h ../include/arp.h \
- ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
- ../include/name.h ../include/shell.h ../include/date.h \
- ../include/prototypes.h ../include/delay.h ../include/stdio.h \
- ../include/string.h ../include/syscall.h
+ ../include/avr_messages.h /usr/lib/avr/include/avr/pgmspace.h \
+ /usr/lib/avr/include/inttypes.h /usr/lib/gcc/avr/5.4.0/include/stdint.h \
+ /usr/lib/avr/include/stdint.h ../include/stddef.h \
+ /usr/lib/avr/include/avr/io.h /usr/lib/avr/include/avr/sfr_defs.h \
+ /usr/lib/avr/include/avr/portpins.h /usr/lib/avr/include/avr/common.h \
+ /usr/lib/avr/include/avr/version.h /usr/lib/avr/include/avr/fuse.h \
+ /usr/lib/avr/include/avr/lock.h ../include/kernel.h ../include/conf.h \
+ ../include/process.h ../include/queue.h ../include/resched.h \
+ ../include/semaphore.h ../include/memory.h ../include/bufpool.h \
+ ../include/mark.h ../include/ports.h ../include/timer.h \
+ ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/syscall.h ../include/avr_serial.h ../include/sync.h
+estado.o: ../main/estado.c ../main/estado.h
+gpio.o: ../main/gpio.c ../main/gpio.h
 main.o: ../main/main.c ../include/xinu.h ../include/avr_messages.h \
- /usr/avr/include/avr/pgmspace.h /usr/avr/include/inttypes.h \
- /usr/lib/gcc/avr/10.2.0/include/stdint.h /usr/avr/include/stdint.h \
- ../include/stddef.h /usr/avr/include/avr/io.h \
- /usr/avr/include/avr/sfr_defs.h /usr/avr/include/avr/portpins.h \
- /usr/avr/include/avr/common.h /usr/avr/include/avr/version.h \
- /usr/avr/include/avr/fuse.h /usr/avr/include/avr/lock.h \
+ /usr/lib/avr/include/avr/pgmspace.h /usr/lib/avr/include/inttypes.h \
+ /usr/lib/gcc/avr/5.4.0/include/stdint.h /usr/lib/avr/include/stdint.h \
+ ../include/stddef.h /usr/lib/avr/include/avr/io.h \
+ /usr/lib/avr/include/avr/sfr_defs.h /usr/lib/avr/include/avr/portpins.h \
+ /usr/lib/avr/include/avr/common.h /usr/lib/avr/include/avr/version.h \
+ /usr/lib/avr/include/avr/fuse.h /usr/lib/avr/include/avr/lock.h \
  ../include/kernel.h ../include/conf.h ../include/process.h \
  ../include/queue.h ../include/resched.h ../include/semaphore.h \
  ../include/memory.h ../include/bufpool.h ../include/mark.h \
@@ -1699,9 +1545,93 @@ main.o: ../main/main.c ../include/xinu.h ../include/avr_messages.h \
  ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
  ../include/name.h ../include/shell.h ../include/date.h \
  ../include/prototypes.h ../include/delay.h ../include/stdio.h \
- ../include/string.h ../include/syscall.h
+ ../include/string.h ../include/syscall.h ../include/avr_serial.h \
+ ../include/sync.h ../main/tarea_controltyh.h ../main/serial.h \
+ ../main/estado.h ../main/ultrasound.h /usr/lib/avr/include/util/delay.h \
+ /usr/lib/avr/include/util/delay_basic.h /usr/lib/avr/include/math.h
+serial.o: ../main/serial.c /usr/lib/gcc/avr/5.4.0/include/stdint.h \
+ /usr/lib/avr/include/stdint.h
+sht31.o: ../main/sht31.c ../include/xinu.h ../include/avr_messages.h \
+ /usr/lib/avr/include/avr/pgmspace.h /usr/lib/avr/include/inttypes.h \
+ /usr/lib/gcc/avr/5.4.0/include/stdint.h /usr/lib/avr/include/stdint.h \
+ ../include/stddef.h /usr/lib/avr/include/avr/io.h \
+ /usr/lib/avr/include/avr/sfr_defs.h /usr/lib/avr/include/avr/portpins.h \
+ /usr/lib/avr/include/avr/common.h /usr/lib/avr/include/avr/version.h \
+ /usr/lib/avr/include/avr/fuse.h /usr/lib/avr/include/avr/lock.h \
+ ../include/kernel.h ../include/conf.h ../include/process.h \
+ ../include/queue.h ../include/resched.h ../include/semaphore.h \
+ ../include/memory.h ../include/bufpool.h ../include/mark.h \
+ ../include/ports.h ../include/timer.h ../include/uart.h ../include/tty.h \
+ ../include/gpio.h ../include/gpioselect.h ../include/device.h \
+ ../include/interrupt.h ../include/file.h ../include/rfilesys.h \
+ ../include/rdisksys.h ../include/lfilesys.h ../include/spi.h \
+ ../include/ether.h ../include/net.h ../include/ip.h ../include/arp.h \
+ ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
+ ../include/name.h ../include/shell.h ../include/date.h \
+ ../include/prototypes.h ../include/delay.h ../include/stdio.h \
+ ../include/string.h ../include/syscall.h ../include/avr_serial.h \
+ ../include/sync.h /usr/lib/avr/include/util/delay.h \
+ /usr/lib/avr/include/util/delay_basic.h /usr/lib/avr/include/math.h \
+ ../main/sht31.h ../main/twi.h
+tarea_controlagua.o: ../main/tarea_controlagua.c \
+ /usr/lib/gcc/avr/5.4.0/include/stdint.h /usr/lib/avr/include/stdint.h \
+ /usr/lib/avr/include/util/delay.h /usr/lib/avr/include/inttypes.h \
+ /usr/lib/avr/include/util/delay_basic.h /usr/lib/avr/include/math.h \
+ ../main/ultrasound.h
+tarea_controltyh.o: ../main/tarea_controltyh.c ../include/xinu.h \
+ ../include/avr_messages.h /usr/lib/avr/include/avr/pgmspace.h \
+ /usr/lib/avr/include/inttypes.h /usr/lib/gcc/avr/5.4.0/include/stdint.h \
+ /usr/lib/avr/include/stdint.h ../include/stddef.h \
+ /usr/lib/avr/include/avr/io.h /usr/lib/avr/include/avr/sfr_defs.h \
+ /usr/lib/avr/include/avr/portpins.h /usr/lib/avr/include/avr/common.h \
+ /usr/lib/avr/include/avr/version.h /usr/lib/avr/include/avr/fuse.h \
+ /usr/lib/avr/include/avr/lock.h ../include/kernel.h ../include/conf.h \
+ ../include/process.h ../include/queue.h ../include/resched.h \
+ ../include/semaphore.h ../include/memory.h ../include/bufpool.h \
+ ../include/mark.h ../include/ports.h ../include/timer.h \
+ ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/syscall.h ../include/avr_serial.h ../include/sync.h \
+ /usr/lib/avr/include/math.h ../main/twi.h ../main/sht31.h \
+ ../main/tarea_controltyh.h ../main/estado.h
+twi.o: ../main/twi.c /usr/lib/avr/include/avr/io.h \
+ /usr/lib/avr/include/avr/sfr_defs.h /usr/lib/avr/include/inttypes.h \
+ /usr/lib/gcc/avr/5.4.0/include/stdint.h /usr/lib/avr/include/stdint.h \
+ /usr/lib/avr/include/avr/portpins.h /usr/lib/avr/include/avr/common.h \
+ /usr/lib/avr/include/avr/version.h /usr/lib/avr/include/avr/fuse.h \
+ /usr/lib/avr/include/avr/lock.h /usr/lib/avr/include/avr/interrupt.h \
+ /usr/lib/avr/include/util/twi.h ../include/stdlib.h ../main/twi.h
+ultrasound.o: ../main/ultrasound.c ../include/xinu.h \
+ ../include/avr_messages.h /usr/lib/avr/include/avr/pgmspace.h \
+ /usr/lib/avr/include/inttypes.h /usr/lib/gcc/avr/5.4.0/include/stdint.h \
+ /usr/lib/avr/include/stdint.h ../include/stddef.h \
+ /usr/lib/avr/include/avr/io.h /usr/lib/avr/include/avr/sfr_defs.h \
+ /usr/lib/avr/include/avr/portpins.h /usr/lib/avr/include/avr/common.h \
+ /usr/lib/avr/include/avr/version.h /usr/lib/avr/include/avr/fuse.h \
+ /usr/lib/avr/include/avr/lock.h ../include/kernel.h ../include/conf.h \
+ ../include/process.h ../include/queue.h ../include/resched.h \
+ ../include/semaphore.h ../include/memory.h ../include/bufpool.h \
+ ../include/mark.h ../include/ports.h ../include/timer.h \
+ ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/syscall.h ../include/avr_serial.h ../include/sync.h \
+ /usr/lib/avr/include/util/delay.h \
+ /usr/lib/avr/include/util/delay_basic.h /usr/lib/avr/include/math.h \
+ ../main/ultrasound.h ../main/gpio.h
 ctxsw.o: ../system/ctxsw.S
-start.o: ../system/start.S /usr/avr/include/avr/io.h \
- /usr/avr/include/avr/sfr_defs.h /usr/avr/include/avr/portpins.h \
- /usr/avr/include/avr/common.h /usr/avr/include/avr/version.h \
- /usr/avr/include/avr/fuse.h /usr/avr/include/avr/lock.h
+start.o: ../system/start.S /usr/lib/avr/include/avr/io.h \
+ /usr/lib/avr/include/avr/sfr_defs.h /usr/lib/avr/include/avr/portpins.h \
+ /usr/lib/avr/include/avr/common.h /usr/lib/avr/include/avr/version.h \
+ /usr/lib/avr/include/avr/fuse.h /usr/lib/avr/include/avr/lock.h
