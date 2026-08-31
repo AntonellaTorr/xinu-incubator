@@ -1,15 +1,10 @@
 
 
 
-
+#include <xinu.h>
 #include <stdint.h>
-#define __DELAY_BACKWARD_COMPATIBLE__
-#define F_CPU 16000000UL
-#include <util/delay.h>
-#include <math.h>
 #include "ultrasound.h"
 #include "estado.h"
-#include "serial.h"
 
 int agua(void)
 {
@@ -22,7 +17,7 @@ int agua(void)
         
         } else {
         }
-        _delay_ms(100);
+        sleepms(100);
     }
 
 }

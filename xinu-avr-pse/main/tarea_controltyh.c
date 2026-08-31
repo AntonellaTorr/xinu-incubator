@@ -26,7 +26,7 @@ int tyh(void){
     }
     uint16_t estado_sht= sht31_read_status();
 
-    
+
     float t,h;
     while (1) {
         if (sht31_read_both(&t, &h)) {
