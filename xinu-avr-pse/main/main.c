@@ -9,44 +9,45 @@
 #include <stdlib.h>
 #include "gpio.h"
 extern void blink_avr(void);  
+void blink (void);
 int main(void)
 {
 	int n;
 	char c;
-	serial_init();
 
+	serial_init();
 	sleepms(2000);
+	twi_init();
+
+
+	resume(create(tyh, 256, 20, "tyh", 0));
 
 	wifi_init_server();
 
 	n = wait_connection();
 	cipsend_one_byte(n, 'A');
 	while(1) {
-
 		c = wait_byte();
+		c= (char) (estado.temperatura+20);
 		cipsend_one_byte(n, c);
 
 
 	}
+		
+
+
 }
 
-	
+void blink (void){
+	while (1) {
+		blink_avr();
+	}
+}
+
 	
 		
 
 
-	/*	while (1) {
-
-		c = wait_byte();
-	
-		if (c == '1') {
-	
-			int t = (int)estado.temperatura;
-	
-			cipsend_one_byte(n, t);
-		}
-	}
-*/
   
 
 
