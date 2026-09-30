@@ -7,7 +7,7 @@
 
 /* avr specific */
 #include <avr/interrupt.h>
-#include "../main/serial.h"
+//#include "../main/serial.h"
 
 
 /*------------------------------------------------------------------------
@@ -25,7 +25,7 @@ void platinit(void)
 	blink_avr();
 
 	/* avr uart init */
-        serial_init();
+   ///     serial_init();
 
 	/* Initialize the Interrupt Controller (evec.c) */
 	initintc();

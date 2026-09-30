@@ -7,12 +7,12 @@
 #include "twi.h"
 #include "wifi.h"
 #include <stdlib.h>
+#include "gpio.h"
+extern void blink_avr(void);  
 int main(void)
-
 {
 	int n;
 	char c;
-
 	serial_init();
 
 	sleepms(2000);
@@ -28,6 +28,11 @@ int main(void)
 
 
 	}
+}
+
+	
+	
+		
 
 
 	/*	while (1) {
@@ -62,5 +67,5 @@ int main(void)
 		sleep(1);
 	}
 	return 0;*/
-}
+
 

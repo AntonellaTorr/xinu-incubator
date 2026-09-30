@@ -62,7 +62,7 @@ void	nulluser()
 						memptr = memptr->mnext) {
 		free_mem += memptr->mlength;
 	}
-	kprintf("\nFreeMEM:%d (bytes)\n\n", free_mem);
+	//kprintf("\nFreeMEM:%d (bytes)\n\n", free_mem);
 
 	/* Initialize the Null process entry */	
 
@@ -101,8 +101,8 @@ static	void	sysinit()
 
 	platinit();
 
-	kprintf(CONSOLE_RESET);
-	avr_kprintf(sysinit_m0);
+	//kprintf(CONSOLE_RESET);
+	//avr_kprintf(sysinit_m0);
 
 	/* Initialize free memory list */
 
@@ -160,7 +160,7 @@ static	void	sysinit()
 
 int32	stop(char *s)
 {
-	avr_kprintf(m12);
+	//avr_kprintf(m12);
 	while(1)
 		/* Empty */;
 }
