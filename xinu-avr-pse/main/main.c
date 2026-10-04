@@ -1,4 +1,3 @@
-
 #include <xinu.h>
 #include "tarea_controltyh.h"
 #include "tarea_controlagua.h"
@@ -8,8 +7,13 @@
 #include "wifi.h"
 #include <stdlib.h>
 #include "gpio.h"
-extern void blink_avr(void);  
-void blink (void);
+static char decimales(float v)
+{
+	if (v < 0)
+		v = -v;
+	return (char)((v - (int)v) * 100);
+}
+
 int main(void)
 {
 	int n;
@@ -19,8 +23,9 @@ int main(void)
 	sleepms(2000);
 	twi_init();
 
-
+	estado.cant_dias = 0;
 	resume(create(tyh, 256, 20, "tyh", 0));
+	resume(create(agua, 128, 20, "agua", 0));
 
 	wifi_init_server();
 
@@ -28,19 +33,13 @@ int main(void)
 	cipsend_one_byte(n, 'A');
 	while(1) {
 		c = wait_byte();
-		c= (char) (estado.temperatura+20);
-		cipsend_one_byte(n, c);
-
-
-	}
-		
-
-
-}
-
-void blink (void){
-	while (1) {
-		blink_avr();
+		switch (c) {
+		case '1': cipsend_one_byte(n, (char)(int)estado.temperatura);  break;  /* entero    */
+		case '2': cipsend_one_byte(n, decimales(estado.temperatura));  break;  /* decimales */
+		case '3': cipsend_one_byte(n, (char)(int)estado.humedad);      break;
+		case '4': cipsend_one_byte(n, decimales(estado.humedad));      break;
+		case '5': cipsend_one_byte(n, (char)(int)estado.distancia_agua); break;
+		}
 	}
 }
 
@@ -68,5 +67,3 @@ void blink (void){
 		sleep(1);
 	}
 	return 0;*/
-
-
