@@ -44,26 +44,3 @@ int main(void)
 }
 
 	
-		
-
-
-  
-
-
-
-	/*
-    twi_init();
-	resume(create(tyh, 256, 20, "tyh", 0));
-	resume(create(agua, 128, 20, "agua", 0));
-	serial_init(); //HABILITAR LAS INTERRUPCIONES DE SERIAL
-
-    for (;;) {
-		//ACA IRIA CODIGO WIFI 
-		serial_put_string("Temperatura: ");
-		serial_print_float(estado.temperatura);
-		serial_put_string("Distancia al agua: ");
-		serial_print_float(estado.distancia_agua);
-		serial_put_string(" cm\n");
-		sleep(1);
-	}
-	return 0;*/
