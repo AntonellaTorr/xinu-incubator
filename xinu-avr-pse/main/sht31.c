@@ -1,9 +1,6 @@
 #include <xinu.h>
 #include <stdint.h>
 #include <stddef.h>
-
-#define F_CPU 16000000UL // Definir la frecuencia del reloj del microcontrolador
-#define __DELAY_BACKWARD_COMPATIBLE__ // Para evitar advertencias de compatibilidad con versiones anteriores
 #include <util/delay.h>
 #include <math.h> // Para la función NAN
 #include "sht31.h"
@@ -82,7 +79,7 @@ void sht31_reset(void) {
     cmd[0] = (SHT31_SOFTRESET >> 8) & 0xFF;
     cmd[1] = SHT31_SOFTRESET & 0xFF;
     twi_write(SHT31_DEFAULT_ADDR, cmd, 2, NULL);
-    _delay_ms(10); // Tiempo necesario para que el sensor se resetee
+    sleepms(10); // Tiempo necesario para que el sensor se resetee
 }
 
 void sht31_clear_status(void) {
@@ -90,7 +87,7 @@ void sht31_clear_status(void) {
     cmd[0] = (SHT31_CLEARSTATUS >> 8) & 0xFF;
     cmd[1] = SHT31_CLEARSTATUS & 0xFF;
     twi_write(SHT31_DEFAULT_ADDR, cmd, 2, NULL);
-    _delay_ms(10);
+    sleepms(10);
 }
 
 int sht31_heater(int h) {
@@ -99,7 +96,7 @@ int sht31_heater(int h) {
     cmd[0] = (command >> 8) & 0xFF;
     cmd[1] = command & 0xFF;
     twi_write(SHT31_DEFAULT_ADDR, cmd, 2, NULL);
-    _delay_ms(1);
+    sleepms(1);
     return 1;
 }
 
@@ -129,11 +126,11 @@ int sht31_read_temp_hum(void) {
     twi_write(SHT31_DEFAULT_ADDR, cmd, 2, NULL);
 
     // 2. Esperar medición (20ms para alta precisión)
-    _delay_ms(20); 
+    sleepms(20); 
 
     // 3. Leer 6 bytes: T (2), CRC (1), H (2), CRC (1)
     twi_read(SHT31_DEFAULT_ADDR, 6, leerb);
-    _delay_ms(2); // Retardo pequeño opcional
+    sleepms(2); // Retardo pequeño opcional
 
     // 4. Copiar datos al buffer de trabajo
     for (uint8_t i = 0; i < 6; i++)
