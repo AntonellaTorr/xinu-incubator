@@ -1,10 +1,13 @@
 #!/usr/bin/env python3
 # Lo mismo que hacer "telnet 192.168.4.1 80": abre el socket, manda bytes de a uno y recibe bytes de a uno.
+# Dos modos: interactivo (el usuario elige que pedir) y continuo (todas las variables, con hora, sin parar).
 import socket
 import time
+from datetime import datetime
 
 IP, PORT = "192.168.4.1", 80          # conectarse antes a la red AVR_wifi_ESP
 PAUSA = 0.3                           # segundos de espera antes de cada byte (el AVR queda ocupado un rato)
+ESPERA_ENTRE_CICLOS = 1.0             # modo continuo: segundos extra entre una medicion y la siguiente
 
 AYUDA = """
 Escribi los numeros que queres pedir (se mandan de a uno, en orden):
@@ -14,13 +17,17 @@ Escribi los numeros que queres pedir (se mandan de a uno, en orden):
   Se pueden combinar, por ej: 12345 pide todo. q para salir.
 """
 
-s = socket.create_connection((IP, PORT), timeout=5)
-s.setsockopt(socket.IPPROTO_TCP, socket.TCP_NODELAY, 1)   # cada send() sale como un paquete de 1 byte
-s.sendall(b"0")                       # el primer byte abre la sesion...
-print("AVR dice:", s.recv(1))         # ...y el AVR contesta 'A'
+
+# ---------------------------------------------------------------- utilidades
+def conectar():
+    s = socket.create_connection((IP, PORT), timeout=5)
+    s.setsockopt(socket.IPPROTO_TCP, socket.TCP_NODELAY, 1)   # cada send() sale como un paquete de 1 byte
+    s.sendall(b"0")                   # el primer byte abre la sesion...
+    print("AVR dice:", s.recv(1))     # ...y el AVR contesta 'A'
+    return s
 
 
-def pedir(c):
+def pedir(s, c):
     """Manda 1 byte (por ej. '1') y devuelve el byte recibido como numero."""
     time.sleep(PAUSA)
     s.sendall(c.encode())
@@ -49,42 +56,75 @@ def descripcion(opcion):              # texto para "Seleccionaste ..."
     return ", ".join(partes)
 
 
-print(AYUDA)
-while True:
-    opcion = input("> ").strip()
-    if opcion == "q":
-        break
-    if not opcion or any(c not in "12345" for c in opcion):
-        print("Solo se aceptan los digitos 1 a 5.")
-        continue
+# --------------------------------------------------------------- metodo 1
+def modo_interactivo(s):
+    print(AYUDA)
+    while True:
+        opcion = input("> ").strip()
+        if opcion == "q":
+            break
+        if not opcion or any(c not in "12345" for c in opcion):
+            print("Solo se aceptan los digitos 1 a 5.")
+            continue
 
-    print(f"Seleccionaste {opcion}: {descripcion(opcion)}")
+        print(f"Seleccionaste {opcion}: {descripcion(opcion)}")
+        try:
+            r = {}
+            for c in opcion:          # un byte por digito, esperando la respuesta de cada uno
+                r[c] = pedir(s, c)
+        except TimeoutError:
+            print(f"Sin respuesta al pedir '{c}'. Reinicia la placa y volve a correr el script.")
+            break
+
+        if "1" in r:
+            ent = con_signo(r["1"])
+            if "2" in r:
+                print(f"Temperatura: {valor(ent, r['2']):.2f} C   (bytes {ent} y {r['2']})")
+            else:
+                print(f"Temperatura: {ent} C")
+        elif "2" in r:
+            print(f"Decimales de temperatura: {r['2']}")
+
+        if "3" in r:
+            if "4" in r:
+                print(f"Humedad: {valor(r['3'], r['4']):.2f} %   (bytes {r['3']} y {r['4']})")
+            else:
+                print(f"Humedad: {r['3']} %")
+        elif "4" in r:
+            print(f"Decimales de humedad: {r['4']}")
+
+        if "5" in r:
+            print(f"Agua: {r['5']} cm")
+
+
+# --------------------------------------------------------------- metodo 2
+def modo_continuo(s):
+    print("Midiendo... (Ctrl+C para detener)\n")
     try:
-        r = {}
-        for c in opcion:              # un byte por digito, esperando la respuesta de cada uno
-            r[c] = pedir(c)
-    except TimeoutError:
-        print(f"Sin respuesta al pedir '{c}'. Reinicia la placa y volve a correr el script.")
-        break
+        while True:
+            try:
+                r = {c: pedir(s, c) for c in "12345"}
+            except TimeoutError:
+                print("Sin respuesta del AVR. Reinicia la placa y volve a correr el script.")
+                break
+            temperatura = valor(con_signo(r["1"]), r["2"])
+            humedad = valor(r["3"], r["4"])
+            hora = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+            print(f"[{hora}]  Temperatura: {temperatura:6.2f} C  |  "
+                  f"Humedad: {humedad:6.2f} %  |  Agua: {r['5']} cm")
+            time.sleep(ESPERA_ENTRE_CICLOS)
+    except KeyboardInterrupt:
+        print("\nDetenido por el usuario.")
 
-    if "1" in r:
-        ent = con_signo(r["1"])
-        if "2" in r:
-            print(f"Temperatura: {valor(ent, r['2']):.2f} C   (bytes {ent} y {r['2']})")
+
+# -------------------------------------------------------------------- main
+if __name__ == "__main__":
+    modo = input("Modo: 1 = interactivo, 2 = continuo > ").strip()
+    s = conectar()
+    try:
+        if modo == "2":
+            modo_continuo(s)
         else:
-            print(f"Temperatura: {ent} C")
-    elif "2" in r:
-        print(f"Decimales de temperatura: {r['2']}")
-
-    if "3" in r:
-        if "4" in r:
-            print(f"Humedad: {valor(r['3'], r['4']):.2f} %   (bytes {r['3']} y {r['4']})")
-        else:
-            print(f"Humedad: {r['3']} %")
-    elif "4" in r:
-        print(f"Decimales de humedad: {r['4']}")
-
-    if "5" in r:
-        print(f"Agua: {r['5']} cm")
-
-s.close()
+            modo_interactivo(s)
+    finally:
+        s.close()
