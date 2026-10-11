@@ -3,11 +3,8 @@
  * 
  * Rafael Ignacio Zurita (c) 2022 <rafa@fi.uncoma.edu.ar>
  */
- #define __DELAY_BACKWARD_COMPATIBLE__
- #define F_CPU 16000000UL
  #include <xinu.h>
  
- #include <util/delay.h>
  #include <string.h>
  #include "serial.h"
  
@@ -78,35 +75,35 @@
  
      sprintf(dest, at_un_byte, n);
      serial_put_str(dest);
-     _delay_ms(60);
+     sleepms(60);
      serial_put_char(c);
-     _delay_ms(40);
+     sleepms(40);
  }
  
  void wifi_init_server()
  {
      // AT y reset
      serial_put_str("AT");
-     _delay_ms(400);
+     sleepms(400);
      serial_put_str("AT+RST");
-     _delay_ms(3000);
+     sleepms(3000);
  
      // access point
      serial_put_str("AT+CWMODE=3");
-     _delay_ms(400);
+     sleepms(400);
  
      // canal 1, access point ESP, sin clave (el cero) 
      //serial_put_str("AT+CWSAP=\"AVR_wifi_ESP\",,1,0");
      serial_put_str("AT+CWSAP=\"AVR_wifi_ESP\",\"12345678\",1,0");
-     _delay_ms(1000);
+     sleepms(1000);
  
      // mult conexiones
      serial_put_str("AT+CIPMUX=1");	/* 0: 1 conexion; 1: max 4 conexiones */
-     _delay_ms(400);
+     sleepms(400);
  
      // servidor web
      serial_put_str("AT+CIPSERVER=1,80");
-     _delay_ms(400);
+     sleepms(400);
  }
  
  void wifi_control() 
